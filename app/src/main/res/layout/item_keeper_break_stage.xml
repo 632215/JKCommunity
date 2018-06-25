@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/item_rootView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_parting_bottom_10dp"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/base_dimen_40"
+                android:paddingLeft="@dimen/base_dimen_30"
+                android:paddingRight="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_36">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image_head"
+        fresco:roundAsCircle="true"
+        android:layout_width="@dimen/base_dimen_88"
+        android:layout_height="@dimen/base_dimen_88"
+        android:src="@mipmap/icon_present_default_head"
+        fresco:failureImage="@mipmap/icon_present_default_head"
+        fresco:progressBarImage="@mipmap/icon_present_default_head"/>
+
+    <TextView
+        android:id="@+id/tx_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen_24"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:layout_toLeftOf="@+id/ll_praise"
+        android:layout_toRightOf="@+id/image_head"
+        android:ellipsize="end"
+        android:lines="1"
+        android:paddingTop="@dimen/base_dimen_4"
+        android:textColor="@color/main_present_text_black"
+        android:textSize="@dimen/base_dimen_28"
+        tools:text="关于停电通知"/>
+
+    <TextView
+        android:id="@+id/tx_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_head"
+        android:layout_alignStart="@+id/tx_name"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/base_dimen_4"
+        android:text="10-20 12:22"
+        android:textColor="@color/main_home_bottom_gray"
+        android:textSize="@dimen/base_dimen_24"/>
+
+    <LinearLayout
+        android:id="@+id/ll_praise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tx_time"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tx_name"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tx_praise"
+            android:paddingRight="@dimen/base_dimen_4"
+            android:src="@mipmap/icon_fragment_housekeeper_praise"/>
+
+        <TextView
+            android:id="@+id/tx_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="赞"
+            android:textColor="@color/main_home_bottom_gray"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tx_time"
+        android:layout_below="@+id/tx_time"
+        android:layout_marginTop="@dimen/base_dimen_18">
+
+        <TextView
+            android:id="@+id/tx_context"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/base_dimen_10"
+            android:layout_toStartOf="@+id/tx_see_more"
+            android:singleLine="true"
+            android:textColor="@color/color_text_first_title"
+            android:textSize="@dimen/base_dimen_28"
+            tools:text="晴晴晴晴晴晴晴晴晴晴晴晴晴晴晴晴晴"/>
+
+        <TextView
+            android:id="@+id/tx_see_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/base_dimen_28"
+            android:layout_marginRight="@dimen/base_dimen_50"
+            android:text="@string/fragment_housekeeper_see_more"
+            android:textColor="@color/color_help_button_text"/>
+
+        <TextView
+            android:id="@+id/tx_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx_context"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/base_dimen_10"
+            android:background="@mipmap/icon_break_state_oneline_bg"
+            android:textColor="@color/color_help_button_text"
+            android:textSize="@dimen/base_dimen_24"
+            android:paddingRight="@dimen/base_dimen_15"
+            android:paddingLeft="@dimen/base_dimen_15"
+            tools:text="【当前状态】"/>
+
+    </RelativeLayout>
+</RelativeLayout>

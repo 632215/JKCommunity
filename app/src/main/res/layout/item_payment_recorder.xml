@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/base_dimen_30"
+                android:paddingRight="@dimen/base_dimen_30">
+
+    <TextView
+        android:id="@+id/payment_state_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/base_dimen_50"
+        android:layout_marginRight="@dimen/base_dimen_40"
+        android:layout_marginTop="@dimen/base_dimen_50"
+        android:background="@mipmap/icon_pay_recorder_pay"
+        android:gravity="center"
+        android:text="缴费"
+        android:textColor="@color/activity_pay_recorder_color1"/>
+
+    <TextView
+        android:id="@+id/pay_method_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/payment_state_text"
+        android:layout_toRightOf="@+id/payment_state_text"
+        android:gravity="center"
+        android:paddingRight="@dimen/base_dimen_46"
+        android:text="公众号微信支付"
+        android:textColor="@color/payment_text_color2"
+        android:textSize="@dimen/base_dimen_28"/>
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/payment_state_text"
+        android:layout_toRightOf="@+id/payment_state_text"
+        android:gravity="center"
+        android:paddingRight="@dimen/base_dimen_46"
+        android:text="2017/12/12"
+        android:textColor="@color/activity_pay_recorder_color3"/>
+
+    <TextView
+        android:id="@+id/money_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/payment_state_text"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/payment_state_text"
+        android:drawablePadding="@dimen/base_dimen_20"
+        android:drawableRight="@mipmap/icon_forward"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxEms="14"
+        android:maxLines="1"
+        android:text="-123.56"
+        android:textColor="@color/activity_pay_recorder_color2"
+        android:textSize="@dimen/base_dimen_36"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:layout_below="@+id/payment_state_text"
+        android:background="@color/default_driver_line_color"/>
+</RelativeLayout>

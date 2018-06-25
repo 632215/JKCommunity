@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_root_view"
+        android:layout_width="@dimen/base_dimen_560"
+        android:layout_height="@dimen/base_dimen_680"
+        android:background="@drawable/shape_call_phone_dialog_bg">
+
+
+        <TextView
+            android:id="@+id/tx_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/base_dimen_24"
+            android:paddingTop="@dimen/base_dimen_30"
+            android:text="@string/pop_layout_community_select"
+            android:textColor="@color/activity_access_control_bg"
+            android:textSize="@dimen/base_dimen_28"/>
+
+        <com.jinke.community.ui.widget.ScrollSelectView
+            android:id="@+id/scroll_select_view"
+            android:layout_width="@dimen/base_dimen_560"
+            android:layout_height="@dimen/base_dimen_460"
+            android:layout_above="@+id/tx_line"
+            android:layout_below="@+id/tx_tips"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_parting_top_1dp"/>
+
+        <TextView
+            android:id="@+id/tx_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_above="@+id/ll_function"
+            android:background="@color/circle_gray"/>
+
+        <LinearLayout
+            android:id="@+id/ll_function"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/base_dimen_15"
+            android:layout_marginRight="@dimen/base_dimen_15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tx_cancle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/base_dimen_40"
+                android:paddingTop="@dimen/base_dimen_22"
+                android:text="@string/pop_layout_community_select_cancle"
+                android:textColor="@color/activity_access_control_bg"
+                android:textSize="@dimen/base_dimen_28"/>
+
+            <TextView
+                android:id="@+id/tx_sure"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/shape_parting_left_1dp"
+                android:gravity="center"
+                android:paddingBottom="@dimen/base_dimen_40"
+                android:paddingTop="@dimen/base_dimen_22"
+                android:text="@string/pop_layout_community_select_sure"
+                android:textColor="@color/activity_access_control_bg"
+                android:textSize="@dimen/base_dimen_28"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

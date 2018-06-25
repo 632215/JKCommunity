@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:autofit="http://schemas.android.com/apk/res-auto"
+            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_walking_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/icon_walking_num_bg"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/base_dimen_60"
+                android:background="@mipmap/icon_walking_bg">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/walking_head_image"
+                    android:layout_width="@dimen/base_dimen_88"
+                    android:layout_height="@dimen/base_dimen_88"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/base_dimen_40"
+                    android:src="@mipmap/icon_present_default_head"
+                    fresco:failureImage="@mipmap/icon_present_default_head"
+                    fresco:progressBarImage="@mipmap/icon_present_default_head"
+                    fresco:roundAsCircle="true"/>
+
+                <TextView
+                    android:id="@+id/today_walkingnum_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/walking_head_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/base_dimen_10"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/base_dimen_20"
+                    tools:text="@string/circle_today_walking_num"/>
+
+                <TextView
+                    android:id="@+id/tx_follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/walking_num_txw"
+                    android:layout_alignLeft="@+id/walking_num_txw"
+                    android:layout_below="@+id/today_walkingnum_text"
+                    android:text="第"
+                    android:textColor="@color/circle_start_yellow"
+                    android:textSize="@dimen/base_dimen_24"/>
+
+                <com.jinke.community.ui.widget.autotextview.AutofitTextView
+                    android:id="@+id/walking_num_txw"
+                    android:layout_width="@dimen/base_dimen_200"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/today_walkingnum_text"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:paddingLeft="@dimen/base_dimen_26"
+                    android:paddingRight="@dimen/base_dimen_26"
+                    android:textColor="@color/circle_start_yellow"
+                    android:textSize="@dimen/base_dimen_72"
+                    autofit:minTextSize="@dimen/base_dimen_32"
+                    tools:text="0"/>
+
+                <TextView
+                    android:id="@+id/tx_behind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/walking_num_txw"
+                    android:layout_alignEnd="@+id/walking_num_txw"
+                    android:layout_below="@+id/today_walkingnum_text"
+                    android:text="名"
+                    android:textColor="@color/circle_start_yellow"
+                    android:textSize="@dimen/base_dimen_24"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_range"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/base_dimen_32"
+                android:layout_marginRight="@dimen/base_dimen_32"
+                android:layout_marginTop="@dimen/base_dimen_40"
+                android:background="@mipmap/icon_walking_range_bg">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/image_head"
+                    android:layout_width="@dimen/base_dimen_80"
+                    android:layout_height="@dimen/base_dimen_80"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/base_dimen_20"
+                    android:layout_marginLeft="@dimen/base_dimen_20"
+                    android:src="@mipmap/icon_present_default_head"
+                    fresco:failureImage="@mipmap/icon_present_default_head"
+                    fresco:progressBarImage="@mipmap/icon_present_default_head"
+                    fresco:roundAsCircle="true"/>
+
+                <TextView
+                    android:id="@+id/tx_walking_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_32"
+                    android:layout_toLeftOf="@+id/tx_walking_range"
+                    android:layout_toRightOf="@+id/image_head"
+                    android:lines="1"
+                    android:textColor="@color/circle_name_color"
+                    tools:text="八分饱青年PekerMan八分饱青年PekerMan"/>
+
+                <TextView
+                    android:id="@+id/tx_walking_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_30"
+                    android:layout_marginRight="@dimen/base_dimen_30"
+                    android:gravity="right"
+                    android:text="1234"
+                    android:textColor="@color/circle_walking_range_color"
+                    android:textSize="@dimen/base_dimen_48"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <com.jinke.community.ui.widget.FillListView
+            android:id="@+id/walking_fillListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_20"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:divider="@null"
+            android:listSelector="@color/list_bg"
+            android:paddingTop="@dimen/base_dimen_20"
+            android:scrollbars="none"/>
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_parting_top_1dp">
+
+    <TextView
+        android:id="@+id/tx_verhicle_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_ban"
+        android:layout_alignTop="@+id/image_ban"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/base_dimen_32"
+        android:paddingTop="@dimen/base_dimen_28"
+        android:textColor="@color/activity_vehicle_text_color2"
+        android:textSize="@dimen/base_dimen_28"
+        />
+
+    <ImageView
+        android:id="@+id/image_ban"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="@dimen/base_dimen_32"
+        android:paddingTop="@dimen/base_dimen_28"
+        android:src="@drawable/icon_verhicle_un_ban"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/tx_verhicle_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tx_verhicle_num"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tx_verhicle_num"
+        android:gravity="center_vertical"
+        android:textColor="@color/activity_vehicle_text_color6"
+        android:textSize="@dimen/base_dimen_28"
+        android:text="@string/activity_vehicle_not_in"
+        android:visibility="gone"
+        />
+</RelativeLayout>

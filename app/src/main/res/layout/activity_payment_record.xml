@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/base_dimen_30"
+        android:paddingRight="@dimen/base_dimen_30">
+
+        <TextView
+            android:id="@+id/tx_payRecord_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/base_dimen_20"
+            android:layout_toLeftOf="@+id/tx_select"
+            android:drawableLeft="@mipmap/icon_pending_house"
+            android:drawablePadding="@dimen/base_dimen_10"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/base_dimen_22"
+            android:paddingTop="@dimen/base_dimen_22"
+            android:textColor="@color/payment_text_address"
+            android:textSize="@dimen/base_dimen_30"
+            tools:text="@string/payment_address"/>
+
+        <TextView
+            android:id="@+id/tx_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/base_dimen_16"
+            android:drawableRight="@mipmap/icon_forward"
+            android:text="@string/payment_please_select"
+            android:textColor="@color/payment_text_color1"/>
+    </RelativeLayout>
+
+    <com.jinke.community.ui.widget.LoadingLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tx_earlier_records"
+        android:layout_below="@+id/rl_address"
+        app:isFirstVisible="true">
+
+        <www.jinke.com.library.pulltorefresh.PullToRefreshScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:background="@color/default_bg"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.jinke.community.ui.widget.FillListView
+                    android:id="@+id/record_fillListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"/>
+            </RelativeLayout>
+
+        </www.jinke.com.library.pulltorefresh.PullToRefreshScrollView>
+    </com.jinke.community.ui.widget.LoadingLayout>
+
+    <TextView
+        android:id="@+id/tx_earlier_records"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/base_dimen_48"
+        android:text="@string/payment_earlier_records"
+        android:textColor="@color/payment_text_color26"
+        android:textSize="@dimen/base_dimen_28"/>
+</RelativeLayout>

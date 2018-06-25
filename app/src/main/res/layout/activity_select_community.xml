@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_gray_default"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/base_dimen_22"
+        android:paddingLeft="@dimen/base_dimen_30"
+        android:paddingRight="@dimen/base_dimen_30"
+        android:paddingTop="@dimen/base_dimen_22">
+
+        <EditText
+            android:id="@+id/ed_community_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/base_dimen_20"
+            android:layout_toLeftOf="@+id/community_search"
+            android:background="@drawable/shape_select_community_edit_bg"
+            android:drawableLeft="@drawable/icon_select_community_search"
+            android:drawablePadding="@dimen/base_dimen_15"
+            android:hint="请输入社区名称或首字母查询"
+            android:paddingBottom="@dimen/base_dimen_14"
+            android:paddingLeft="@dimen/base_dimen_20"
+            android:paddingTop="@dimen/base_dimen_14"
+            android:textColor="#7A797B"
+            android:textColorHint="#7A797B"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/community_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/base_dimen_30"
+            android:background="@drawable/shape_community_search_bg"
+            android:paddingBottom="@dimen/base_dimen_10"
+            android:paddingLeft="@dimen/base_dimen_20"
+            android:paddingRight="@dimen/base_dimen_20"
+            android:paddingTop="@dimen/base_dimen_10"
+            android:text="搜索"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_2"
+        android:background="@color/main_gray_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/base_dimen_30"
+        android:paddingLeft="@dimen/base_dimen_30"
+        android:paddingTop="@dimen/base_dimen_30">
+
+        <TextView
+            android:id="@+id/tx_select_community_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_select_community_location"
+            android:drawablePadding="@dimen/base_dimen_16"
+            android:text="定位中..."
+            android:textColor="@color/main_them_color" />
+
+        <TextView
+            android:id="@+id/select_other_community"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/base_dimen_30"
+            android:drawablePadding="@dimen/base_dimen_10"
+            android:drawableRight="@drawable/icon_presenter_allow"
+            android:text="@string/select_community_other"
+            android:textColor="@color/main_present_text_gray" />
+
+    </RelativeLayout>
+
+    <com.jinke.community.ui.widget.LoadingLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:isFirstVisible="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/base_dimen_2"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/main_gray_line"
+                android:dividerHeight="@dimen/base_dimen_2" />
+
+            <LinearLayout
+                android:id="@+id/select_community_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ListView
+                    android:id="@+id/left_listView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:divider="@color/select_community_line"
+                    android:dividerHeight="@dimen/base_dimen_2"
+                    android:scrollbars="none" />
+
+                <View
+                    android:layout_width="@dimen/base_dimen_2"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_gray_line" />
+
+                <com.jinke.community.ui.widget.LoadingLayout
+                    android:id="@+id/expand_loadView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.8">
+
+                    <ExpandableListView
+                        android:id="@+id/right_listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:groupIndicator="@null"
+                        android:scrollbars="none" />
+                </com.jinke.community.ui.widget.LoadingLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.jinke.community.ui.widget.LoadingLayout>
+
+</LinearLayout>

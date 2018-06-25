@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_supermarket"
+        android:layout_width="@dimen/base_dimen_84"
+        android:layout_height="@dimen/base_dimen_84"
+        android:background="@color/white"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tx_life_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_10"
+        android:gravity="center"
+        android:text="@string/life_supermarket"
+        android:textColor="@color/main_present_text_gray"
+        android:textSize="@dimen/base_dimen_24" />
+</LinearLayout>

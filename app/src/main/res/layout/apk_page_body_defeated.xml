@@ -1,0 +1,53 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/open_door_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/base_dimen_100">
+
+        <TextView
+            android:id="@+id/opne_fail_warm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/base_dimen_80"
+            android:text="@string/open_fail_warm"
+            android:textColor="@color/page_head_title"
+            android:textSize="@dimen/base_dimen_48" />
+
+        <TextView
+            android:id="@+id/open_fail_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/opne_fail_warm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/base_dimen_60"
+            android:text="@string/open_fail_hint"
+            android:textColor="@color/page_head_title"
+            android:textSize="@dimen/base_dimen_36" />
+
+        <ImageView
+            android:id="@+id/open_door_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/open_door_fail" />
+
+        <TextView
+            android:id="@+id/dome_shut_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/base_dimen_160"
+            android:background="@drawable/btn_open_door_close"
+            android:gravity="center"
+            android:text="@string/dome_shut"
+            android:textColor="@color/page_head_title" />
+    </RelativeLayout>
+
+
+</FrameLayout>

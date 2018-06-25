@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tool="http://schemas.android.com/tools"
+                android:id="@+id/rl_root_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/base_dimen_50"
+                android:paddingLeft="@dimen/base_dimen_24"
+                android:paddingRight="@dimen/base_dimen_28"
+                android:paddingTop="@dimen/base_dimen_50">
+
+    <ImageView
+        android:id="@+id/image_select_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_verhicle_selected"/>
+
+    <TextView
+        android:id="@+id/tx_parking_space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_select_state"
+        android:layout_toRightOf="@+id/image_select_state"
+        android:paddingLeft="@dimen/base_dimen_12"
+        android:textColor="@color/payment_text_color20"
+        android:textSize="@dimen/base_dimen_32"
+        tool:hint="1F-4953车位     "/>
+
+    <TextView
+        android:id="@+id/tx_money_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_select_state"
+        android:layout_toLeftOf="@+id/tx_money"
+        android:paddingLeft="@dimen/base_dimen_12"
+        android:text="¥"
+        android:textColor="@color/payment_text_color20"
+        android:textSize="@dimen/base_dimen_32"
+        tool:hint="¥"/>
+
+    <TextView
+        android:id="@+id/tx_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/image_select_state"
+        android:paddingLeft="@dimen/base_dimen_12"
+        android:textColor="@color/payment_text_color20"
+        android:textSize="@dimen/base_dimen_32"
+        tool:hint="400元/月"/>
+
+    <TextView
+        android:id="@+id/tx_parking_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_parking_space"
+        android:layout_toRightOf="@+id/image_select_state"
+        android:paddingLeft="@dimen/base_dimen_12"
+        android:paddingTop="@dimen/base_dimen_22"
+        android:textColor="@color/payment_text_color20"
+        android:textSize="@dimen/base_dimen_32"
+        tool:hint="当前有效期：2017/09/12"/>
+
+    <TextView
+        android:id="@+id/tx_tx_rechanrge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_add_num"
+        android:layout_toRightOf="@+id/image_select_state"
+        android:paddingLeft="@dimen/base_dimen_12"
+        android:text="@string/payment_renewal_recharge"
+        android:textColor="@color/payment_text_color20"
+        android:textSize="@dimen/base_dimen_32"/>
+
+
+    <ImageView
+        android:id="@+id/image_add_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tx_parking_time"
+        android:layout_marginTop="@dimen/base_dimen_40"
+        android:src="@drawable/incn_add_num"/>
+
+    <TextView
+        android:id="@+id/tx_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_add_num"
+        android:layout_marginLeft="@dimen/base_dimen_12"
+        android:layout_marginRight="@dimen/base_dimen_12"
+        android:layout_toLeftOf="@+id/image_add_num"
+        android:background="@drawable/shape_item_parking_month_bg"
+        android:paddingBottom="@dimen/base_dimen_4"
+        android:paddingLeft="@dimen/base_dimen_70"
+        android:paddingRight="@dimen/base_dimen_70"
+        android:paddingTop="@dimen/base_dimen_4"
+        android:src="@drawable/incn_add_num"
+        android:textSize="@dimen/base_dimen_28"
+        tool:hint="1月"/>
+
+
+    <ImageView
+        android:id="@+id/image_reduce_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_add_num"
+        android:layout_toLeftOf="@+id/tx_num"
+        android:src="@drawable/icon_reduce_num"/>
+
+</RelativeLayout>

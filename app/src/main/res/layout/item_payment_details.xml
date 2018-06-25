@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen_30">
+
+        <TextView
+            android:id="@+id/tx_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/base_dimen_20"
+            android:layout_marginTop="@dimen/base_dimen_46"
+            android:layout_toLeftOf="@+id/payment_cost_text"
+            android:drawablePadding="@dimen/base_dimen_20"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:textColor="@color/payment_text_color9"
+            android:textSize="@dimen/base_dimen_30"
+            tools:text="201703水电公摊费"/>
+
+        <TextView
+            android:id="@+id/payment_cost_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/base_dimen_24"
+            android:textColor="@color/payment_text_color9"
+            android:textSize="@dimen/base_dimen_30"
+            android:visibility="gone"
+            tools:text="¥125.21"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen_94"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:background="@drawable/shape_parting_top_1dp"
+        android:paddingBottom="@dimen/base_dimen_20"
+        android:paddingTop="@dimen/base_dimen_20">
+
+        <TextView
+            android:id="@+id/item_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前余额"
+            android:textColor="@color/main_present_text_gray"/>
+
+        <TextView
+            android:id="@+id/item_current_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/item_current"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/main_radio_chose_color"
+            tools:text="¥100.00"/>
+
+        <TextView
+            android:id="@+id/item_lave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_current"
+            android:layout_below="@+id/item_current"
+            android:layout_marginTop="@dimen/base_dimen_18"
+            android:text="本次充值"
+            android:textColor="@color/main_present_text_gray"/>
+
+        <TextView
+            android:id="@+id/item_lave_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/item_lave"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/main_present_text_gray"
+            tools:text="¥100.00"/>
+    </RelativeLayout>
+</LinearLayout>

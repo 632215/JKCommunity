@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_gray_default"
+                android:orientation="vertical"
+                app:isFirstVisible="true">
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_schedule"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/white"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingBottom="@dimen/base_dimen_74"-->
+    <!--android:paddingLeft="@dimen/base_dimen_30"-->
+    <!--android:paddingRight="@dimen/base_dimen_30"-->
+    <!--android:paddingTop="@dimen/base_dimen_26">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="@dimen/base_dimen_0"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tx_schedule_phone"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@mipmap/icon_register_red"-->
+    <!--android:gravity="center"-->
+    <!--android:text="1"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/base_dimen_24"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tx_schedule_tips_phone"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:paddingTop="@dimen/base_dimen_16"-->
+    <!--android:text="@string/activity_phone_verification_input_phone"-->
+    <!--android:textColor="@color/acticivty_phoneverification_color1"-->
+    <!--android:textSize="@dimen/base_dimen_28"/>-->
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="@dimen/base_dimen_0"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tx_schedule_verification"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@mipmap/icon_register_gray"-->
+    <!--android:gravity="center"-->
+    <!--android:text="2"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/base_dimen_24"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tx_schedule_tips_verification"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:paddingTop="@dimen/base_dimen_16"-->
+    <!--android:text="@string/activity_phone_verification_input_verification_code"-->
+    <!--android:textColor="@color/acticivty_phoneverification_color2"-->
+    <!--android:textSize="@dimen/base_dimen_28"/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="@dimen/base_dimen_0"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tx_schedule_bind"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@mipmap/icon_register_gray"-->
+    <!--android:gravity="center"-->
+    <!--android:text="3"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/base_dimen_24"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tx_schedule_tips_bind"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:paddingTop="@dimen/base_dimen_16"-->
+    <!--android:text="@string/activity_phone_verification_bind_house"-->
+    <!--android:textColor="@color/acticivty_phoneverification_color2"-->
+    <!--android:textSize="@dimen/base_dimen_28"/>-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <TextView
+        android:id="@+id/tx_input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/base_dimen_36"
+        android:paddingTop="@dimen/base_dimen_40"
+        android:text="@string/verification_phone_toast"
+        android:textColor="@color/color_text_first_title"
+        android:textSize="@dimen/base_dimen_36"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_input_phone"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/verification_phone_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:layout_marginRight="@dimen/base_dimen_30"
+            android:background="@mipmap/icon_phone_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/base_dimen_140"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/activity_phone_verification_phone"
+                android:textColor="@color/acticivty_phoneverification_color1"
+                android:textSize="@dimen/base_dimen_30"/>
+
+            <EditText
+                android:id="@+id/verification_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_90"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/base_dimen_10"
+                android:background="@null"
+                android:hint="@string/verification_phone_toast"
+                android:inputType="number"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/base_dimen_24"
+                android:textColor="@color/main_present_text_black"
+                android:textColorHint="@color/acticivty_phoneverification_color2"
+                android:textSize="@dimen/base_dimen_30"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/verification_sms_code_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verification_phone_view"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:layout_marginRight="@dimen/base_dimen_30"
+            android:layout_marginTop="@dimen/base_dimen_14"
+            android:background="@mipmap/icon_phone_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/base_dimen_136"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/activity_phone_verification_verification"
+                android:textColor="@color/acticivty_phoneverification_color1"
+                android:textSize="@dimen/base_dimen_30"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/base_dimen_10">
+
+                <EditText
+                    android:id="@+id/verification_sms_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_90"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/verification_send"
+                    android:background="@null"
+                    android:gravity="center|left"
+                    android:hint="@string/verification_input_sms_code"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/base_dimen_24"
+                    android:textColor="@color/main_present_text_black"
+                    android:textColorHint="@color/acticivty_phoneverification_color2"
+                    android:textSize="@dimen/base_dimen_30"/>
+
+                <TextView
+                    android:id="@+id/verification_send"
+                    android:layout_width="@dimen/base_dimen_196"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/base_dimen_10"
+                    android:background="@mipmap/icon_verification_code_wait"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:text="获取验证码"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/base_dimen_28"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/verification_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_90"
+            android:layout_below="@+id/verification_sms_code_view"
+            android:layout_marginBottom="@dimen/base_dimen_50"
+            android:layout_marginLeft="@dimen/base_dimen_24"
+            android:layout_marginRight="@dimen/base_dimen_24"
+            android:layout_marginTop="@dimen/base_dimen_70"
+            android:background="@mipmap/icon_next_gray"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/verification_next"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="@dimen/base_dimen_30">
+
+        <ImageView
+            android:id="@+id/image_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tx_login_deal"
+            android:layout_alignTop="@+id/tx_login_deal"
+            android:layout_toLeftOf="@+id/tx_login_deal"
+            android:paddingRight="@dimen/base_dimen_10"
+            android:src="@mipmap/icon_register_selected"/>
+
+        <TextView
+            android:id="@+id/tx_login_deal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tx_out_look"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/base_dimen_34"
+            android:text="@string/verification_user_protocol"
+            android:textColor="#999999"
+            android:textSize="@dimen/base_dimen_34"/>
+
+        <TextView
+            android:id="@+id/tx_out_look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tx_copy_right"
+            android:layout_centerHorizontal="true"
+            android:text="@string/verification_service_provider"
+            android:textColor="#999999"
+            android:textSize="@dimen/base_dimen_20"/>
+
+        <TextView
+            android:id="@+id/tx_copy_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/base_dimen_5"
+            android:text="@string/verification_copyright"
+            android:textColor="#999999"
+            android:textSize="@dimen/base_dimen_20"/>
+    </RelativeLayout>
+</RelativeLayout>

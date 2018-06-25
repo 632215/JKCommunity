@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen_30"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:layout_marginTop="@dimen/base_dimen_22">
+
+        <TextView
+            android:id="@+id/open_door_info_address_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/open_door_info_address"
+            android:textColor="@color/text_black" />
+
+        <TextView
+            android:id="@+id/open_door_info_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_18"
+            android:layout_toEndOf="@+id/open_door_info_address_hint"
+            android:textColor="@color/text_gray" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen_30"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:layout_marginTop="@dimen/base_dimen_30">
+
+        <TextView
+            android:id="@+id/open_door_info_aim_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/open_door_info_aim"
+            android:textColor="@color/text_black" />
+
+        <TextView
+            android:id="@+id/open_door_info_aim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_18"
+            android:layout_toEndOf="@+id/open_door_info_aim_hint"
+            android:text="中介看房"
+            android:textColor="@color/text_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/base_dimen_22"
+        android:layout_marginLeft="@dimen/base_dimen_30"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:layout_marginTop="@dimen/base_dimen_30">
+
+        <TextView
+            android:id="@+id/open_door_info_valid_time_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/open_door_info_valid_time"
+            android:textColor="@color/text_black" />
+
+        <TextView
+            android:id="@+id/open_door_info_valid_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_18"
+            android:layout_toEndOf="@+id/open_door_info_valid_time_hint"
+            android:text="2017年5月14日当天"
+            android:textColor="@color/text_gray" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/base_dimen_22"
+        android:layout_marginLeft="@dimen/base_dimen_30"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/open_door_info_times_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/open_door_info_times"
+            android:textColor="@color/text_black" />
+
+        <TextView
+            android:id="@+id/open_door_info_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_18"
+            android:layout_toEndOf="@+id/open_door_info_times_hint"
+            android:text="一次"
+            android:textColor="@color/text_gray" />
+
+    </RelativeLayout>
+
+</LinearLayout>

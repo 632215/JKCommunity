@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_satisfaction"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_100"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/base_dimen_30"
+        android:paddingRight="@dimen/base_dimen_30">
+
+        <TextView
+            android:id="@+id/tx_satisfaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/activity_comment_satisfaction"
+            android:textColor="@color/activity_comment_color1"
+            android:textSize="@dimen/base_dimen_30"/>
+
+        <com.jinke.community.ui.widget.FillGridView
+            android:id="@+id/fill_grid_view"
+            android:layout_width="@dimen/base_dimen_300"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/base_dimen_20"
+            android:layout_toEndOf="@+id/tx_satisfaction"
+            android:gravity="left"
+            android:listSelector="@color/white"
+            android:numColumns="5"/>
+
+        <TextView
+            android:id="@+id/tx_service_satisfaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_24"
+            android:textColor="@color/activity_comment_color2"
+            android:textSize="@dimen/base_dimen_30"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tx_broken_submit"
+        android:layout_below="@+id/rl_satisfaction"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/ed_property_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="top|left"
+            android:hint="@string/activity_comment_add"
+            android:maxLength="2000"
+            android:minHeight="@dimen/base_dimen_400"
+            android:padding="@dimen/base_dimen_30"
+            android:textColor="@color/main_present_text_black"
+            android:textColorHint="#CCCCCC"
+            android:textSize="@dimen/base_dimen_28"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/base_dimen_160"
+            android:src="@mipmap/icon_activity_break_new_write"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tx_broken_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/base_dimen_34"
+        android:layout_marginLeft="@dimen/base_dimen_30"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:layout_marginTop="@dimen/base_dimen_54"
+        android:background="@mipmap/icon_activity_break_new_commit_bg"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/base_dimen_32"/>
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/base_dimen_30"
+    android:paddingRight="@dimen/base_dimen_30"
+    android:paddingTop="@dimen/base_dimen_44">
+
+    <ImageView
+        android:id="@+id/image_item_head"
+        android:layout_width="@dimen/base_dimen_88"
+        android:layout_height="@dimen/base_dimen_88" />
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen_24"
+        android:layout_toLeftOf="@+id/tx_item_time"
+        android:layout_marginRight="@dimen/base_dimen_10"
+        android:layout_toRightOf="@+id/image_item_head"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/tx_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_5"
+            android:layout_toLeftOf="@+id/image_new"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/main_present_text_black"
+            android:textSize="@dimen/base_dimen_30"
+            tools:text="关于停电关于停电" />
+
+        <ImageView
+            android:id="@+id/image_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="@dimen/base_dimen_4"
+            android:background="@drawable/shape_corners_red_bg"
+            android:src="@mipmap/icon_fragment_housekeeper_new"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tx_item_describe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_item_head"
+        android:layout_alignLeft="@+id/rl_title"
+        android:layout_toLeftOf="@+id/tx_item_time"
+        android:layout_toRightOf="@+id/image_item_head"
+        android:layout_toStartOf="@+id/tx_see_all"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="@color/activity_broken_dynamic_color2"
+        android:textSize="@dimen/base_dimen_24"
+        tools:text="金科云湖天都物业管理处金科云湖天都物业管理处" />
+
+    <TextView
+        android:id="@+id/tx_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rl_title"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:textColor="@color/activity_broken_dynamic_color3"
+        android:textSize="@dimen/base_dimen_24"
+        tools:text="今天　23：32" />
+
+    <TextView
+        android:id="@+id/tx_see_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tx_item_describe"
+        android:layout_toStartOf="@+id/tx_item_time"
+        android:text="阅读全文"
+        android:textColor="@color/activity_broken_dynamic_color1"
+        android:textSize="@dimen/base_dimen_24"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_2"
+        android:layout_below="@+id/image_item_head"
+        android:layout_marginTop="@dimen/base_dimen_44"
+        android:background="@color/default_driver_line_color" />
+</RelativeLayout>

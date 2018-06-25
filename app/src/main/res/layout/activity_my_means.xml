@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_gray_default">
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/base_dimen_40"
+        android:paddingRight="@dimen/base_dimen_40">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/base_dimen_40"
+            android:text="@string/means_head"
+            android:textColor="@color/main_present_text_black"/>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/present_head_image"
+            android:layout_width="@dimen/base_dimen_96"
+            android:layout_height="@dimen/base_dimen_96"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/base_dimen_40"
+            android:layout_marginRight="@dimen/base_dimen_6"
+            android:layout_toLeftOf="@+id/img_arrow"
+            android:src="@mipmap/icon_present_default_head"
+            fresco:failureImage="@mipmap/icon_present_default_head"
+            fresco:progressBarImage="@mipmap/icon_present_default_head"
+            fresco:roundAsCircle="true"/>
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/present_head_image"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/present_head_image"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_presenter_allow"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_below="@+id/present_head_image"
+            android:background="@color/default_driver_line_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_rank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_head"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/base_dimen_40"
+        android:paddingRight="@dimen/base_dimen_40">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/means_rank"
+            android:textColor="@color/main_present_text_black"/>
+
+        <TextView
+            android:id="@+id/tx_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30"
+            tools:text="业主"
+            android:textColor="@color/main_present_text_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_below="@+id/tx_owner"
+            android:background="@color/default_driver_line_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_rank"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/base_dimen_40"
+        android:paddingRight="@dimen/base_dimen_40">
+
+        <TextView
+            android:id="@+id/tx_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/means_name"
+            android:textColor="@color/main_present_text_black"/>
+
+        <TextView
+            android:id="@+id/tx_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tx_name"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:lines="1"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30"
+            tools:text="周斌"
+            android:textColor="@color/main_present_text_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_below="@+id/tx_userName"
+            android:background="@color/default_driver_line_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_name"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/base_dimen_40"
+        android:paddingRight="@dimen/base_dimen_40">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/means_phone"
+            android:textColor="@color/main_present_text_black"/>
+
+        <TextView
+            android:id="@+id/tx_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30"
+            tools:text="18315058038"
+            android:textColor="@color/main_present_text_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_below="@+id/tx_phone"
+            android:background="@color/default_driver_line_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_phone"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/base_dimen_40"
+        android:paddingRight="@dimen/base_dimen_40">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/mean_sex"
+            android:textColor="@color/main_present_text_black"/>
+
+        <TextView
+            android:id="@+id/tx_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/base_dimen_20"
+            android:drawableRight="@drawable/icon_presenter_allow"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30"
+            tools:text="男"
+            android:textColor="@color/main_present_text_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_below="@+id/tx_sex"
+            android:background="@color/default_driver_line_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_nick_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_sex"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="@dimen/base_dimen_34"
+        android:paddingLeft="@dimen/base_dimen_40"
+        android:paddingRight="@dimen/base_dimen_40"
+        android:paddingTop="@dimen/base_dimen_30">
+
+        <TextView
+            android:id="@+id/tx_ni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mean_nike"
+            android:textColor="@color/main_present_text_black"/>
+
+        <EditText
+            android:id="@+id/ed_nickName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_60"
+            android:layout_toRightOf="@+id/tx_ni"
+            android:background="@color/white"
+            android:gravity="center|right"
+            android:maxLength="13"
+            android:maxLines="1"
+            android:textColor="@color/main_present_text_gray"
+            android:textSize="14sp"
+            tools:text="八分饱青年PekerMan"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_skill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_nick_name"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/base_dimen_40"
+        android:paddingRight="@dimen/base_dimen_40">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/mean_skill"
+            android:textColor="@color/main_present_text_black"/>
+
+        <TextView
+            android:id="@+id/tx_skill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/base_dimen_20"
+            android:drawableRight="@drawable/icon_presenter_allow"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30"
+            android:text="@string/mean_skill_tips"
+            android:textColor="@color/main_present_text_gray"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_below="@+id/tx_skill"
+            android:background="@color/default_driver_line_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_interest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_skill"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/base_dimen_40"
+        android:paddingRight="@dimen/base_dimen_40">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/mean_interest"
+            android:textColor="@color/main_present_text_black"/>
+
+        <TextView
+            android:id="@+id/tx_interest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/base_dimen_20"
+            android:drawableRight="@drawable/icon_presenter_allow"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30"
+            android:text="@string/mean_interest_tips"
+            android:textColor="@color/main_present_text_gray"/>
+    </RelativeLayout>
+</RelativeLayout>

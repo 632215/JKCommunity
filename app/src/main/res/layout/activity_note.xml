@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jinke.community.ui.widget.LoadingLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loadinglayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <www.jinke.com.library.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/pull_to_refresh_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_parting_top_12dp">
+
+            <TextView
+                android:id="@+id/tx_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_60"
+                android:gravity="center_horizontal"
+                android:text="@string/activity_note_interest"
+                android:textColor="@color/color_text_first_title"
+                android:textSize="@dimen/base_dimen_40"
+                />
+
+            <TextView
+                android:id="@+id/tx_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_title"
+                android:layout_marginTop="@dimen/base_dimen_12"
+                android:gravity="center_horizontal"
+                android:text="@string/activity_note_tips"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/base_dimen_28"
+                />
+
+            <com.jinke.community.ui.widget.FillRecyclerView
+                android:id="@+id/rv_note"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/tx_sure"
+                android:layout_below="@+id/tx_tips"
+                android:layout_marginLeft="@dimen/base_dimen_30"
+                android:layout_marginRight="@dimen/base_dimen_30"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:nestedScrollingEnabled="false"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/tx_sure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/base_dimen_60"
+                android:layout_marginTop="@dimen/base_dimen_60"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@mipmap/icon_sure_bg"
+                android:text="完成"/>
+        </RelativeLayout>
+    </www.jinke.com.library.pulltorefresh.PullToRefreshScrollView>
+</com.jinke.community.ui.widget.LoadingLayout>
+

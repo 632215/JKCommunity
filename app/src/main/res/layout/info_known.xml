@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/icon_fragment_house_keeper_image_bg">
+
+        <LinearLayout
+            android:id="@+id/ll_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/base_dimen_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邻居，您好！"
+                android:textColor="@color/white"
+                android:textSize="@dimen/base_dimen_24"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_hello"
+                android:text="与房屋相关的通知公告请点这里哟 "
+                android:textColor="@color/white"
+                android:textSize="@dimen/base_dimen_24"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tx_guide_known"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/base_dimen_84"
+            android:layout_toEndOf="@+id/ll_tips"
+            android:background="@mipmap/icon_fragment_house_keeper_know"
+            android:gravity="center"
+            android:text="我知道了"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_24"/>
+    </RelativeLayout>
+</RelativeLayout>

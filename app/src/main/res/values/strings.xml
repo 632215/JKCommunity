@@ -1,0 +1,575 @@
+<resources>
+    <string name="app_name">大社区</string>
+    <string name="patrol_manage_empty_hint">您还没有房屋哦,请添加房屋哦!</string>
+    <string name="patrol_manage_add">添加房屋</string>
+    <string name="main_bottom_houseKeeper">管家</string>
+    <string name="main_bottom_life">生活</string>
+    <string name="main_bottom_circle">圈子</string>
+    <string name="main_bottom_presenter">我</string>
+    <string name="main_presenter_username">八分饱青年PekerMan</string>
+    <string name="jk_money">金科币</string>
+    <string name="jk_money_center">金科币中心</string>
+    <string name="circle_community_events">社区赛事</string>
+    <string name="circle_walking_competition_events">健步大比拼</string>
+    <string name="circle_name">八分饱青年PekerMan</string>
+    <string name="circle_today_walking_num">您在金科\n全国1500000业主中排名</string>
+
+    <string name="open_door_success">开门成功，欢迎回家</string>
+    <string name="lock_opening">开门中，请稍后</string>
+    <string name="open_fail_warm">开门失败</string>
+    <string name="open_fail_hint">请靠近设备后再试</string>
+    <string name="dome_shut">关闭</string>
+    <string name="net_error">网络连接失败，请检查您的网络!</string>
+
+    <string name="expand">阅读全文</string>
+    <string name="collapse">收起</string>
+
+    <string name="empty"/>
+    <string name="range">今日步数</string>
+    <string name="thank">请您为这次服务评分\n谢谢！</string>
+
+    <string name="main_presenter_balance">预存余额</string>
+    <string name="main_presenter_car">卡券</string>
+    <string name="main_presenter_add_info">请完善资料</string>
+    <string name="main_presenter_my_home">我的魅力家</string>
+    <string name="main_present_wisdom_life">智慧生活 为您开启</string>
+    <string name="main_present_vehicle_my">我的车辆</string>
+    <string name="main_present_attention_vehicle">车库锁车 访客授权</string>
+    <string name="main_present_heath_my">我的健康</string>
+    <string name="main_present_attention_heath">关注健康 关注生命</string>
+    <string name="main_present_my_order">我的订单</string>
+    <string name="main_present_address">收货地址</string>
+    <string name="main_present_shopping_car">购物车</string>
+    <string name="main_present_life_record">生活服务记录</string>
+    <string name="main_present_real_pay">物业缴费记录</string>
+    <string name="main_present_real_news">物业报事记录</string>
+    <string name="main_present_app_spread">APP下载推广码</string>
+    <string name="main_present_offer">意见建议</string>
+    <string name="main_present_probles">常见问题</string>
+    <string name="main_present_clear">清理缓存</string>
+    <string name="main_present_service_hot_line">客户热线</string>
+    <string name="main_present_version">当前版本v1.0.0</string>
+    <string name="main_present_set">设置</string>
+    <string name="main_present_versions">当前版本v</string>
+    <string name="main_present_login_out">退出登录</string>
+    <string name="main_present_official_server">切换到正式服务器</string>
+    <string name="main_present_test_server">切换到测试服务器</string>
+    <string name="main_present_visitor_video_access">访客视频门禁</string>
+
+    <string name="house_present_setting">当前房屋</string>
+    <string name="house_add">添加房屋</string>
+    <string name="house_my_title">我的房屋</string>
+    <string name="house_empty">小金妹等你好久了,快来绑定房屋吧！</string>
+
+
+    <string name="payment_lave_money">余额</string>
+    <string name="payment_tx_property_payment">物业费</string>
+    <string name="payment_tx_monthly_parking_fee">月租车位费</string>
+    <string name="payment_tx_parking_fee">月租充值</string>
+    <string name="payment_tx_parking_fee_description">查看月租到期时间，续租车位</string>
+    <string name="payment_payment_property_payment">物业缴费</string>
+    <string name="payment_payment_record">缴费记录</string>
+    <string name="payment_address">重庆  金科云湖天都4-1214</string>
+    <string name="payment_owner">业主：</string>
+    <string name="payment_earlier_records">查看更早记录</string>
+    <string name="payment_please_select">请选择</string>
+    <string name="payment_withholding_search">待缴费查询</string>
+    <string name="payment_withholding_costs">代扣费用</string>
+    <string name="payment_property_payment">物业缴费</string>
+    <string name="payment_withholding_search_description">查看物业账单 微信 支付宝代扣缴费</string>
+    <string name="payment_pre_stored_search">预存</string>
+    <string name="payment_pre_stored_search_description">预存物业费、查询预存余额</string>
+    <string name="payment_pending_search">待缴费查询</string>
+    <string name="payment_pending_search_description">查看待缴物业账单，支付宝、微信缴费</string>
+    <string name="payment_auto_tips">自动代扣  不再麻烦</string>
+    <string name="payment_auto_tips_right_title">即刻生效</string>
+    <string name="payment_auto_tips_right">开通服务，立即生效，本次待缴费用立即缴纳。</string>
+    <string name="payment_auto_tips_month_title">月中扣费</string>
+    <string name="payment_auto_tips_month">每月10日~15日自动扣取当月费用，具体以实时通知为准。</string>
+    <string name="payment_auto_tips_close_title">一键解约</string>
+    <string name="payment_auto_tips_close">如需解约，可进入代扣管理。一键解约，关闭服务，立即生效。</string>
+
+
+    <string name="withholding_management">代扣管理</string>
+    <string name="withholding_management_description">代扣缴费的查询、签约和解约</string>
+
+    <string name="payment_notes">缴费注意事项</string>
+    <string name="payment_total_cost_text">预存余额（元）</string>
+    <string name="payment_prepaid_cost_text">预存合计： </string>
+    <string name="payment_prepaid_now">立即预存 </string>
+    <string name="payment_unit">元</string>
+    <string name="payment_property_service_fee">物业服务费</string>
+    <string name="payment_water_and_electricity">水电公摊费</string>
+    <string name="payment_parking_management_fee">车位管理费</string>
+    <string name="payment_lave">剩余</string>
+    <string name="payment_recharge">充值</string>
+    <string name="payment_tips">请输入充值金额</string>
+    <string name="payment_pending_payment_tips">待缴费</string>
+    <string name="payment_pending">待缴费</string>
+    <string name="payment_total_pending">待缴纳金额合计：</string>
+    <string name="payment_payment_now">立即缴费</string>
+    <string name="payment_withholding_text1">订单已生成，请核对清楚</string>
+    <string name="payment_withholding_text2">网上支付订单等待支付</string>
+    <string name="payment_withholding_text3">您共需要支付:</string>
+    <string name="payment_we_pay">微信支付</string>
+    <string name="payment_ali_pay">支付宝支付</string>
+    <string name="payment_pay_tips">每月自动扣款，省心省力</string>
+    <string name="payment_failed_tips">支付失败请重新支付</string>
+    <string name="payment_success_tips">支付成功</string>
+    <string name="payment_failed_forward">重新支付</string>
+    <string name="payment_success_forward">缴费记录</string>
+    <string name="payment_return_store">返回管家</string>
+    <string name="payment_vehicle_in">入账中</string>
+    <string name="payment_vehicle_failed">入账失败，请联系物管</string>
+
+    <string name="payment_withholding_please_make_sure">请仔细核对确认</string>
+    <string name="payment_withholding_pay_method">支付方式</string>
+    <string name="payment_withholding_wechat_withholding">微信代扣</string>
+    <string name="payment_withholding_wechat_withholding_tips">每月自动扣款，省心省力</string>
+    <string name="payment_withholding_ali_withholding">支付宝代扣</string>
+    <string name="payment_withholding_total_money">合计金额：</string>
+    <string name="payment_withholding_open_success">签约成功</string>
+    <string name="payment_withholding_open_failed">签约失败</string>
+    <string name="payment_withholding_open_title">签约</string>
+
+
+    <string name="payment_phone">400-846-1818</string>
+    <string name="payment_tip">如有疑问请拨打客服热线</string>
+    <string name="payment_make_sure">确认支付</string>
+    <string name="payment_success">支付成功</string>
+    <string name="payment_failed">支付失败</string>
+    <string name="payment">支付</string>
+
+    <string name="payment_renewal_select_parking_space">选择车位</string>
+    <string name="payment_renewal_renewal_parking_space">车位续期</string>
+    <string name="payment_renewal_my_vehicle">我的车辆</string>
+    <string name="payment_renewal_no_info_tip">暂无月租车位信息\n如需租车位，需要物管处登记哦</string>
+
+    <string name="payment_renewal_recharge">充值</string>
+    <string name="payment_renewal_total_in_advance">预存合计：￥0.00</string>
+    <string name="payment_renewal_recharge_now">立即充值</string>
+
+
+    <string name="verification_phone_number">手机号</string>
+    <string name="verification_phone_toast">请输入手机号码</string>
+    <string name="verification_code">验证码</string>
+    <string name="verification_input_sms_code">请输入验证码</string>
+    <string name="verification_reappear_send">重新发送</string>
+    <string name="verification_user_protocol">用户协议</string>
+    <string name="verification_service_provider">一站式美好生活服务提供商</string>
+    <string name="verification_copyright">Copyright© 2017金科物业服务集团有限公司</string>
+    <string name="verification_next">下一步</string>
+    <string name="verification_title">身份认证</string>
+    <string name="verification_phone_error_msg">手机号无效</string>
+
+
+    <string name="add_house_community">小区</string>
+    <string name="add_house_relationship">关系</string>
+    <string name="add_house_place_chose">请选择</string>
+    <string name="add_house_place_userName">姓名</string>
+    <string name="add_house_input_userName">请输入已在物业中心登记的姓名</string>
+    <string name="add_house_input_phone">请输入已在物业中心登记的手机号码</string>
+    <string name="add_house_phone">手机</string>
+    <string name="add_house_verification_code">请输入验证码</string>
+    <string name="add_house_input_get_verification">获取验证码</string>
+    <string name="add_house_verification">验证码</string>
+    <string name="add_house_url">绑定房屋遇到问题?</string>
+    <string name="add_house_sure">确定</string>
+    <string name="add_house_verification_empty">验证码输入有误</string>
+    <string name="add_house_phone_empty">业主电话号码输入有误</string>
+    <string name="add_house_name_empty">业主姓名输入有误</string>
+    <string name="add_house_relationship_empty">请选择与业主的关系</string>
+
+    <string name="select_community_other">选择其他小区</string>
+    <string name="select_community_title">选择小区</string>
+    <string name="payment_details">缴费明细</string>
+    <string name="prepaid_expenses">费用预存</string>
+
+    <string name="authorization_relationship">身份</string>
+    <string name="authorization_name">姓名</string>
+    <string name="authorization_phone">手机</string>
+    <string name="authorization_delete">删除</string>
+    <string name="authorization_edit">编辑</string>
+    <string name="authorization_add">添加授权</string>
+    <string name="authorization_title">授权管理</string>
+    <string name="authorization_to">授权给</string>
+
+    <string name="activity_authorization_select_relation">请选择与业主的关系</string>
+    <string name="activity_authorization_relation_friend">朋友</string>
+    <string name="activity_authorization_relation_family">家人</string>
+    <string name="activity_authorization_relation_rental">租赁户</string>
+    <string name="activity_authorization_relation_cancel">取消</string>
+    <string name="activity_authorization_relation_sure">确定</string>
+    <string name="activity_authorization_select">请选择</string>
+    <string name="activity_authorization_add_authorized">被授权人</string>
+    <string name="activity_authorization_delete_relation">删除授权</string>
+    <string name="activity_authorization_delete_relation_tips">确定要删除授权吗？</string>
+    <string name="activity_authorization_delete_success">删除成功</string>
+
+
+    <string name="property_news_title">报事报修</string>
+    <string name="property_news_property_tips_top">物业报事：报事、报修、投诉、建议，\n打造24小时的高效服务。</string>
+    <string name="property_broken_title">小金妹爆料</string>
+    <string name="property_news_broken_tips_top">小金妹爆料台是金科物业集团公众监督平台，\n在这里您可以咨询和爆料小区生活中遇到的问题，\n也可以点赞表扬优质服务和好人好事。</string>
+
+    <string name="broken_history">爆料记录</string>
+    <string name="property_title">爆料选择</string>
+    <string name="broken_ed_content">请填写您的爆料需求，我们会尽快处理！</string>
+    <string name="broken_owner">业主：</string>
+
+    <string name="property_news_ed">请填写您的报事需求，我们会尽快处理！</string>
+
+    <string name="home_title_door">开门</string>
+    <string name="home_title_payment">缴费</string>
+    <string name="home_title_broken">爆料</string>
+    <string name="home_title_call">呼叫</string>
+    <string name="home_payment_describe">物业费／停车费</string>
+    <string name="home_open_door_describe">一键开门／访客开门</string>
+    <string name="home_call_describe">物业／管家／400</string>
+    <string name="home_broken_describe">物业报事／小金妹爆料</string>
+
+    <string name="life_travel">旅游</string>
+    <string name="life_car">汽车</string>
+    <string name="life_home">家居</string>
+    <string name="life_housekeeping">家政</string>
+    <string name="life_renting">租售</string>
+    <string name="life_supermarket">超市</string>
+    <string name="life_ticket">票务</string>
+    <string name="life_money">钱生钱</string>
+    <string name="life_spike1">天天秒杀</string>
+    <string name="life_spike2">精选商品 抢购好货</string>
+    <string name="life_buy1">今日拼团</string>
+    <string name="life_buy2">优选好货 团购给力</string>
+    <string name="life_specialty1">土特名产</string>
+    <string name="life_specialty2">精装特产 任你挑选</string>
+    <string name="life_food_list">粮油副食榜</string>
+    <string name="life_daily_list">日化榜</string>
+    <string name="life_fruits_list">蔬果榜</string>
+    <string name="life_select_list">金心挑选</string>
+
+    <string name="payment_details_time">有效期至：</string>
+    <string name="payment_details_recharge">充值：</string>
+    <string name="payment_details_pay_method_ali_app">APP支付宝支付</string>
+    <string name="payment_details_pay_method_wechat_app">APP微信支付</string>
+    <string name="payment_details_pay_method_ali_public">公众号 支付宝支付</string>
+    <string name="payment_details_pay_method_wechat_public">公众号 微信支付</string>
+    <string name="payment_details_withhold_method_wechat_app">APP微信代扣</string>
+    <string name="payment_details_withhold_method_ali_app">APP支付宝代扣</string>
+
+    <string name="means_head">头像</string>
+    <string name="means_rank">身份</string>
+    <string name="means_name">姓名</string>
+    <string name="means_phone">手机</string>
+    <string name="mean_sex">性别</string>
+    <string name="mean_nike">昵称</string>
+    <string name="feed_back_hid_msg">请填写您的意见反馈,我们会尽快处理!</string>
+    <string name="feed_back_title">意见建议</string>
+    <string name="mean_skill">技能标签</string>
+    <string name="mean_interest">兴趣标签</string>
+    <string name="mean_skill_tips">邻居可以来找我</string>
+    <string name="mean_interest_tips">邻居可以来认知我</string>
+
+    <string name="activity_access_control_title">门禁系统</string>
+    <string name="activity_access_control_key">门禁钥匙</string>
+    <string name="activity_access_control_visitor">访客通行</string>
+    <string name="activity_access_control_text_open_success">开门成功</string>
+
+    <string name="activity_visitors_pass_title">访客通行</string>
+    <string name="activity_visitors_pass_tips">为将要到访的亲朋好友生成放行密码，以微信或短信方式发送给他们，在大门和单元们出输入通行码，即可验证通行。</string>
+    <string name="activity_visitors_pass_please_select_house">请选择房屋： </string>
+    <string name="activity_visitors_pass_please_select_purpose">请选择来访目的：</string>
+    <string name="activity_visitors_pass_please_select_date">请选择有效日期：</string>
+    <string name="activity_visitors_pass_date">有效日期：</string>
+    <string name="activity_visitors_pass_times">有效次数：</string>
+    <string name="activity_visitors_pass_sure">确定</string>
+    <string name="activity_visitors_pass_intermediary_showings">中介看房</string>
+    <string name="activity_visitors_pass_move_off">搬家放行</string>
+    <string name="activity_visitors_pass_delivery">送货上门</string>
+    <string name="activity_visitors_pass_decoration_release">装修放行</string>
+    <string name="activity_visitors_pass_housekeeping">家政服务</string>
+    <string name="activity_visitors_pass_friends_visit">朋友来访</string>
+    <string name="activity_visitors_pass_today">今日</string>
+    <string name="activity_visitors_pass_tomorrow">明日</string>
+    <string name="activity_visitors_share">立即分享密码给好友</string>
+    <string name="activity_visitors_sms">短信</string>
+    <string name="activity_visitors_wechart">微信</string>
+    <string name="activity_visitors_qq">QQ</string>
+
+    <string name="activity_release_password_title">放行密码</string>
+    <string name="activity_release_password_tips">小区通行用密码，分享好友需谨慎</string>
+    <string name="activity_release_password_visit_address">拜访地址</string>
+    <string name="activity_release_password_visit_purpose">到访目的</string>
+    <string name="activity_release_password_time">有效时间</string>
+    <string name="activity_release_password_times">有效次数</string>
+    <string name="activity_release_password_msg">使用短信发送</string>
+    <string name="activity_release_password_chat">发给微信好友</string>
+
+
+    <string name="open_door_password">访客通行</string>
+    <string name="open_door_hint">为将要到访的亲朋好友生成通行码，以短信、微信或QQ的方式发送给他们，在大门和单元们出输入通行码，即可自动验证开门。</string>
+    <string name="open_door_choice_sure">确&#160;&#160;&#160;&#160;定</string>
+    <string name="open_door_choice_house">请选择房屋：</string>
+    <string name="open_door_choice_aim">请选择来访目的：</string>
+    <string name="open_door_choice_see_apartment">中介看房</string>
+    <string name="open_door_choice_move_house">搬家放行</string>
+    <string name="open_door_choice_send">送货上门</string>
+    <string name="open_door_choice_fitment">装修放行</string>
+    <string name="open_door_choice_housekeeping">家政服务</string>
+    <string name="open_door_choice_friend">朋友来访</string>
+    <string name="open_door_time_today">今日</string>
+    <string name="open_door_time_tomorrow">明日</string>
+    <string name="open_door_choose_effective_date">请选择有效日期：</string>
+    <string name="open_door_effective_date">有效日期：</string>
+    <string name="open_door_effective_degree">有效次数：</string>
+
+
+    <string name="title_activity_open_door_password_info">通行码</string>
+    <string name="btn_open_door_note">使用短信发送</string>
+    <string name="btn_open_door_weixin">发给微信好友</string>
+    <string name="open_door_info_password_hint">小区通行用密码，分享好友需谨慎</string>
+    <string name="open_door_info_address">拜访地址</string>
+    <string name="open_door_info_aim">拜访目的</string>
+    <string name="open_door_info_valid_time">有效时间</string>
+    <string name="open_door_info_times">有效次数</string>
+
+
+    <string name="setting">设置</string>
+    <string name="perm_tip">
+        当前应用缺少必要权限。\n请点击"设置"-"权限"-打开所需权限。\n最后点击两次后退按钮，即可返回。
+    </string>
+    <string name="ask_again">请给予应用必要权限，让程序可正常工作。</string>
+    <string name="cancel">取消</string>
+    <string name="permissions_camera">相机</string>
+    <string name="Press_again_to_exit_the_program">再按一次退出程序</string>
+
+    <!--云对讲-->
+    <string name="video_call_head_hint">访客来电</string>
+    <string name="video_call_connect">视频</string>
+    <string name="video_call_come">通行</string>
+    <string name="video_call_hang">挂断</string>
+    <string name="video_call_forbid">禁入</string>
+    <string name="video_coming">正在开门</string>
+    <string name="video_come_success">开门成功</string>
+    <string name="video_come_forbid">已拒绝开门</string>
+    <string name="video_come_login_failure">视频门禁登录失败</string>
+
+    <string name="activity_vehicle_my_car">我的车辆</string>
+    <string name="activity_vehicle_my_car_tips">登记车辆请携带房产证和行驶证到物业管理处办理</string>
+    <string name="activity_vehicle_my_car_ban_tips">开启按钮即锁定车辆，禁止出车库。</string>
+    <string name="activity_vehicle_authorized_vehicles">我的授权车辆</string>
+    <string name="activity_vehicle_authorized_vehicles_tips">可授权来访车辆进入小区哦！单次有效。</string>
+    <string name="activity_vehicle_delete">删除</string>
+    <string name="activity_vehicle_not_in">未入场</string>
+
+    <string name="activity_vehicle_authorized">授权车辆</string>
+    <string name="activity_vehicle_authorized_license_num">请完善车牌号</string>
+    <string name="activity_vehicle_authorized_address">授权进入：</string>
+    <string name="activity_vehicle_authorized_select_address">请选择小区</string>
+    <string name="activity_vehicle_authorized_time">有效期至：</string>
+    <string name="activity_vehicle_authorized_select_time">请选择30天以内授权结束时间</string>
+    <string name="activity_vehicle_authorized_name">姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名：</string>
+    <string name="activity_vehicle_authorized_phone">联系电话：</string>
+    <string name="activity_vehicle_authorized_sure">确定</string>
+    <string name="activity_vehicle_authorized_please_inout_license_address">请选择车牌所在地</string>
+    <string name="activity_vehicle_authorized_please_inout_license">请输入完整车牌号</string>
+    <string name="activity_vehicle_authorized_please_inout_too_long">车牌号输入错误</string>
+
+    <string name="activity_vehicle_authorized_please_address">请选择授权所在小区</string>
+    <string name="activity_vehicle_authorized_please_time">请选择授权有效期</string>
+    <string name="activity_vehicle_authorized_please_inout_license_address_error">车牌所在地位置错误</string>
+
+    <string name="pop_layout_community_select">选择小区</string>
+    <string name="pop_layout_community_select_cancle">取消</string>
+    <string name="pop_layout_community_select_sure">确定</string>
+    <string name="pop_layout_community_time_select">选择时间</string>
+
+    <string name="universal_tips">商城调试中，暂不支持付款，望海涵。</string>
+    <string name="universal_title">提示</string>
+    <string name="universal_sure">我知道了</string>
+
+    <string name="activity_phone_verification_input_phone">输入手机号</string>
+    <string name="activity_phone_verification_input_verification_code">输入验证码</string>
+    <string name="activity_phone_verification_bind_house">自动绑定房屋</string>
+    <string name="activity_phone_verification_phone">+ 86</string>
+    <string name="activity_phone_verification_verification">验证码</string>
+    <string name="activity_phone_verification_user_agreement">请仔细阅读用户协议并勾选确认！</string>
+
+    <string name="activity_bind_house_please_select_house">请选择一套您的常用房屋</string>
+    <string name="activity_bind_house_please_wait">邻居，休息一会</string>
+    <string name="activity_bind_house_please_wait_searching">正在为您查找房屋…</string>
+    <string name="activity_bind_house_sorry">很抱歉</string>
+    <string name="activity_bind_house_search_no">没有找到您的房屋</string>
+    <string name="activity_bind_house_phone">手机号变更了？</string>
+    <string name="activity_bind_house_visitor">我是游客？</string>
+    <string name="activity_bind_house_register">还未在物管处登记？</string>
+    <string name="activity_bind_house_authorized">房屋租赁，业主未授权？</string>
+    <string name="activity_bind_house_contact">我不清楚，联系物业400-846-1818</string>
+    <string name="activity_bind_house_return">返回管家</string>
+    <string name="activity_bind_house_select_community">选择小区</string>
+    <string name="activity_bind_house_yes">房屋绑定成功</string>
+    <string name="activity_bind_house_start">立即开启</string>
+    <string name="activity_bind_house_service">管家服务之旅</string>
+    <string name="activity_bind_house_title">绑定房屋</string>
+
+    <string name="fragment_housekeeper_break_tips">小金妹爆料台是金科物业集团公众监督平台，在这里您可以咨询和爆料小区生活中遇到的问题，也可以点赞表扬优质服务和好人好事。</string>
+    <string name="fragment_housekeeper_break_break">我先爆料</string>
+    <string name="fragment_housekeeper_break_break_platform">小金妹爆料台</string>
+    <string name="fragment_housekeeper_more">查看更多</string>
+    <string name="fragment_housekeeper_open">展开全文</string>
+    <string name="fragment_housekeeper_close">收起内容</string>
+    <string name="fragment_housekeeper_tips">联系客服</string>
+    <string name="fragment_housekeeper_selected_house">请绑定房屋!</string>
+    <string name="fragment_housekeeper_housekeeper_tips">此功能为业主专享\n请先绑定房屋</string>
+    <string name="fragment_housekeeper_see_more">查看详情</string>
+
+    <string name="activity_pending_current_house">当前房屋</string>
+    <string name="activity_pending_details">明细</string>
+    <string name="actvitiy_pengding_refresh">刷新</string>
+
+    <string name="activity_withholding_management_title">代扣管理</string>
+    <string name="activity_withholding_management_refresh">刷新</string>
+    <string name="activity_withholding_management_tips_above">支持支付宝代扣和微信代扣服务</string>
+    <string name="activity_withholding_management_tips_below">每月10日~15日自动扣取当月物业费</string>
+    <string name="activity_withholding_management_explain">代扣说明</string>
+    <string name="activity_withholding_management_method">代扣方式</string>
+    <string name="activity_withholding_management_wechat">微信代扣</string>
+    <string name="activity_withholding_management_ali">支付宝代扣</string>
+    <string name="activity_withholding_management_operate_in">开通代扣</string>
+    <string name="activity_withholding_management_operate_ing">签约中</string>
+    <string name="activity_withholding_management_operate_out">代扣解约</string>
+    <string name="activity_withholding_management_recorder">代扣记录</string>
+    <string name="activity_withholding_management_detail">待缴费明细</string>
+    <string name="activity_withholding_management_out_top">解约成功，立即生效！</string>
+    <string name="activity_withholding_management_out_cener">解约后，你需要每月留意账单信息，</string>
+    <string name="activity_withholding_management_out_below">并手动缴费，更费时费心哦~</string>
+
+    <string name="activity_withholding_open_please_check">请核对房屋信息</string>
+    <string name="activity_withholding_open_withhold_method">代扣支付方式</string>
+    <string name="activity_withholding_open_withholding_contract">代扣签约</string>
+    <string name="activity_withholding_open_refresh">刷新</string>
+
+    <string name="activity_broken_dynamic_title">通知公告</string>
+    <string name="activity_broken_person_history_title">我的爆料</string>
+    <string name="activity_broken_person_history_right_text">爆料台</string>
+
+    <string name="activity_broken_stage_add_broken">我要爆料</string>
+
+
+    <string name="widget_community_empty_no">暂未找到此小区</string>
+    <string name="widget_community_empty_tips">您还可以点击“选择其他小区”，进行查找哦。</string>
+    <string name="widget_authorized_empty">暂无授权\n\n添加授权，被授权人即可尊享业主特权哦</string>
+    <string name="widget_payrecorder_empty">最近6个月暂无缴费记录</string>
+
+    <string name="activity_comment">发表评价</string>
+    <string name="activity_comment_add">他的服务还满意吗？说说您的体验感想吧，我们会持续努力为您服务的~</string>
+    <string name="activity_comment_satisfaction">服务满意度</string>
+    <string name="activity_comment_satisfaction5">非常满意</string>
+    <string name="activity_comment_satisfaction4">满意</string>
+    <string name="activity_comment_satisfaction3">一般</string>
+    <string name="activity_comment_satisfaction2">不满意</string>
+    <string name="activity_comment_satisfaction1">非常不满意</string>
+
+    <string name="activity_property_details_state">报事状态：</string>
+    <string name="activity_property_details_time">报事时间：</string>
+    <string name="activity_property_details_id">报事单号：</string>
+    <string name="activity_property_details_house">报事房屋：</string>
+    <string name="activity_property_details_content">报事内容：</string>
+    <string name="activity_property_details_state1">待处理</string>
+    <string name="activity_property_details_state2">处理中</string>
+    <string name="activity_property_details_state3">已完结</string>
+    <string name="activity_property_details_state4">已评价</string>
+    <string name="activity_property_details_my_access">我的评论</string>
+    <string name="activity_property_details_haven_access">我已为本次服务评分：</string>
+    <string name="activity_property_details_housekeeper">联系客服/楼栋管家：400-846-1818</string>
+
+    <string name="activity_property_history">添加报事</string>
+    <string name="activity_property_progress">处理进度：</string>
+    <string name="activity_property_post_id">报事单号：</string>
+    <string name="activity_property_house">报事房号：</string>
+    <string name="activity_property_person">报事业主：</string>
+    <string name="activity_property_satisfaction">评分</string>
+    <string name="activity_property_progress1">待处理，物业正在分配任务</string>
+    <string name="activity_property_progress2">处理中，相关负责人正在处理</string>
+    <string name="activity_property_progress3">已完成，请对结果进行评价</string>
+    <string name="activity_property_progress_finish">已完成</string>
+    <string name="activity_property_progress4">已评价</string>
+    <string name="activity_property_wait_deal">报事已经进入物业管理系统，正在为您分派处理人…</string>
+    <string name="activity_property_deal">正在为您处理</string>
+    <string name="activity_property_finish">处理完成</string>
+    <string name="activity_property_score">请您对这次服务进行评价</string>
+    <string name="activity_property_to_score">评分</string>
+    <string name="activity_property_please_score">为本次服务进行评分</string>
+    <string name="activity_property_please_explain">该报事处理会产生费用。</string>
+
+
+    <string name="activity_login_others">第三方授权登录</string>
+    <string name="activity_login_protocol">用户协议</string>
+
+    <string name="activity_call_housekeeper">呼叫楼栋管家</string>
+    <string name="activity_call_hot_line">24小时服务热线</string>
+    <string name="activity_call_service">咨询在线客服</string>
+    <string name="activity_call_title">呼叫</string>
+
+    <string name="activity_note_skill">选择你的技能标签</string>
+    <string name="activity_note_tips">请选择1—3个可随时调整</string>
+    <string name="activity_note_interest">选择你的兴趣标签</string>
+    <string name="activity_note_title">标签</string>
+
+    <string name="activity_share_app">扫描二维码 加入大社区</string>
+    <string name="activity_share_app_tips">别犹豫了，点击右上角，分享给身边的人吧！</string>
+    <string name="activity_share_app_title">推广码</string>
+    <string name="activity_share">分享</string>
+
+    <string name="ip_all_images">所有图片</string>
+    <string name="ip_folder_image_count">共%1$d张</string>
+    <string name="ip_preview_image_count">%1$d/%2$d</string>
+    <string name="ip_select_limit">最多选择%1$d张图片</string>
+    <string name="ip_complete">完成</string>
+    <string name="ip_select_complete">完成(%1$d/%2$d)</string>
+    <string name="ip_preview">预览</string>
+    <string name="ip_preview_count">预览(%1$d)</string>
+    <string name="ip_photo_crop">图片裁剪</string>
+    <string name="ip_origin">原图</string>
+    <string name="ip_origin_size">原图(%1$s)</string>
+
+    <string name="activity_authentication_guide">接房指引</string>
+    <string name="activity_authentication">为了节约您的排队等候时间，请第一个业主提前提供所有业主的身份证照片信息，请使用摄像头扫描识别。</string>
+    <string name="activity_authentication_house_number">房间号码：</string>
+    <string name="activity_authentication_owner">业主姓名:</string>
+    <string name="activity_authentication_owner_number">身份证号：</string>
+    <string name="activity_authentication_phone">联系电话：</string>
+    <string name="activity_authentication_photo_tips">请照片完全放入图像框内</string>
+    <string name="activity_authentication_photo_man">身份证人像面</string>
+    <string name="activity_authentication_photo_national">身份证国徽面</string>
+    <string name="activity_authentication_sure">继续添加业主</string>
+    <string name="activity_authentication_please_owner">请输入您的姓名</string>
+    <string name="activity_authentication_please_owner_number">请输入您的身份证号码</string>
+    <string name="activity_authentication_please_phone">请输入您的电话号码</string>
+    <string name="activity_authentication_guide_tips">请进行身份验证</string>
+    <string name="activity_authentication_go">去验证</string>
+    <string name="activity_authentication_save">提交</string>
+    <string name="activity_authentication_title">身份验证</string>
+    <string name="activity_check_title">身份审核</string>
+    <string name="activity_check_fail">很抱歉，您未通过审核</string>
+    <string name="activity_check_success">恭喜，您已通过审核</string>
+    <string name="activity_checking">提交成功，请等待审核！</string>
+    <string name="activity_button_fail">重新提交</string>
+    <string name="activity_button_book">业主手册</string>
+    <string name="activity_button_authenticaltion">身份认证</string>
+    <string name="activity_button_area">面积与产权手续</string>
+    <string name="activity_button_fee">物业费预存</string>
+    <string name="activity_button_manager">家庭档案管理</string>
+    <string name="activity_button_key">钥匙托管管理</string>
+    <string name="activity_button_question">问卷调查</string>
+
+    <string name="activity_msgcenter_title">消息中心</string>
+    <string name="activity_msgcenter_num">取件码：</string>
+    <string name="activity_msgcenter_already">已取件</string>
+
+    <string name="activity_msgcenter_post_time">入柜时间：</string>
+    <string name="activity_msgcenter_post_company">快递公司：</string>
+    <string name="activity_msgcenter_post_num">运送单号：</string>
+    <string name="activity_msgcenter_post_man">派件人员：</string>
+    <string name="activity_msgcenter_post_phone">联系电话：</string>
+
+</resources>

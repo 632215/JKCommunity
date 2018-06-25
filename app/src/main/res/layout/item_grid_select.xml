@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/life_select_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_320"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_life_select1" />
+
+
+</RelativeLayout>

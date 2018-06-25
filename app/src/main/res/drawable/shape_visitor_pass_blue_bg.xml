@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="@dimen/base_dimen_10" />
+    <solid android:color="@color/activity_visitor_pass_text_bg1" />
+</shape>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_gray_default">
+
+    <TextView
+        android:id="@+id/tx_please_make_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base_dimen_32"
+        android:text="@string/activity_withholding_open_please_check"
+        android:textColor="@color/payment_text_color20"
+        android:textSize="@dimen/base_dimen_30"/>
+
+    <TextView
+        android:id="@+id/tx_hosue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_please_make_sure"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:textColor="@color/payment_text_color26"
+        android:textSize="@dimen/base_dimen_26"/>
+
+    <TextView
+        android:id="@+id/tx_owner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_hosue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base_dimen_10"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:lines="1"
+        android:textColor="@color/activity_withholding_management_color5"
+        android:textSize="@dimen/base_dimen_28"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tx_owner"
+        android:layout_marginTop="@dimen/base_dimen_36"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/base_dimen_30"
+        android:paddingRight="@dimen/base_dimen_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/base_dimen_22"
+            android:layout_marginTop="@dimen/base_dimen_22"
+            android:text="@string/activity_withholding_open_withhold_method"
+            android:textColor="@color/payment_text_color20"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_wechat_withholding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/we_layout"
+            android:background="@drawable/shape_parting_top_1dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/image_wechat_withholding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/base_dimen_26"
+                android:layout_marginRight="@dimen/base_dimen_50"
+                android:layout_marginTop="@dimen/base_dimen_26"
+                android:src="@mipmap/icon_wechat_withholding"/>
+
+            <TextView
+                android:id="@+id/tx_wechat_withholding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_28"
+                android:layout_toRightOf="@+id/image_wechat_withholding"
+                android:text="@string/payment_withholding_wechat_withholding"
+                android:textColor="@color/payment_text_address"/>
+
+            <TextView
+                android:id="@+id/tx_wechat_withholding_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_wechat_withholding"
+                android:layout_marginBottom="@dimen/base_dimen_28"
+                android:layout_marginTop="@dimen/base_dimen_6"
+                android:layout_toRightOf="@+id/image_wechat_withholding"
+                android:text="@string/payment_pay_tips"
+                android:textColor="@color/payment_text_color6"/>
+
+            <ImageView
+                android:id="@+id/image_wechat_withholding_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_pay_method_un_selected"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_ali_withholding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/we_layout"
+            android:background="@drawable/shape_parting_top_1dp">
+
+            <ImageView
+                android:id="@+id/image_ali_withholding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/base_dimen_26"
+                android:layout_marginRight="@dimen/base_dimen_50"
+                android:layout_marginTop="@dimen/base_dimen_26"
+                android:src="@mipmap/icon_ali_withholding"/>
+
+            <TextView
+                android:id="@+id/tx_ali_withholding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_28"
+                android:layout_toRightOf="@+id/image_ali_withholding"
+                android:text="@string/payment_withholding_ali_withholding"
+                android:textColor="@color/payment_text_address"/>
+
+            <TextView
+                android:id="@+id/tx_ali_withholding_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_ali_withholding"
+                android:layout_marginBottom="@dimen/base_dimen_28"
+                android:layout_marginTop="@dimen/base_dimen_6"
+                android:layout_toRightOf="@+id/image_ali_withholding"
+                android:text="@string/payment_pay_tips"
+                android:textColor="@color/payment_text_color6"/>
+
+            <ImageView
+                android:id="@+id/image_ali_withholding_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_pay_method_un_selected"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/image_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ali_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/base_dimen_200"
+            android:gravity="center"
+            android:src="@mipmap/icon_activty_withhold_open_sure_open"
+            android:text="@string/payment_make_sure"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

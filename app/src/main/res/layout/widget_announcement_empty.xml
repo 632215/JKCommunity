@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_breakstage_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_100"
+        android:src="@mipmap/icon_breakstage_empty"/>
+
+    <TextView
+        android:id="@+id/tx_breakstage_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_90"
+        android:text="当前社区 暂无通知公告"
+        android:textColor="@color/loaclayout_color1"
+        android:textSize="@dimen/base_dimen_32"/>
+</LinearLayout>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_gray_default"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_parting_top_10dp"
+            android:paddingTop="@dimen/base_dimen_20">
+
+            <EditText
+                android:id="@+id/ed_property_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="top|left"
+                android:hint="@string/property_news_ed"
+                android:maxLength="800"
+                android:minHeight="@dimen/base_dimen_400"
+                android:padding="@dimen/base_dimen_30"
+                android:textColor="@color/main_present_text_black"
+                android:textColorHint="#CCCCCC"
+                android:textSize="@dimen/base_dimen_28"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_activity_break_new_write"/>
+
+            <TextView
+                android:id="@+id/tx_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/ed_property_content"
+                android:layout_below="@+id/ed_property_content"
+                android:layout_marginBottom="@dimen/base_dimen_30"
+                android:layout_marginRight="@dimen/base_dimen_30"
+                android:layout_marginTop="@dimen/base_dimen_6"
+                android:textSize="@dimen/base_dimen_24"
+                tools:text="0/800"/>
+        </RelativeLayout>
+
+        <com.jinke.community.ui.widget.FillGridView
+            android:id="@+id/fill_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_parting_top_10dp"
+            android:horizontalSpacing="@dimen/base_dimen_20"
+            android:listSelector="@color/white"
+            android:numColumns="4"
+            android:paddingBottom="@dimen/base_dimen_28"
+            android:paddingLeft="@dimen/base_dimen_30"
+            android:paddingRight="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_48"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/base_dimen_20"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_select_house"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:background="@drawable/shape_parting_top_10dp"
+            android:paddingBottom="@dimen/base_dimen_20"
+            android:paddingLeft="@dimen/base_dimen_30"
+            android:paddingRight="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_46">
+
+            <TextView
+                android:id="@+id/tx_select_house_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginRight="@dimen/base_dimen_30"
+                android:layout_toLeftOf="@+id/tx_chooes"
+                android:drawableLeft="@mipmap/icon_activity_myhouse_house"
+                android:drawablePadding="@dimen/base_dimen_16"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:textColor="@color/main_present_text_black"
+                tools:text="重庆金科云湖天都4-1212"/>
+
+            <TextView
+                android:id="@+id/tx_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="@dimen/base_dimen_20"
+                android:drawableRight="@drawable/icon_presenter_allow"
+                android:gravity="center_vertical"
+                android:text="@string/payment_please_select"
+                android:textColor="@color/activity_broke_news_color1"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:layout_marginRight="@dimen/base_dimen_30"
+            android:background="@color/default_driver_line_color"/>
+
+        <!--<TextView-->
+        <!--android:id="@+id/tx_house_owner"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignLeft="@+id/tx_house_title"-->
+        <!--android:background="@color/white"-->
+        <!--android:drawableLeft="@mipmap/icon_activity_myhouse_name"-->
+        <!--android:drawablePadding="@dimen/base_dimen_16"-->
+        <!--android:ellipsize="end"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:lines="1"-->
+        <!--android:paddingBottom="@dimen/base_dimen_20"-->
+        <!--android:paddingLeft="@dimen/base_dimen_30"-->
+        <!--android:paddingRight="@dimen/base_dimen_30"-->
+        <!--android:paddingTop="@dimen/base_dimen_20"-->
+        <!--android:textColor="@color/main_present_text_black"-->
+        <!--tools:text="32s"/>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingLeft="@dimen/base_dimen_30"
+            android:paddingRight="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30">
+
+            <ImageView
+                android:id="@+id/tx_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_activity_myhouse_name"/>
+
+            <EditText
+                android:id="@+id/ed_owner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/base_dimen_16"
+                android:layout_toRightOf="@+id/tx_owner"
+                android:background="@color/white"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="@color/main_present_text_gray"
+                android:textSize="@dimen/base_dimen_30"
+                tools:hint="昵称"/>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:layout_marginRight="@dimen/base_dimen_30"
+            android:background="@color/default_driver_line_color"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingLeft="@dimen/base_dimen_30"
+            android:paddingRight="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30">
+
+            <ImageView
+                android:id="@+id/tx_owner_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_activity_myhouse_phone"/>
+
+            <EditText
+                android:id="@+id/ed_owner_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/base_dimen_16"
+                android:layout_toRightOf="@+id/tx_owner_phone"
+                android:background="@color/white"
+                android:enabled="false"
+                android:gravity="center_vertical|left"
+                android:inputType="phone"
+                android:textColor="@color/main_present_text_gray1"
+                android:textSize="@dimen/base_dimen_30"
+                tools:hint="请输入电话号码"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_gray_default">
+
+            <TextView
+                android:id="@+id/tx_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_dimen_30"
+                android:layout_marginLeft="@dimen/base_dimen_30"
+                android:layout_marginRight="@dimen/base_dimen_30"
+                android:layout_marginTop="@dimen/base_dimen_30"
+                android:background="@mipmap/icon_sure_bg"
+                android:gravity="center"
+                android:paddingBottom="@dimen/base_dimen_26"
+                android:paddingTop="@dimen/base_dimen_26"
+                android:text="提交"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

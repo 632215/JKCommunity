@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_gray_default"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_sign_type"
+        android:layout_marginTop="@dimen/base_dimen_24"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tx_current_community"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/base_dimen_10"
+            android:drawableStart="@mipmap/icon_pending_house"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/base_dimen_30"
+            android:text="当前社区："
+            android:textColor="@color/circle_money_color"
+            android:textSize="@dimen/base_dimen_30"/>
+
+        <TextView
+            android:id="@+id/tx_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/base_dimen_20"
+            android:layout_toEndOf="@+id/tx_current_community"
+            android:layout_toStartOf="@+id/tx_select"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/base_dimen_22"
+            android:paddingTop="@dimen/base_dimen_22"
+            android:textColor="@color/payment_text_address"
+            android:textSize="@dimen/base_dimen_30"
+            tools:text="@string/payment_address"/>
+
+        <TextView
+            android:id="@+id/tx_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/base_dimen_16"
+            android:drawableRight="@mipmap/icon_forward"
+            android:paddingRight="@dimen/base_dimen_24"
+            android:text="@string/payment_please_select"
+            android:textColor="@color/payment_text_color1"/>
+    </RelativeLayout>
+
+    <com.jinke.community.ui.widget.LoadingLayout
+        android:id="@+id/loadingLayout"
+        app:isFirstVisible="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <www.jinke.com.library.pulltorefresh.PullToRefreshScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:background="@color/default_bg"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_marginTop="@dimen/base_dimen_20">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <com.jinke.community.ui.widget.FillListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    />
+
+                <TextView
+                    android:id="@+id/tx_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/listView"
+                    android:layout_marginBottom="@dimen/base_dimen_40"
+                    android:layout_marginTop="@dimen/base_dimen_40"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="gone"
+                    android:text="已经全部加载完毕"/>
+            </RelativeLayout>
+
+        </www.jinke.com.library.pulltorefresh.PullToRefreshScrollView>
+    </com.jinke.community.ui.widget.LoadingLayout>
+</LinearLayout>

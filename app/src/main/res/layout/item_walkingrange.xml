@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/walking_range_txw"
+        android:layout_width="@dimen/base_dimen_40"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/base_dimen_40"
+        android:layout_marginRight="@dimen/base_dimen_28"
+        android:gravity="center"
+        android:textColor="@color/circle_name_color"
+        android:textSize="@dimen/base_dimen_28"
+        tools:text="1" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/walking_head_image"
+        android:layout_width="@dimen/base_dimen_80"
+        android:layout_height="@dimen/base_dimen_80"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/base_dimen_20"
+        android:layout_marginLeft="@dimen/base_dimen_105"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:src="@mipmap/icon_present_default_head"
+        fresco:failureImage="@mipmap/icon_present_default_head"
+        fresco:progressBarImage="@mipmap/icon_present_default_head"
+        fresco:roundAsCircle="true" />
+
+    <TextView
+        android:id="@+id/walking_name_txw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/base_dimen_32"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:layout_toLeftOf="@+id/walking_num_txw"
+        android:layout_toRightOf="@+id/walking_head_image"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/app_name"
+        android:textColor="@color/circle_name_color" />
+
+
+    <TextView
+        android:id="@+id/walking_num_txw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="@dimen/base_dimen_40"
+        android:text="1234"
+        android:textColor="@color/circle_walking_num_color"
+        android:textSize="@dimen/base_dimen_48" />
+
+    <TextView
+        android:id="@+id/walking_line_txw"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:layout_below="@+id/walking_head_image"
+        android:layout_marginLeft="@dimen/base_dimen_40"
+        android:background="@color/walking_range_line" />
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/share_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/translucent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/item_rootView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/base_dimen_10"
+            android:paddingTop="@dimen/base_dimen_10">
+
+            <TextView
+                android:id="@+id/tx_camera"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_96"
+                android:gravity="center"
+                android:text="更换头像"
+                android:textColor="@color/color_text_second_title"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_2"
+                android:background="@color/main_gray_line" />
+
+            <TextView
+                android:id="@+id/tx_album"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_96"
+                android:gravity="center"
+                android:text="查看大图"
+                android:textColor="@color/color_text_second_title"
+                android:textSize="@dimen/base_dimen_28" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tx_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_96"
+            android:layout_below="@+id/item_rootView"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/color_text_second_title"
+            android:textSize="@dimen/base_dimen_28" />
+    </RelativeLayout>
+</RelativeLayout>

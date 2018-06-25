@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tx_satisfaction"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_100"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/base_dimen_30"
+        android:paddingRight="@dimen/base_dimen_30"
+        android:text="@string/activity_property_please_score"
+        android:textColor="@color/activity_comment_color1"
+        android:textSize="@dimen/base_dimen_28"/>
+
+    <com.jinke.community.ui.widget.FillGridView
+        android:id="@+id/fill_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_satisfaction"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/base_dimen_150"
+        android:layout_marginRight="@dimen/base_dimen_150"
+        android:gravity="center_horizontal"
+        android:listSelector="@color/white"
+        android:numColumns="5"
+        android:paddingTop="@dimen/base_dimen_36"/>
+
+    <TextView
+        android:id="@+id/tx_service_satisfaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fill_grid_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/base_dimen_36"
+        android:paddingTop="@dimen/base_dimen_42"
+        android:textColor="@color/color_text_first_title"
+        android:textSize="@dimen/base_dimen_28"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tx_broken_submit"
+        android:layout_below="@+id/tx_service_satisfaction"
+        android:background="@drawable/shape_parting_top_10dp">
+
+        <EditText
+            android:id="@+id/ed_property_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="top|left"
+            android:hint="@string/activity_comment_add"
+            android:maxLength="2000"
+            android:minHeight="@dimen/base_dimen_400"
+            android:padding="@dimen/base_dimen_30"
+            android:textColor="@color/main_present_text_black"
+            android:textColorHint="#CCCCCC"
+            android:textSize="@dimen/base_dimen_28"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/base_dimen_160"
+            android:src="@mipmap/icon_activity_break_new_write"/>
+    </RelativeLayout>
+</RelativeLayout>

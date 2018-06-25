@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_tips"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/base_dimen_20"
+        android:paddingLeft="@dimen/base_dimen_30"
+        android:paddingRight="@dimen/base_dimen_30">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tx_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_delete"
+                android:layout_alignTop="@+id/img_delete"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="业主1"
+                android:textColor="@color/color_text_2"
+                android:textSize="@dimen/base_dimen_28"/>
+
+            <ImageView
+                android:id="@+id/img_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="@dimen/base_dimen_30"
+                android:layout_marginTop="@dimen/base_dimen_30"
+                android:src="@mipmap/icon_idcard_delete"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tx_house_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_100"
+            android:background="@drawable/shape_parting_top_1dp"
+            android:drawableLeft="@mipmap/icon_activity_myhouse_house"
+            android:drawablePadding="@dimen/base_dimen_20"
+            android:gravity="center_vertical"
+            android:text="@string/activity_authentication_house_number"
+            android:textColor="@color/color_text_2"
+            android:textSize="@dimen/base_dimen_28"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_100"
+            android:background="@drawable/shape_parting_top_1dp">
+
+            <TextView
+                android:id="@+id/tx_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/icon_authentication_owner"
+                android:drawablePadding="@dimen/base_dimen_20"
+                android:gravity="center_vertical"
+                android:text="@string/activity_authentication_owner"
+                android:textColor="@color/color_text_2"
+                android:textSize="@dimen/base_dimen_28"/>
+
+
+            <EditText
+                android:id="@+id/ed_input_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/base_dimen_60"
+                android:layout_toRightOf="@+id/tx_name"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/activity_authentication_please_owner"
+                android:singleLine="true"
+                android:textColor="@color/main_present_text_gray"
+                android:textSize="@dimen/base_dimen_28"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_100"
+            android:background="@drawable/shape_parting_top_1dp">
+
+            <TextView
+                android:id="@+id/tx_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/icon_authentication_owner"
+                android:drawablePadding="@dimen/base_dimen_20"
+                android:gravity="center_vertical"
+                android:text="@string/activity_authentication_owner_number"
+                android:textColor="@color/color_text_2"
+                android:textSize="@dimen/base_dimen_28"/>
+
+            <EditText
+                android:id="@+id/ed_input_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/base_dimen_60"
+                android:layout_toRightOf="@+id/tx_number"
+                android:background="@null"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="right|center_vertical"
+                android:hint="@string/activity_authentication_please_owner_number"
+                android:maxLength="18"
+                android:singleLine="true"
+                android:textColor="@color/main_present_text_gray"
+                android:textSize="@dimen/base_dimen_28"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_100"
+            android:background="@drawable/shape_parting_top_1dp">
+
+            <TextView
+                android:id="@+id/tx_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/icon_authentication_owner"
+                android:drawablePadding="@dimen/base_dimen_20"
+                android:gravity="center_vertical"
+                android:text="@string/activity_authentication_phone"
+                android:textColor="@color/color_text_2"
+                android:textSize="@dimen/base_dimen_28"/>
+
+            <EditText
+                android:id="@+id/ed_input_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/base_dimen_60"
+                android:layout_toRightOf="@+id/tx_phone"
+                android:background="@null"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="right|center_vertical"
+                android:hint="@string/activity_authentication_please_phone"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:singleLine="true"
+                android:textColor="@color/main_present_text_gray"
+                android:textSize="@dimen/base_dimen_28"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tx_number_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_input"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/base_dimen_30"
+        android:text="@string/activity_authentication_photo_tips"
+        android:textColor="@color/color_text_second_title"
+        android:textSize="@dimen/base_dimen_30"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_portrait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_number_tips"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/base_dimen_30"
+        android:paddingRight="@dimen/base_dimen_30">
+
+        <ImageView
+            android:id="@+id/img_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/icon_idcard_bg"/>
+
+        <ImageView
+            android:id="@+id/img_card"
+            android:layout_width="@dimen/base_dimen_480"
+            android:layout_height="@dimen/base_dimen_300"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_idcard"/>
+
+        <ImageView
+            android:id="@+id/img_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_bg"
+            android:layout_alignTop="@+id/img_bg"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_idcard_camera"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_card"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/base_dimen_40"
+            android:text="@string/activity_authentication_photo_man"
+            android:textColor="@color/color_text_second_title"
+            android:textSize="@dimen/base_dimen_28"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_national"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_portrait"
+        android:layout_marginBottom="@dimen/base_dimen_20"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/base_dimen_40"
+        android:paddingLeft="@dimen/base_dimen_30"
+        android:paddingRight="@dimen/base_dimen_30"
+        android:paddingTop="@dimen/base_dimen_50">
+
+        <ImageView
+            android:id="@+id/img_national_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/icon_idcard_bg"/>
+
+        <ImageView
+            android:id="@+id/img_national_card"
+            android:layout_width="@dimen/base_dimen_480"
+            android:layout_height="@dimen/base_dimen_300"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon_idcard_nation"/>
+
+        <ImageView
+            android:id="@+id/img_national_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_national_bg"
+            android:layout_alignTop="@+id/img_national_bg"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/icon_idcard_camera"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_national_card"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/base_dimen_40"
+            android:text="@string/activity_authentication_photo_national"
+            android:textColor="@color/color_text_second_title"
+            android:textSize="@dimen/base_dimen_28"/>
+    </RelativeLayout>
+</RelativeLayout>

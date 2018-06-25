@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_gray_default">
+
+    <FrameLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_gray_line" />
+
+    <View
+        android:id="@+id/main_gray_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_1"
+        android:layout_above="@+id/main_bottom_group"
+        android:background="#E1E1E1" />
+
+    <RadioGroup
+        android:id="@+id/main_bottom_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_100"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/base_dimen_6"
+        android:paddingTop="@dimen/base_dimen_14">
+
+        <com.jinke.community.ui.widget.CustomRadioButton
+            android:id="@+id/main_housekeeper"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/select_main_home"
+            android:gravity="center"
+            android:text="@string/main_bottom_houseKeeper"
+            android:textColor="@drawable/select_radio_text_color"
+            android:textSize="12sp" />
+
+        <com.jinke.community.ui.widget.CustomRadioButton
+            android:id="@+id/main_life"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/select_main_life"
+            android:gravity="center"
+            android:text="@string/main_bottom_life"
+            android:textColor="@drawable/select_radio_text_color"
+            android:textSize="12sp" />
+
+        <com.jinke.community.ui.widget.CustomRadioButton
+            android:id="@+id/main_circle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/select_main_circle"
+            android:gravity="center"
+            android:text="@string/main_bottom_circle"
+            android:textColor="@drawable/select_radio_text_color"
+            android:textSize="12sp" />
+
+        <com.jinke.community.ui.widget.CustomRadioButton
+            android:id="@+id/main_personalCenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/select_main_my"
+            android:gravity="center"
+            android:text="@string/main_bottom_presenter"
+            android:textColor="@drawable/select_radio_text_color"
+            android:textSize="12sp" />
+    </RadioGroup>
+</RelativeLayout>

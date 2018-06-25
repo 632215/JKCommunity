@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <com.jinke.community.ui.widget.LoadingLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tx_add_house"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:background="@color/white"
+        app:isFirstVisible="true">
+
+        <www.jinke.com.library.pulltorefresh.PullToRefreshScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/default_bg"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            >
+
+            <com.jinke.community.ui.widget.FillListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:divider="@color/transparent"
+                android:dividerHeight="@dimen/base_dimen_20"
+                android:listSelector="@color/transparent"
+                android:paddingLeft="@dimen/base_dimen_30"
+                android:paddingRight="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_20"
+                android:scrollbars="none"/>
+        </www.jinke.com.library.pulltorefresh.PullToRefreshScrollView>
+    </com.jinke.community.ui.widget.LoadingLayout>
+
+    <TextView
+        android:id="@+id/tx_add_house"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/base_dimen_10"
+        android:background="@mipmap/icon_add_broken"
+        android:gravity="center|bottom"
+        android:paddingBottom="@dimen/base_dimen_15"
+        android:text="@string/house_add"
+        android:textColor="@color/activity_broken_stage_add"
+        android:textSize="@dimen/base_dimen_28"/>
+</RelativeLayout>

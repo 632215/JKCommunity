@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jinke.community.ui.widget.LoadingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/loadingLayout"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@color/main_gray_default"
+                                             app:isFirstVisible="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/base_dimen_30"
+                android:paddingRight="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_20">
+
+                <TextView
+                    android:id="@+id/tx_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_property_post_id"
+                    android:textColor="@color/color_text"
+                    android:textSize="@dimen/base_dimen_28"/>
+
+                <TextView
+                    android:id="@+id/tx_post_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/base_dimen_10"
+                    android:layout_toEndOf="@+id/tx_post"
+                    android:layout_toStartOf="@+id/tx_time"
+                    android:singleLine="true"
+                    android:textColor="@color/color_text_1"
+                    android:textSize="@dimen/base_dimen_28"
+                    tools:text="JK136353413264"/>
+
+                <TextView
+                    android:id="@+id/tx_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="right"
+                    tools:text="2017/9/30 14:25"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_2"
+                    android:layout_below="@+id/tx_post"
+                    android:layout_marginTop="@dimen/base_dimen_20"
+                    android:background="@color/default_driver_line_color"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_house"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_id"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/base_dimen_30"
+                android:paddingRight="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_20">
+
+                <TextView
+                    android:id="@+id/tx_house"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_property_house"
+                    android:textColor="@color/color_text"
+                    android:textSize="@dimen/base_dimen_28"/>
+
+                <TextView
+                    android:id="@+id/tx_post_house"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tx_house"
+                    android:textColor="@color/color_text_1"
+                    android:textSize="@dimen/base_dimen_28"
+                    tools:text="深圳金科智慧城科技中心8-1-119"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_dimen_2"
+                    android:layout_below="@+id/tx_house"
+                    android:layout_marginTop="@dimen/base_dimen_20"
+                    android:background="@color/default_driver_line_color"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_house"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingLeft="@dimen/base_dimen_30"
+                android:paddingRight="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_20">
+
+                <TextView
+                    android:id="@+id/tx_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_property_person"
+                    android:textColor="@color/color_text"
+                    android:textSize="@dimen/base_dimen_28"/>
+
+                <TextView
+                    android:id="@+id/tx_post_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tx_person"
+                    android:textColor="@color/color_text_1"
+                    android:textSize="@dimen/base_dimen_28"
+                    tools:text="****"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tx_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_person"
+                android:layout_marginBottom="@dimen/base_dimen_20"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:paddingLeft="@dimen/base_dimen_30"
+                android:paddingRight="@dimen/base_dimen_30"
+                android:textColor="@color/color_text_second_title"
+                android:textSize="@dimen/base_dimen_28"
+                tools:text="摘要报事内容摘要报事内容摘要报事内容摘要报事内容摘要报事内容摘要报事内容摘要报事内容摘要报事内容摘要报事内容摘要"/>
+
+            <com.jinke.community.ui.widget.FillGridView
+                android:id="@+id/fill_grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_content"
+                android:layout_marginBottom="@dimen/base_dimen_20"
+                android:horizontalSpacing="@dimen/base_dimen_26"
+                android:listSelector="@color/white"
+                android:numColumns="3"
+                android:paddingLeft="@dimen/base_dimen_30"
+                android:paddingRight="@dimen/base_dimen_30"
+                android:scrollbars="none"
+                android:verticalSpacing="@dimen/base_dimen_20"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fill_grid_view"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingLeft="@dimen/base_dimen_30"
+                android:paddingRight="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_20">
+
+                <TextView
+                    android:id="@+id/tx_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/icon_progress"
+                    android:drawablePadding="@dimen/base_dimen_20"
+                    android:gravity="center_vertical"
+                    android:text="@string/activity_property_progress"
+                    android:textColor="@color/color_text"
+                    android:textSize="@dimen/base_dimen_28"/>
+
+                <TextView
+                    android:id="@+id/tx_post_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tx_progress"
+                    android:layout_alignTop="@+id/tx_progress"
+                    android:layout_toEndOf="@+id/tx_progress"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@color/color_main"
+                    android:textSize="@dimen/base_dimen_28"
+                    tools:text="待处理，物业正在分配任务"/>
+            </RelativeLayout>
+
+            <com.jinke.community.ui.widget.FillRecyclerView
+                android:id="@+id/recycle_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_progress"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingLeft="@dimen/base_dimen_30"
+                android:paddingRight="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_20"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_please_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recycle_progress"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingTop="@dimen/base_dimen_20"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tx_comment_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="请您对这次服务进行评价"
+                    android:textColor="@color/color_text_first_title"
+                    android:textSize="@dimen/base_dimen_28"/>
+
+                <TextView
+                    android:id="@+id/tx_to_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tx_comment_tips"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/base_dimen_12"
+                    android:background="@mipmap/icon_progress_to_score"
+                    android:gravity="center"
+                    android:text="评价"
+                    android:textColor="@color/color_main"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_please_comment"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingLeft="@dimen/base_dimen_30"
+                android:paddingRight="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_20"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tx_comment_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_text"
+                    android:textSize="@dimen/base_dimen_28"
+                    tools:text="2017/08/12"/>
+
+                <TextView
+                    android:id="@+id/tx_comment_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tx_comment_date"
+                    android:textColor="@color/color_text"
+                    android:textSize="@dimen/base_dimen_28"
+                    tools:text="12:25"/>
+
+                <com.jinke.community.ui.widget.FillGridView
+                    android:id="@+id/grid_view"
+                    android:layout_width="@dimen/base_dimen_300"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tx_comment_time"
+                    android:layout_toStartOf="@+id/tx_satisfaction"
+                    android:listSelector="@color/white"
+                    android:numColumns="5"/>
+
+                <TextView
+                    android:id="@+id/tx_satisfaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tx_comment_time"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/color_text_first_title"
+                    android:textSize="@dimen/base_dimen_28"
+                    tools:text="非常满意"/>
+
+                <TextView
+                    android:id="@+id/tx_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_dimen_10"
+                    android:layout_below="@+id/tx_comment_time"
+                    android:textColor="@color/color_text_second_title"
+                    android:textSize="@dimen/base_dimen_28"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tx_housekeeper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/rl_comment"
+                android:layout_centerHorizontal="true"
+                android:gravity="bottom"
+                android:paddingBottom="@dimen/base_dimen_20"
+                android:paddingTop="@dimen/base_dimen_20"
+                android:text="@string/activity_property_details_housekeeper"
+                android:textColor="@color/activity_property_details_color6"
+                android:textSize="@dimen/base_dimen_28"/>
+        </RelativeLayout>
+    </ScrollView>
+</com.jinke.community.ui.widget.LoadingLayout>

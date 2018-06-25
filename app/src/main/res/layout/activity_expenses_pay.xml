@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_gray_default">
+
+    <TextView
+        android:id="@+id/payment_withholding_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base_dimen_32"
+        android:text="@string/payment_withholding_text1"
+        android:textColor="@color/payment_text_color14"/>
+
+    <TextView
+        android:id="@+id/payment_withholding_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/payment_withholding_text1"
+        android:layout_below="@+id/payment_withholding_text1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base_dimen_10"
+        android:text="@string/payment_withholding_text2"
+        android:textColor="@color/payment_text_color14"/>
+
+    <TextView
+        android:id="@+id/payment_withholding_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/payment_withholding_text1"
+        android:layout_below="@+id/payment_withholding_text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/base_dimen_20"
+        android:layout_marginTop="@dimen/base_dimen_10"
+        android:text="@string/payment_withholding_text3"
+        android:textColor="@color/payment_text_color15"/>
+
+    <RelativeLayout
+        android:id="@+id/we_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payment_withholding_money"
+        android:layout_marginBottom="@dimen/base_dimen_20"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/we_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/base_dimen_40"
+            android:layout_marginLeft="@dimen/base_dimen_48"
+            android:layout_marginRight="@dimen/base_dimen_50"
+            android:layout_marginTop="@dimen/base_dimen_40"
+            android:src="@mipmap/icon_wechat"/>
+
+        <TextView
+            android:id="@+id/payment_we_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_28"
+            android:layout_toRightOf="@+id/we_image"
+            android:text="@string/payment_we_pay"
+            android:textColor="@color/payment_text_address"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tx_WchatPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/we_image"
+            android:text="@string/payment_we_pay"
+            android:textColor="@color/payment_text_address"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/we_tips_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payment_we_text"
+            android:layout_marginTop="@dimen/base_dimen_6"
+            android:layout_toRightOf="@+id/we_image"
+            android:text="@string/payment_pay_tips"
+            android:textColor="@color/payment_text_color6"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/we_select_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/base_dimen_54"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ali_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/we_layout"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/ali_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/base_dimen_40"
+            android:layout_marginLeft="@dimen/base_dimen_48"
+            android:layout_marginRight="@dimen/base_dimen_50"
+            android:layout_marginTop="@dimen/base_dimen_40"
+            android:src="@mipmap/icon_alipay"/>
+
+        <TextView
+            android:id="@+id/payment_ali_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_28"
+            android:layout_toRightOf="@+id/ali_image"
+            android:text="@string/payment_ali_pay"
+            android:textColor="@color/payment_text_address"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tx_aliaPay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ali_image"
+            android:text="@string/payment_ali_pay"
+            android:textColor="@color/payment_text_address"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/ali_tips_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payment_ali_text"
+            android:layout_marginBottom="@dimen/base_dimen_28"
+            android:layout_marginTop="@dimen/base_dimen_6"
+            android:layout_toRightOf="@+id/ali_image"
+            android:text="@string/payment_pay_tips"
+            android:textColor="@color/payment_text_color6"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/ali_select_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/base_dimen_54"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/forward_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ali_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base_dimen_200"
+        android:background="@mipmap/icon_sure_bg"
+        android:paddingBottom="@dimen/base_dimen_24"
+        android:paddingLeft="@dimen/base_dimen_280"
+        android:paddingRight="@dimen/base_dimen_280"
+        android:paddingTop="@dimen/base_dimen_24"
+        android:text="@string/payment_make_sure"
+        android:textColor="@color/white"/>
+</RelativeLayout>

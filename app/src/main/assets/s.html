@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+</head>
+<body>
+<p id="scan">欢迎进入大社区js与原生交互</p>
+<p id="userinfo">欢迎进入大社区js与原生交互</p>
+<p id="location">欢迎进入大社区js与原生交互</p>
+<br>
+<br>
+<input onclick="funScan()" type="button" name="测试交互" value="扫码">
+<br>
+<br>
+<input type="button" name="测试交互" value="获取用户信息">
+<br>
+<br>
+<input onclick="funGetLocation()" type="button" name="测试交互" value="获取位置信息">
+</body>
+<script type="text/javascript">
+       //扫码
+		function funScan(){
+			window.WebViewJavascriptBridge.callHandler(
+			'scan'
+			,{'param':'请求扫码'}
+			,function(responserData){
+                //获取到返回数据
+                 var ind =document.getElementById("scan");
+			    ind.innerHTML ="二维码扫描结果："+responserData;
+			});
+		}
+
+        //连接成功时向js传递用户信息
+        function connectWebViewJavascriptBridge(callback) {
+           if (window.WebViewJavascriptBridge) {
+               callback(WebViewJavascriptBridge)
+           } else {
+               document.addEventListener(
+                   'WebViewJavascriptBridgeReady'
+                   , function() {
+                       callback(WebViewJavascriptBridge)
+                   },
+                   false
+               );
+           }
+       }
+
+		connectWebViewJavascriptBridge(function(bridge) {
+           bridge.init(function(message, responseCallback) {
+               var data = {
+                   'Javascript Responds': 'Wee!'
+               };
+               responseCallback(data);
+           });
+       })
+
+</script>
+</html>

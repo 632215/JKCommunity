@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/base_dimen_30"
+        android:paddingLeft="@dimen/base_dimen_30"
+        android:paddingRight="@dimen/base_dimen_30"
+        android:paddingTop="@dimen/base_dimen_30">
+
+        <TextView
+            android:id="@+id/tx_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_activity_myhouse_name"
+            android:drawablePadding="@dimen/base_dimen_16"
+            android:gravity="center_vertical"
+            android:text="@string/add_house_place_userName"
+            android:textColor="@color/main_present_text_black" />
+
+        <!--<EditText-->
+        <!--android:id="@+id/ed_input_name"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="@dimen/base_dimen_60"-->
+        <!--android:layout_toRightOf="@+id/tx_name"-->
+        <!--android:background="@null"-->
+        <!--android:gravity="right"-->
+        <!--android:hint="@string/add_house_input_userName"-->
+        <!--android:maxLength="11"-->
+        <!--android:maxLines="1"-->
+        <!--android:textColor="@color/main_present_text_gray"-->
+        <!--android:textSize="@dimen/base_dimen_28"/>-->
+
+        <EditText
+            android:id="@+id/ed_input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_60"
+            android:layout_toRightOf="@+id/tx_name"
+            android:maxLength="10"
+            android:background="@color/white"
+            android:ellipsize="end"
+            android:gravity="center|right"
+            android:hint="@string/add_house_input_userName"
+            android:lines="1"
+            android:textColor="@color/main_present_text_gray"
+            android:textSize="@dimen/base_dimen_28" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingRight="@dimen/base_dimen_30">
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:background="@color/default_driver_line_color" />
+
+        <TextView
+            android:id="@+id/tx_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_line"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:drawableLeft="@mipmap/icon_activity_myhouse_phone"
+            android:drawablePadding="@dimen/base_dimen_16"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30"
+            android:text="@string/add_house_phone"
+            android:textColor="@color/main_present_text_black" />
+
+        <EditText
+            android:id="@+id/ed_input_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_60"
+            android:layout_toRightOf="@+id/tx_phone"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="@string/add_house_input_phone"
+            android:inputType="number"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:textColor="@color/main_present_text_gray"
+            android:textSize="@dimen/base_dimen_28" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <View
+            android:id="@+id/view_num_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:layout_marginRight="@dimen/base_dimen_30"
+            android:background="@color/default_driver_line_color" />
+
+        <TextView
+            android:id="@+id/house_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_num_line"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/base_dimen_30"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:layout_marginTop="@dimen/base_dimen_30"
+            android:drawableLeft="@mipmap/icon_activity_add_house_num"
+            android:drawablePadding="@dimen/base_dimen_16"
+            android:gravity="center_vertical"
+            android:text="@string/add_house_verification"
+            android:textColor="@color/main_present_text_black" />
+
+        <EditText
+            android:id="@+id/ed_input_verification_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:layout_toLeftOf="@+id/tx_getVerification"
+            android:layout_toRightOf="@+id/house_name"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="@string/add_house_verification_code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:textColor="@color/main_present_text_gray"
+            android:textSize="@dimen/base_dimen_28" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/tx_getVerification"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_marginRight="@dimen/base_dimen_30"-->
+        <!--android:background="@mipmap/icon_verification_code"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingBottom="@dimen/base_dimen_18"-->
+        <!--android:paddingLeft="@dimen/base_dimen_24"-->
+        <!--android:paddingRight="@dimen/base_dimen_24"-->
+        <!--android:paddingTop="@dimen/base_dimen_18"-->
+        <!--android:text="@string/add_house_input_get_verification"-->
+        <!--android:textColor="@color/white"/>-->
+        <TextView
+            android:id="@+id/tx_getVerification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/base_dimen_30"
+            android:background="@mipmap/icon_verification_code_wait"
+            android:enabled="false"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_dimen_18"
+            android:paddingLeft="@dimen/base_dimen_24"
+            android:paddingRight="@dimen/base_dimen_24"
+            android:paddingTop="@dimen/base_dimen_18"
+            android:text="@string/add_house_input_get_verification"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tx_banding_house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tx_add_house"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/base_dimen_48"
+            android:text="@string/add_house_url"
+            android:textColor="#418BFF" />
+
+        <ImageView
+            android:id="@+id/image_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:layout_marginRight="@dimen/base_dimen_30"
+            android:layout_marginTop="@dimen/base_dimen_64"
+            android:src="@mipmap/icon_activity_add_house_sure" />
+    </RelativeLayout>
+</LinearLayout>

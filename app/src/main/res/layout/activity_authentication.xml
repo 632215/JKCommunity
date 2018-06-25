@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tx_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_authentication_tips_bg"
+            android:padding="@dimen/base_dimen_30"
+            android:text="@string/activity_authentication"
+            android:textColor="@color/color_text_first_title"
+            android:textSize="@dimen/base_dimen_28"/>
+
+        <com.jinke.community.ui.widget.FillRecyclerView
+            android:id="@+id/fill_recycler_view"
+            android:layout_width="match_parent"
+            android:nestedScrollingEnabled="false"
+            android:focusableInTouchMode="false"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tx_tips"/>
+
+        <TextView
+            android:id="@+id/tx_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fill_recycler_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/base_dimen_34"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:layout_marginRight="@dimen/base_dimen_30"
+            android:layout_marginTop="@dimen/base_dimen_15"
+            android:background="@mipmap/icon_authentication_sure"
+            android:gravity="center"
+            android:text="@string/activity_authentication_sure"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_32"/>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tx_parking_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/base_dimen_20"
+            android:layout_marginLeft="@dimen/base_dimen_22"
+            android:layout_marginRight="@dimen/base_dimen_10"
+            android:layout_marginTop="@dimen/base_dimen_46"
+            android:layout_toLeftOf="@+id/payment_cost_text"
+            android:drawableLeft="@drawable/icon_vehicle_pay_detail"
+            android:drawablePadding="@dimen/base_dimen_20"
+            android:gravity="center_vertical"
+            android:textColor="@color/payment_text_color9"
+            android:textSize="@dimen/base_dimen_30"
+            tools:text="1F-4953车位 "/>
+
+        <TextView
+            android:id="@+id/tx_payment_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/base_dimen_24"
+            android:textColor="@color/payment_text_color16"
+            android:textSize="@dimen/base_dimen_32"
+            tools:text="¥125.21"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen_90">
+
+        <TextView
+            android:id="@+id/tx_recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payment_details_recharge"
+            android:textSize="@dimen/base_dimen_26"
+            android:textColor="@color/main_present_text_gray"/>
+
+        <TextView
+            android:id="@+id/tx_recharge_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tx_recharge"
+            android:layout_toLeftOf="@+id/tx_time"
+            android:layout_toRightOf="@+id/tx_recharge"
+            android:gravity="right"
+            android:text="@string/payment_details_time"
+            android:lines="1"
+            android:textSize="@dimen/base_dimen_26"
+            android:textColor="@color/main_present_text_gray"
+            tools:text="有效期至："/>
+
+        <TextView
+            android:id="@+id/tx_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/base_dimen_24"
+            android:lines="1"
+            android:paddingRight="@dimen/base_dimen_26"
+            android:textColor="@color/payment_text_color23"
+            tools:text="2017/09/12"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_2"
+        android:layout_below="@+id/item_title"
+        android:layout_marginLeft="@dimen/base_dimen_66"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:background="@color/circle_gray"/>
+
+</LinearLayout>

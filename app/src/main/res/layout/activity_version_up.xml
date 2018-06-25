@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_gray_default">
+
+    <RelativeLayout
+        android:id="@+id/rl_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/base_dimen_100"
+        android:paddingTop="@dimen/base_dimen_100">
+
+        <ImageView
+            android:id="@+id/version_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_version_up"/>
+
+        <TextView
+            android:id="@+id/tx_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/version_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/base_dimen_60"
+            android:textColor="@color/main_present_text_black"
+            tools:text="版本号：v1.0.0"/>
+
+        <TextView
+            android:id="@+id/tx_version_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx_version"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/base_dimen_40"
+            android:text="发布时间：2018年6月19日"
+            android:textColor="@color/main_present_text_black"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tx_check_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_image"
+        android:layout_marginLeft="@dimen/base_dimen_24"
+        android:layout_marginRight="@dimen/base_dimen_24"
+        android:layout_marginTop="@dimen/base_dimen_60"
+        android:background="@mipmap/icon_sure_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/base_dimen_24"
+        android:paddingTop="@dimen/base_dimen_24"
+        android:text="检查更新"
+        android:textColor="@color/white"/>
+
+
+    <TextView
+        android:id="@+id/tx_user_agreement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tx_company_publicity"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/base_dimen_20"
+        android:layout_marginTop="@dimen/base_dimen_60"
+        android:text="用户协议"
+        android:textColor="@color/color_blue"/>
+
+    <TextView
+        android:id="@+id/tx_company_publicity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tx_company_copyright"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/base_dimen_12"
+        android:text="一站式美好生活服务提供商"
+        android:textColor="@color/open_door_hint_color"/>
+
+    <TextView
+        android:id="@+id/tx_company_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/base_dimen_34"
+        android:text="@string/verification_copyright"
+        android:textColor="@color/open_door_hint_color"/>
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/base_dimen_200"
+        android:src="@mipmap/icon_bind_house_no"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="@dimen/base_dimen_64"
+        android:text="@string/activity_bind_house_sorry"
+        android:textColor="@color/acticivty_bind_house_color2"
+        android:textSize="@dimen/base_dimen_28"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="@dimen/base_dimen_16"
+        android:text="@string/activity_bind_house_search_no"
+        android:textColor="@color/acticivty_bind_house_color2"
+        android:textSize="@dimen/base_dimen_32"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/base_dimen_70">
+
+        <TextView
+            android:id="@+id/tx_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/activity_bind_house_phone"
+            android:textColor="@color/acticivty_bind_house_color2"
+            android:textSize="@dimen/base_dimen_28"/>
+
+        <TextView
+            android:id="@+id/tx_visitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx_phone"
+            android:paddingLeft="@dimen/base_dimen_212"
+            android:paddingTop="@dimen/base_dimen_12"
+            android:text="@string/activity_bind_house_visitor"
+            android:textColor="@color/acticivty_bind_house_color3"
+            android:textSize="@dimen/base_dimen_28"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx_phone"
+            android:layout_toRightOf="@+id/tx_visitor"
+            android:paddingLeft="@dimen/base_dimen_43"
+            android:paddingTop="@dimen/base_dimen_12"
+            android:text="@string/activity_bind_house_register"
+            android:textColor="@color/acticivty_bind_house_color2"
+            android:textSize="@dimen/base_dimen_28"/>
+
+        <TextView
+            android:id="@+id/tx_authorized"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx_visitor"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/base_dimen_12"
+            android:text="@string/activity_bind_house_authorized"
+            android:textColor="@color/acticivty_bind_house_color3"
+            android:textSize="@dimen/base_dimen_28"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx_authorized"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/base_dimen_12"
+            android:text="@string/activity_bind_house_contact"
+            android:textColor="@color/acticivty_bind_house_color2"
+            android:textSize="@dimen/base_dimen_28"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tx_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/base_dimen_68"
+        android:background="@mipmap/icon_bind_house_bg"
+        android:gravity="center"
+        android:text="@string/activity_bind_house_select_community"
+        android:textColor="@color/acticivty_bind_house_color4"
+        android:textSize="@dimen/base_dimen_32"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/icon_bind_hosue_background"/>
+    </RelativeLayout>
+</LinearLayout>

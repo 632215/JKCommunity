@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tx_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_2"
+        android:background="@color/default_driver_line_color"/>
+
+    <TextView
+        android:id="@+id/property_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_line"
+        android:layout_toRightOf="@+id/property_image"
+        android:drawableLeft="@mipmap/icon_property_costs"
+        android:drawablePadding="@dimen/base_dimen_24"
+        android:gravity="center|left"
+        android:paddingBottom="@dimen/base_dimen_32"
+        android:paddingTop="@dimen/base_dimen_48"
+        android:text="@string/payment_property_service_fee"
+        android:textColor="@color/payment_text_color20"
+        android:textSize="@dimen/base_dimen_32"/>
+
+    <TextView
+        android:id="@+id/property_lave_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/property_text"
+        android:layout_alignTop="@+id/property_text"
+        android:layout_toLeftOf="@+id/property_lave_money_text"
+        android:gravity="center_vertical"
+        android:paddingRight="@dimen/base_dimen_6"
+        android:paddingTop="@dimen/base_dimen_6"
+        android:text="@string/payment_lave_money"
+        android:textColor="@color/payment_text_color11"
+        android:textSize="@dimen/base_dimen_28"/>
+
+    <TextView
+        android:id="@+id/property_lave_money_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/property_text"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/property_text"
+        android:layout_marginBottom="@dimen/base_dimen_28"
+        android:layout_marginTop="@dimen/base_dimen_24"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/base_dimen_6"
+        android:text="123元"
+        android:textColor="@color/payment_text_color21"
+        tools:text="123元"/>
+
+    <TextView
+        android:id="@+id/property_recharge_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ed_reset_money"
+        android:layout_alignTop="@+id/ed_reset_money"
+        android:layout_below="@+id/property_lave_text"
+        android:layout_marginLeft="@dimen/base_dimen_100"
+        android:gravity="center"
+        android:text="@string/payment_recharge"/>
+
+    <TextView
+        android:id="@+id/property_unit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ed_reset_money"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ed_reset_money"
+        android:layout_below="@+id/property_lave_money_text"
+        android:gravity="center"
+        android:paddingLeft="@dimen/base_dimen_16"
+        android:text="@string/payment_unit"
+        android:textColor="@color/payment_text_color6"/>
+
+    <EditText
+        android:id="@+id/ed_reset_money"
+        android:layout_width="@dimen/base_dimen_300"
+        android:layout_height="@dimen/base_dimen_70"
+        android:layout_below="@+id/property_text"
+        android:layout_marginBottom="@dimen/base_dimen_50"
+        android:layout_marginLeft="@dimen/base_dimen_30"
+        android:layout_toLeftOf="@+id/property_unit_text"
+        android:background="@mipmap/icon_money_input_bg"
+        android:gravity="center"
+        android:hint="@string/payment_tips"
+        android:inputType="numberDecimal"
+        android:maxLength="7"
+        android:maxLines="1"
+        android:paddingRight="@dimen/base_dimen_4"
+        android:textColorHint="@color/payment_text_color6"
+        android:textSize="@dimen/base_dimen_26"/>
+
+
+</RelativeLayout>

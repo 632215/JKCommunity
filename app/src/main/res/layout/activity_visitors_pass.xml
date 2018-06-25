@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tx_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_parting_bottom_1dp"
+            android:lineSpacingExtra="@dimen/base_dimen_10"
+            android:padding="@dimen/base_dimen_30"
+            android:text="@string/activity_visitors_pass_tips"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <RelativeLayout
+            android:id="@+id/layout_purpose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx_tips"
+            android:background="@drawable/shape_parting_bottom_1dp"
+            android:paddingBottom="@dimen/base_dimen_35"
+            android:paddingTop="@dimen/base_dimen_35">
+
+            <RelativeLayout
+                android:id="@+id/layout_house_select_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen_30"
+                android:background="@drawable/shape_parting_bottom_1dp"
+                android:paddingBottom="@dimen/base_dimen_35"
+                android:paddingRight="@dimen/base_dimen_30">
+
+                <TextView
+                    android:id="@+id/tx_house_selected"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_visitors_pass_please_select_house" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@mipmap/icon_forward" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tx_purpose_selected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_house_select_title"
+                android:paddingBottom="@dimen/base_dimen_25"
+                android:paddingLeft="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_35"
+                android:text="@string/activity_visitors_pass_please_select_purpose"
+                android:textColor="@color/activity_visitor_pass_text_color1" />
+
+            <com.jinke.community.ui.widget.FillGridView
+                android:id="@+id/fillGridView_purpose"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_purpose_selected"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:listSelector="@color/list_bg"
+                android:numColumns="3"
+                android:paddingLeft="@dimen/base_dimen_30"
+                android:paddingRight="@dimen/base_dimen_30"
+                android:scrollbars="none"
+                android:verticalSpacing="@dimen/base_dimen_35" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_purpose"
+            android:background="@drawable/shape_parting_bottom_1dp"
+            android:paddingTop="@dimen/base_dimen_35">
+
+            <TextView
+                android:id="@+id/tx_date_selected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/base_dimen_30"
+                android:text="@string/activity_visitors_pass_please_select_date"
+                android:textColor="@color/activity_visitor_pass_text_color1" />
+
+            <com.jinke.community.ui.widget.FillGridView
+                android:id="@+id/fillGridView_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_date_selected"
+                android:background="@drawable/shape_parting_bottom_1dp"
+                android:gravity="center_horizontal"
+                android:listSelector="@color/list_bg"
+                android:numColumns="3"
+                android:paddingBottom="@dimen/base_dimen_35"
+                android:paddingLeft="@dimen/base_dimen_30"
+                android:paddingRight="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_25"
+                android:scrollbars="none"
+                android:verticalSpacing="@dimen/base_dimen_35" />
+
+            <TextView
+                android:id="@+id/tx_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fillGridView_date"
+                android:layout_marginLeft="@dimen/base_dimen_30"
+                android:background="@drawable/shape_parting_bottom_1dp"
+                android:paddingBottom="@dimen/base_dimen_35"
+                android:paddingTop="@dimen/base_dimen_35"
+                android:text="@string/activity_visitors_pass_date"
+                android:textColor="@color/activity_visitor_pass_text_color1" />
+
+            <TextView
+                android:id="@+id/tx_w_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tx_date"
+                android:layout_alignTop="@+id/tx_date"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/tx_date"
+                android:background="@drawable/shape_parting_bottom_1dp"
+                android:paddingLeft="@dimen/base_dimen_40"
+
+                android:text="ssssss"
+                android:textColor="@color/activity_visitor_pass_text_color1" />
+
+            <TextView
+                android:id="@+id/tx_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_date"
+                android:paddingBottom="@dimen/base_dimen_35"
+                android:paddingLeft="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_35"
+                android:text="@string/activity_visitors_pass_times"
+                android:textColor="@color/activity_visitor_pass_text_color1" />
+
+            <TextView
+                android:id="@+id/tx_w_times"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tx_times"
+                android:layout_alignTop="@+id/tx_times"
+                android:gravity="center_vertical"
+                android:layout_toRightOf="@+id/tx_times"
+                android:background="@drawable/shape_parting_bottom_1dp"
+                android:paddingLeft="@dimen/base_dimen_40"
+                android:text="ssssss"
+                android:textColor="@color/activity_release_text_color2" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tx_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_date"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/base_dimen_85"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:layout_marginRight="@dimen/base_dimen_30"
+            android:layout_marginTop="@dimen/base_dimen_85"
+            android:background="@drawable/shape_visitor_pass_blue_bg"
+            android:gravity="center"
+            android:padding="@dimen/base_dimen_30"
+            android:text="@string/activity_visitors_pass_sure"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</ScrollView>

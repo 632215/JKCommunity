@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <View
+        android:id="@+id/divider_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_20"
+        android:background="@color/backgroup_bg" />
+
+    <ImageView
+        android:id="@+id/image_result_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base_dimen_166"
+        />
+
+    <TextView
+        android:id="@+id/tx_result_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_result_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base_dimen_60"
+        android:text="@string/payment_success_tips"
+        android:textColor="@color/main_present_text_black"
+        android:textSize="@dimen/base_dimen_30" />
+
+    <TextView
+        android:id="@+id/tx_payment_forward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_result_tips"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/base_dimen_36"
+        android:layout_marginRight="@dimen/base_dimen_36"
+        android:layout_marginTop="@dimen/base_dimen_200"
+        android:background="@mipmap/icon_sure_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/base_dimen_24"
+        android:paddingTop="@dimen/base_dimen_24"
+        android:text="@string/payment_success_forward"
+        android:textColor="@color/white"
+        android:textSize="@dimen/base_dimen_30" />
+
+    <TextView
+        android:id="@+id/tx_payment_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_payment_forward"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/base_dimen_36"
+        android:layout_marginRight="@dimen/base_dimen_36"
+        android:layout_marginTop="@dimen/base_dimen_46"
+        android:background="@drawable/shape_payment_back"
+        android:gravity="center"
+        android:paddingBottom="@dimen/base_dimen_24"
+        android:paddingTop="@dimen/base_dimen_24"
+        android:text="@string/payment_return_store"
+        android:textColor="@color/payment_text_color16"
+        android:textSize="@dimen/base_dimen_30" />
+
+
+    <TextView
+        android:id="@+id/tip_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/phone_text"
+        android:layout_centerHorizontal="true"
+        android:text="@string/payment_tip"
+        android:textColor="@color/payment_text_color1" />
+
+    <TextView
+        android:id="@+id/phone_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/base_dimen_28"
+        android:text="@string/payment_phone"
+        android:textColor="@color/payment_text_color7"
+        android:textSize="@dimen/base_dimen_30" />
+</RelativeLayout>

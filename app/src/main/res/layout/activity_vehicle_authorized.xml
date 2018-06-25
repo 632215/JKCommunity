@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rl_root_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_input_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_parting_top_12dp"
+        android:paddingLeft="@dimen/base_dimen_32"
+        android:paddingRight="@dimen/base_dimen_32"
+        android:paddingTop="@dimen/base_dimen_24">
+
+        <TextView
+            android:id="@+id/tx_my_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_vehicle_rectangle"
+            android:drawablePadding="@dimen/base_dimen_12"
+            android:paddingBottom="@dimen/base_dimen_14"
+            android:paddingTop="@dimen/base_dimen_24"
+            android:text="@string/activity_vehicle_authorized"
+            android:textColor="@color/activity_vehicle_text_color1"
+            android:textSize="@dimen/base_dimen_30"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_authorized_vehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx_my_car"
+            android:background="@drawable/shape_parting_top_1dp">
+
+            <TextView
+                android:id="@+id/tx_license_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_dimen_20"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:background="@drawable/icon_authorize_un_select"
+                android:paddingBottom="@dimen/base_dimen_12"
+                android:paddingLeft="@dimen/base_dimen_34"
+                android:paddingRight="@dimen/base_dimen_26"
+                android:paddingTop="@dimen/base_dimen_11"
+                android:textColor="@color/activity_vehicle_text_color4"
+                android:textSize="@dimen/base_dimen_30"/>
+
+            <EditText
+                android:id="@+id/ed_license_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tx_license_address"
+                android:background="@null"
+                android:hint="@string/activity_vehicle_authorized_license_num"
+                android:maxLength="6"
+                android:paddingLeft="@dimen/base_dimen_34"
+                android:textColor="@color/activity_vehicle_text_color2"
+                android:textColorHint="@color/activity_vehicle_text_color5"
+                android:textSize="@dimen/base_dimen_28"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_authorized_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_authorized_vehicle"
+            android:background="@drawable/shape_parting_top_1dp">
+
+            <TextView
+                android:id="@+id/tx_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/icon_authorized"
+                android:drawablePadding="@dimen/base_dimen_12"
+                android:paddingRight="@dimen/base_dimen_16"
+                android:text="@string/activity_vehicle_authorized_address"
+                android:textColor="@color/activity_vehicle_text_color2"/>
+
+            <TextView
+                android:id="@+id/tx_authorized_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tx_address"
+                android:background="@null"
+                android:hint="@string/activity_vehicle_authorized_select_address"
+                android:paddingBottom="@dimen/base_dimen_30"
+                android:paddingLeft="@dimen/base_dimen_10"
+                android:paddingTop="@dimen/base_dimen_30"
+                android:textColor="@color/activity_vehicle_text_color2"
+                android:textColorHint="@color/activity_vehicle_text_color5"
+                android:textSize="@dimen/base_dimen_28"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_authorized_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_authorized_address"
+            android:background="@drawable/shape_parting_top_1dp">
+
+            <TextView
+                android:id="@+id/tx_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/icon_authorized_time"
+                android:drawablePadding="@dimen/base_dimen_12"
+                android:paddingRight="@dimen/base_dimen_16"
+                android:text="@string/activity_vehicle_authorized_time"
+                android:textColor="@color/activity_vehicle_text_color2"/>
+
+            <TextView
+                android:id="@+id/tx_authorized_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tx_time"
+                android:background="@null"
+                android:drawableRight="@drawable/icon_authorized_select"
+                android:hint="@string/activity_vehicle_authorized_select_time"
+                android:paddingBottom="@dimen/base_dimen_30"
+                android:paddingLeft="@dimen/base_dimen_10"
+                android:paddingTop="@dimen/base_dimen_30"
+                android:textColor="@color/activity_vehicle_text_color2"
+                android:textColorHint="@color/activity_vehicle_text_color5"
+                android:textSize="@dimen/base_dimen_28"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_authorized_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_authorized_time"
+            android:background="@drawable/shape_parting_top_1dp">
+
+            <TextView
+                android:id="@+id/tx_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/icon_authorized_name"
+                android:drawablePadding="@dimen/base_dimen_12"
+                android:paddingRight="@dimen/base_dimen_16"
+                android:text="@string/activity_vehicle_authorized_name"
+                android:textColor="@color/activity_vehicle_text_color5"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/ed_authorized_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_name"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/base_dimen_30"
+                android:layout_marginTop="@dimen/base_dimen_30"
+                android:layout_toRightOf="@+id/tx_ni"
+                android:background="@null"
+                android:drawableLeft="@mipmap/icon_authorized_name"
+                android:drawablePadding="@dimen/base_dimen_12"
+                android:gravity="center|left"
+                android:hint="@string/activity_vehicle_authorized_name"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:textColor="@color/activity_vehicle_text_color2"
+                android:textColorHint="@color/activity_vehicle_text_color5"
+                android:textSize="14sp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_authorized_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_authorized_name"
+            android:background="@drawable/shape_parting_top_1dp">
+
+            <TextView
+                android:id="@+id/tx_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@drawable/icon_authorized_phone"
+                android:drawablePadding="@dimen/base_dimen_12"
+                android:paddingRight="@dimen/base_dimen_16"
+                android:text="@string/activity_vehicle_authorized_phone"
+                android:textColor="@color/activity_vehicle_text_color5"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/ed_authorized_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_phone"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/base_dimen_30"
+                android:layout_marginTop="@dimen/base_dimen_30"
+                android:background="@null"
+                android:drawableLeft="@drawable/icon_authorized_phone"
+                android:drawablePadding="@dimen/base_dimen_12"
+                android:hint="@string/activity_vehicle_authorized_phone"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingRight="@dimen/base_dimen_16"
+                android:textColor="@color/activity_vehicle_text_color2"
+                android:textColorHint="@color/activity_vehicle_text_color5"
+                android:textSize="@dimen/base_dimen_28"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tx_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_input_info"
+        android:layout_marginLeft="@dimen/base_dimen_32"
+        android:layout_marginRight="@dimen/base_dimen_32"
+        android:layout_marginTop="@dimen/base_dimen_100"
+        android:alpha="0.5"
+        android:background="@mipmap/icon_activity_add_house_sure"
+        android:enabled="false"
+        android:gravity="center"
+        android:paddingBottom="@dimen/base_dimen_24"
+        android:paddingTop="@dimen/base_dimen_24"
+        android:textColor="@color/white"
+        android:textSize="@dimen/base_dimen_32"
+        />
+</RelativeLayout>
+

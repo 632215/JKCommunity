@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rl_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_parting_top_10dp"
+                android:paddingTop="@dimen/base_dimen_44">
+
+    <TextView
+        android:id="@+id/tx_post_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="@dimen/base_dimen_28"
+        android:layout_toStartOf="@+id/tx_time"
+        android:paddingLeft="@dimen/base_dimen_30"
+        android:singleLine="true"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/base_dimen_26"
+        tools:text="报事单号:JK23685656"/>
+
+    <TextView
+        android:id="@+id/tx_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:paddingRight="@dimen/base_dimen_30"
+        android:singleLine="true"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/base_dimen_26"
+        tools:text="2017/9/30 14:25"/>
+
+    <TextView
+        android:id="@+id/tx_post_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_post_id"
+        android:layout_marginBottom="@dimen/base_dimen_20"
+        android:layout_marginTop="@dimen/base_dimen_26"
+        android:background="@color/color_text_bg"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:paddingBottom="@dimen/base_dimen_22"
+        android:paddingLeft="@dimen/base_dimen_30"
+        android:paddingRight="@dimen/base_dimen_30"
+        android:paddingTop="@dimen/base_dimen_22"
+        android:textColor="@color/color_text_1"
+        android:textSize="@dimen/base_dimen_28"
+        tools:text="摘要报事内容摘要报事内容摘要报事内容摘要报事内容摘要报事内容摘要报事内摘要报事内容摘要报事内"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_post_content"
+        android:paddingLeft="@dimen/base_dimen_30"
+        android:layout_marginBottom="@dimen/base_dimen_20"
+        android:paddingRight="@dimen/base_dimen_30">
+
+        <TextView
+            android:id="@+id/tx_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_progress"
+            android:drawablePadding="@dimen/base_dimen_20"
+            android:gravity="center_vertical"
+            android:text="@string/activity_property_progress"
+            android:textColor="@color/color_text_second_title"
+            android:textSize="@dimen/base_dimen_28"/>
+
+        <TextView
+            android:id="@+id/tx_progress_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tx_progress"
+            android:layout_alignTop="@+id/tx_progress"
+            android:layout_toEndOf="@+id/tx_progress"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/color_main"
+            android:textSize="@dimen/base_dimen_28"
+            tools:text="待处理，物业正在分配任务"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tx_progress"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/tx_progress"
+            android:src="@mipmap/icon_pay_recorder_arrow"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_satisfaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_post_content"
+        android:paddingLeft="@dimen/base_dimen_30"
+        android:paddingRight="@dimen/base_dimen_30"
+        android:layout_marginBottom="@dimen/base_dimen_20"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tx_satisfaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/activity_property_satisfaction"
+            android:textColor="@color/color_text_second_title"
+            android:textSize="@dimen/base_dimen_28"/>
+
+        <com.jinke.community.ui.widget.FillGridView
+            android:id="@+id/fill_grid_view"
+            android:layout_width="@dimen/base_dimen_300"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/base_dimen_20"
+            android:layout_toEndOf="@+id/tx_satisfaction"
+            android:gravity="left"
+            android:listSelector="@color/white"
+            android:numColumns="5"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tx_satisfaction"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/tx_satisfaction"
+            android:src="@mipmap/icon_pay_recorder_arrow"/>
+    </RelativeLayout>
+</RelativeLayout>

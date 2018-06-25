@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/owner_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/base_dimen_20"
+        android:text="周斌"
+        android:paddingBottom="@dimen/base_dimen_4"
+        android:paddingTop="@dimen/base_dimen_4"
+        android:textColor="@color/main_present_text_gray" />
+
+    <TextView
+        android:id="@+id/owner_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="18315058038"
+        android:paddingTop="@dimen/base_dimen_4"
+        android:paddingBottom="@dimen/base_dimen_4"
+        android:textColor="@color/main_present_text_gray" />
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rl_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_parting_bottom_10dp"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tx_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/base_dimen_16"
+        android:layout_marginTop="@dimen/base_dimen_36"
+        android:layout_toRightOf="@+id/img_type"
+        android:textColor="@color/color_text_first_title"
+        android:textSize="@dimen/base_dimen_30"
+        tools:text="取件通知"/>
+
+    <TextView
+        android:id="@+id/tx_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tx_type"
+        android:layout_below="@+id/tx_type"
+        android:layout_marginBottom="@dimen/base_dimen_56"
+        android:layout_marginTop="@dimen/base_dimen_6"
+        android:layout_toLeftOf="@+id/img_arrow"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/activity_vehicle_text_color3"
+        android:textSize="@dimen/base_dimen_28"
+        tools:text="你有一个包你有一个包裹你有一个包裹你有一个包裹你有一个包裹裹"/>
+
+    <ImageView
+        android:id="@+id/img_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tx_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/tx_type"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/base_dimen_30"
+        android:src="@mipmap/icon_msg_center_out"/>
+
+    <TextView
+        android:id="@+id/tx_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tx_type"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:textColor="@color/activity_vehicle_text_color3"
+        android:textSize="@dimen/base_dimen_24"
+        tools:text="12:23"/>
+
+    <ImageView
+        android:id="@+id/img_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tx_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:paddingLeft="@dimen/base_dimen_30"
+        android:src="@mipmap/icon_msg_center_arrow"/>
+
+</RelativeLayout>

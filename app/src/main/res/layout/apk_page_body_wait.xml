@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/open_door_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/base_dimen_100">
+
+        <TextView
+            android:id="@+id/lock_opening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/base_dimen_100"
+            android:text="@string/lock_opening"
+            android:textColor="@color/page_head_title"
+            android:textSize="@dimen/base_dimen_48"/>
+
+        <com.jinke.community.ui.widget.DiffuseView
+            android:id="@+id/diffuseView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:diffuse_color="@color/colorAccent"
+            app:diffuse_coreImage="@drawable/open_door_fail"
+            app:diffuse_coreRadius="50"
+            app:diffuse_maxWidth="460"
+            app:diffuse_width="3"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

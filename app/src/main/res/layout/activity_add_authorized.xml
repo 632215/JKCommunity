@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_relation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/base_dimen_30"
+        android:paddingLeft="@dimen/base_dimen_30"
+        android:paddingRight="@dimen/base_dimen_30"
+        android:paddingTop="@dimen/base_dimen_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_activity_myhouse_relation"
+            android:drawablePadding="@dimen/base_dimen_16"
+            android:gravity="center_vertical"
+            android:text="关系"
+            android:textColor="@color/main_present_text_black"
+            android:textSize="@dimen/base_dimen_30"/>
+
+        <TextView
+            android:id="@+id/tx_relationship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="@dimen/base_dimen_20"
+            android:drawableRight="@drawable/icon_presenter_allow"
+            android:gravity="center_vertical"
+            android:text="@string/activity_authorization_select"
+            android:textColor="@color/main_present_text_gray"
+            android:textSize="@dimen/base_dimen_30"
+            tools:text="@string/activity_authorization_select"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:layout_marginRight="@dimen/base_dimen_30"
+            android:background="@color/default_driver_line_color"/>
+
+        <TextView
+            android:id="@+id/tx_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/icon_activity_myhouse_name"
+            android:drawablePadding="@dimen/base_dimen_16"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingLeft="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30"
+            android:text="@string/authorization_name"
+            android:textColor="@color/main_present_text_black"
+            android:textSize="@dimen/base_dimen_30"/>
+
+        <EditText
+            android:id="@+id/ed_owner_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:layout_toRightOf="@+id/tx_item_name"
+            android:background="@color/white"
+            android:gravity="right|center"
+            android:hint="请输入"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:paddingRight="@dimen/base_dimen_30"
+            android:textColor="@color/main_present_text_gray"
+            android:textSize="@dimen/base_dimen_30"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:layout_marginRight="@dimen/base_dimen_30"
+            android:background="@color/default_driver_line_color"/>
+
+        <TextView
+            android:id="@+id/tx_owner_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/icon_activity_myhouse_phone"
+            android:drawablePadding="@dimen/base_dimen_16"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingLeft="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30"
+            android:text="@string/authorization_phone"
+            android:inputType="phone"
+            android:textColor="@color/main_present_text_black"
+            android:textSize="@dimen/base_dimen_30"/>
+
+        <EditText
+            android:id="@+id/ed_owner_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tx_owner_phone"
+            android:background="@color/white"
+            android:gravity="right"
+            android:hint="请输入"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:paddingRight="@dimen/base_dimen_30"
+            android:textColor="@color/main_present_text_gray"
+            android:textSize="@dimen/base_dimen_30"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/base_dimen_40"
+        android:src="@mipmap/icon_authorized_save_bg"/>
+</LinearLayout>

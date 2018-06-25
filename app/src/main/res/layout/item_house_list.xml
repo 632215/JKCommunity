@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tx_house"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_check"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/image_check"
+        android:layout_marginRight="@dimen/base_dimen_10"
+        android:layout_toLeftOf="@+id/image_check"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:text="重庆市合川天蓝城市4-2312"
+        android:textColor="@color/acticivty_bind_house_color1" />
+
+    <ImageView
+        android:id="@+id/image_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="@dimen/base_dimen_44"
+        android:paddingTop="@dimen/base_dimen_44"
+        android:src="@mipmap/icon_bind_house_list_selected" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_2"
+        android:layout_below="@+id/image_check"
+        android:background="@color/default_driver_line_color" />
+</RelativeLayout>

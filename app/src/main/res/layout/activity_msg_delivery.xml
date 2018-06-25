@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tx_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/icon_msg_delivery_success"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen_30"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:layout_marginTop="@dimen/base_dimen_168"
+        android:background="@drawable/shape_corners_with_white_bg">
+
+        <ImageView
+            android:id="@+id/img_state"
+            android:layout_width="@dimen/base_dimen_115"
+            android:layout_height="@dimen/base_dimen_115"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:src="@mipmap/icon_msg_success"/>
+
+        <TextView
+            android:id="@+id/tx_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_32"
+            android:layout_marginTop="@dimen/base_dimen_40"
+            android:layout_toRightOf="@+id/img_state"
+            android:textColor="@color/color_text_first_title"
+            android:textSize="@dimen/base_dimen_32"
+            tools:text="取件码：44567896"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/tx_number"
+            android:layout_below="@+id/tx_number"
+            android:layout_marginBottom="@dimen/base_dimen_20"
+            android:layout_marginRight="@dimen/base_dimen_30"
+            android:layout_marginTop="@dimen/base_dimen_10">
+
+            <ImageView
+                android:id="@+id/img_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_dimen_6"
+                android:src="@mipmap/icon_msg_center_address"/>
+
+            <TextView
+                android:id="@+id/tx_address"
+                android:layout_marginLeft="@dimen/base_dimen_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/img_address"
+                android:textColor="@color/color_text_second_title"
+                android:textSize="@dimen/base_dimen_28"
+                tools:text="手机 "/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top"
+        android:layout_marginLeft="@dimen/base_dimen_30"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:background="@mipmap/icon_msg_delivery_bottom"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tx_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_28"
+            android:drawableLeft="@mipmap/icon_msg_time"
+            android:drawablePadding="@dimen/base_dimen_10"
+            android:singleLine="true"
+            android:textColor="@color/activity_vehicle_text_color3"
+            android:textSize="@dimen/base_dimen_32"
+            tools:text="入柜时间:2018年4月30日 12：332"/>
+
+        <TextView
+            android:id="@+id/tx_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_28"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:drawableLeft="@mipmap/icon_msg_delivery"
+            android:drawablePadding="@dimen/base_dimen_10"
+            android:singleLine="true"
+            android:textColor="@color/activity_vehicle_text_color3"
+            android:textSize="@dimen/base_dimen_32"
+            tools:text="快递公司：韵达快递"/>
+
+        <TextView
+            android:id="@+id/tx_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_28"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:drawableLeft="@mipmap/icon_msg_num"
+            android:drawablePadding="@dimen/base_dimen_10"
+            android:singleLine="true"
+            android:textColor="@color/activity_vehicle_text_color3"
+            android:textSize="@dimen/base_dimen_32"
+            tools:text="运送单号：4525252956005"/>
+
+        <TextView
+            android:id="@+id/tx_person"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_28"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:drawableLeft="@mipmap/icon_msg_person"
+            android:drawablePadding="@dimen/base_dimen_10"
+            android:singleLine="true"
+            android:textColor="@color/activity_vehicle_text_color3"
+            android:textSize="@dimen/base_dimen_32"
+            tools:text="派件人员：向建新"/>
+
+        <TextView
+            android:id="@+id/tx_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_28"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:drawableLeft="@mipmap/icon_msg_phone"
+            android:drawablePadding="@dimen/base_dimen_10"
+            android:singleLine="true"
+            android:textColor="@color/activity_vehicle_text_color3"
+            android:textSize="@dimen/base_dimen_32"
+            tools:text="联系电话：19923014532"/>
+    </LinearLayout>
+</RelativeLayout>

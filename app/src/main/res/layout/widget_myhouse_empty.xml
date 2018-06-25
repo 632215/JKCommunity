@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_gray_default"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/layout_title_bar_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base_dimen_100"
+        android:drawablePadding="@dimen/base_dimen_56"
+        android:drawableTop="@mipmap/icon_bind_house_no"
+        android:gravity="center"
+        android:text="@string/patrol_manage_empty_hint"
+        android:textColor="#999999"/>
+
+    <TextView
+        android:id="@+id/tx_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_below="@+id/layout_title_bar_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/base_dimen_80"
+        android:layout_marginTop="@dimen/base_dimen_400"
+        android:text="@string/add_house_url"
+        android:textColor="#418BFF"/>
+
+
+    <TextView
+        android:id="@+id/patrol_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_them_color"
+        android:gravity="center"
+        android:paddingBottom="@dimen/base_dimen_26"
+        android:paddingTop="@dimen/base_dimen_26"
+        android:text="@string/patrol_manage_add"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

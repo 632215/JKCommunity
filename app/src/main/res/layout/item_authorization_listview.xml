@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginTop="@dimen/base_dimen_20"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen_30"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_activity_myhouse_authorise_to"
+            android:drawablePadding="@dimen/base_dimen_16"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30"
+            android:text="@string/authorization_to"
+            android:textColor="@color/main_present_text_black"
+            android:textSize="@dimen/base_dimen_30"/>
+
+        <TextView
+            android:id="@+id/tx_authorization_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/base_dimen_40"
+            android:layout_toLeftOf="@+id/tx_authorization_delete"
+            android:background="@color/white"
+            android:drawableLeft="@mipmap/icon_activity_myhouse_edit"
+            android:drawablePadding="@dimen/base_dimen_14"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30"
+            android:text="@string/authorization_edit"
+            android:textColor="@color/main_home_adapter"
+            android:textSize="@dimen/base_dimen_28"/>
+
+        <TextView
+            android:id="@+id/tx_authorization_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/white"
+            android:drawableLeft="@mipmap/icon_activity_myhouse_delete"
+            android:drawablePadding="@dimen/base_dimen_14"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30"
+            android:text="@string/authorization_delete"
+            android:textColor="@color/main_home_adapter"
+            android:textSize="@dimen/base_dimen_28"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen_30"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:background="@drawable/shape_parting_top_1dp"
+        android:paddingBottom="@dimen/base_dimen_30"
+        android:paddingTop="@dimen/base_dimen_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_activity_myhouse_relation"
+            android:drawablePadding="@dimen/base_dimen_16"
+            android:gravity="center_vertical"
+            android:text="关系"
+            android:textColor="@color/main_present_text_black"
+            android:textSize="@dimen/base_dimen_30"/>
+
+        <TextView
+            android:id="@+id/tx_relationship"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/base_dimen_20"
+            android:text="@string/activity_authorization_select"
+            android:textColor="@color/main_present_text_gray"
+            android:textSize="@dimen/base_dimen_30"
+            tools:text="请选择"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen_30"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:background="@drawable/shape_parting_top_1dp"
+        android:paddingBottom="@dimen/base_dimen_30"
+        android:paddingTop="@dimen/base_dimen_30">
+
+        <TextView
+            android:id="@+id/tx_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_activity_myhouse_name"
+            android:drawablePadding="@dimen/base_dimen_16"
+            android:gravity="center_vertical"
+            android:text="@string/authorization_name"
+            android:textColor="@color/main_present_text_black"
+            android:textSize="@dimen/base_dimen_30"/>
+
+        <com.jinke.community.ui.widget.ContainsEmojiEditText
+            android:id="@+id/ed_owner_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:layout_toRightOf="@+id/tx_item_name"
+            android:background="@color/white"
+            android:gravity="right|center"
+            android:hint="请输入授权人姓名"
+            android:maxLines="1"
+            android:textColor="@color/main_present_text_gray"
+            android:textSize="@dimen/base_dimen_30"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen_30"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:background="@drawable/shape_parting_top_1dp"
+        android:paddingBottom="@dimen/base_dimen_30"
+        android:paddingTop="@dimen/base_dimen_30">
+
+        <TextView
+            android:id="@+id/tx_owner_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_activity_myhouse_phone"
+            android:drawablePadding="@dimen/base_dimen_16"
+            android:gravity="center_vertical"
+            android:text="@string/authorization_phone"
+            android:textColor="@color/main_present_text_black"
+            android:textSize="@dimen/base_dimen_30"/>
+
+        <EditText
+            android:id="@+id/ed_owner_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/base_dimen_30"
+            android:layout_toRightOf="@+id/tx_owner_phone"
+            android:background="@color/white"
+            android:gravity="center|right"
+            android:inputType="phone"
+            android:textColor="@color/main_present_text_gray"
+            android:textSize="@dimen/base_dimen_30"
+            tools:hint="请输入授权人电话号码"/>
+    </RelativeLayout>
+
+</LinearLayout>

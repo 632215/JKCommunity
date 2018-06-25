@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/share_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/translucent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/item_rootView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/base_dimen_36"
+            android:paddingTop="@dimen/base_dimen_44">
+
+            <TextView
+                android:id="@+id/tx_wechart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/icon_share_qr_wechart"
+                android:gravity="center"
+                android:text="微信"
+                android:textColor="@color/color_text_second_title"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/tx_friend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/icon_share_qr_friend"
+                android:gravity="center"
+                android:text="朋友圈"
+                android:textColor="@color/color_text_second_title"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/tx_qq"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/icon_share_qr_qq"
+                android:gravity="center"
+                android:text="QQ"
+                android:textColor="@color/color_text_second_title"
+                android:textSize="@dimen/base_dimen_28" />
+
+            <TextView
+                android:id="@+id/tx_zone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/icon_share_qr_zone"
+                android:gravity="center"
+                android:text="空间"
+                android:textColor="@color/color_text_second_title"
+                android:textSize="@dimen/base_dimen_28" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tx_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_96"
+            android:layout_below="@+id/item_rootView"
+            android:background="@drawable/shape_parting_top_1dp"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/color_text_second_title"
+            android:textSize="@dimen/base_dimen_28" />
+    </RelativeLayout>
+</RelativeLayout>

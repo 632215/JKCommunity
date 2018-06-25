@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_my_car"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_parting_top_12dp"
+            android:paddingLeft="@dimen/base_dimen_32"
+            android:paddingRight="@dimen/base_dimen_32"
+            android:paddingTop="@dimen/base_dimen_24">
+
+            <TextView
+                android:id="@+id/tx_my_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_vehicle_rectangle"
+                android:drawablePadding="@dimen/base_dimen_12"
+                android:paddingBottom="@dimen/base_dimen_14"
+                android:paddingTop="@dimen/base_dimen_24"
+                android:text="@string/activity_vehicle_my_car"
+                android:textColor="@color/activity_vehicle_text_color1"
+                android:textSize="@dimen/base_dimen_30"/>
+
+            <TextView
+                android:id="@+id/tx_my_car_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_my_car"
+                android:background="@drawable/shape_parting_top_1dp"
+                android:paddingBottom="@dimen/base_dimen_42"
+                android:paddingTop="@dimen/base_dimen_26"
+                android:text="@string/activity_vehicle_my_car_tips"
+                android:textColor="@color/activity_vehicle_text_color2"
+                android:textSize="@dimen/base_dimen_28"/>
+
+            <com.jinke.community.ui.widget.FillListView
+                android:id="@+id/lv_my_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_my_car_tips"
+                android:divider="@null"
+                android:scrollbars="none"/>
+
+            <TextView
+                android:id="@+id/tx_my_car_ban_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv_my_car"
+                android:background="@drawable/shape_parting_top_1dp"
+                android:drawableLeft="@drawable/icon_vehicle_ban_tips"
+                android:drawablePadding="@dimen/base_dimen_2"
+                android:paddingBottom="@dimen/base_dimen_26"
+                android:paddingTop="@dimen/base_dimen_22"
+                android:text="@string/activity_vehicle_my_car_ban_tips"
+                android:textColor="@color/activity_vehicle_text_color3"
+                android:textSize="@dimen/base_dimen_24"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_authorized_vehicles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_my_car"
+            android:background="@drawable/shape_parting_top_12dp"
+            android:paddingLeft="@dimen/base_dimen_32"
+            android:paddingRight="@dimen/base_dimen_32"
+            android:paddingTop="@dimen/base_dimen_24">
+
+            <TextView
+                android:id="@+id/tx_authorized_vehicles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tx_add_authorized"
+                android:layout_alignTop="@+id/tx_add_authorized"
+                android:drawableLeft="@drawable/icon_vehicle_rectangle"
+                android:drawablePadding="@dimen/base_dimen_12"
+                android:gravity="center_vertical"
+                android:text="@string/activity_vehicle_authorized_vehicles"
+                android:textColor="@color/activity_vehicle_text_color1"
+                android:textSize="@dimen/base_dimen_30"/>
+
+            <TextView
+                android:id="@+id/tx_add_authorized"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/icon_vehicle_add_authorized"
+                android:paddingBottom="@dimen/base_dimen_10"
+                android:paddingTop="@dimen/base_dimen_32"/>
+
+            <com.jinke.community.ui.widget.FillListView
+                android:id="@+id/lv_authorization_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_add_authorized"
+                android:divider="@null"
+                android:scrollbars="none"/>
+
+            <TextView
+                android:id="@+id/tx_authorized_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lv_authorization_car"
+                android:background="@drawable/shape_parting_top_1dp"
+                android:drawableLeft="@drawable/icon_vehicle_ban_tips"
+                android:paddingBottom="@dimen/base_dimen_54"
+                android:paddingTop="@dimen/base_dimen_18"
+                android:text="@string/activity_vehicle_authorized_vehicles_tips"
+                android:textSize="@dimen/base_dimen_24"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tx_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_authorized_vehicles"
+            android:layout_marginBottom="@dimen/base_dimen_74"
+            android:layout_marginLeft="@dimen/base_dimen_32"
+            android:layout_marginRight="@dimen/base_dimen_32"
+            android:layout_marginTop="@dimen/base_dimen_140"
+            android:alpha="0.5"
+            android:background="@mipmap/icon_sure_bg"
+            android:enabled="false"
+            android:gravity="center"
+            android:paddingBottom="@dimen/base_dimen_24"
+            android:paddingTop="@dimen/base_dimen_24"
+            android:text="@string/activity_vehicle_delete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_32"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+</head>
+<body>
+<p id="scan">欢迎进入大社区js与原生交互</p>
+<p id="userinfo">欢迎进入大社区js与原生交互</p>
+<p id="location">欢迎进入大社区js与原生交互</p>
+<br>
+<br>
+<input onclick="funScan()" type="button" name="测试交互" value="扫码">
+<br>
+<br>
+<input type="button" name="测试交互" value="获取用户信息">
+<br>
+<br>
+<input onclick="funGetLocation()" type="button" name="测试交互" value="获取位置信息">
+</body>
+<script type="text/javascript">
+  var u = navigator.userAgent;
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    if (isiOS) {
+              /*这段代码是固定的，必须要放到js中*/
+            function setupWebViewJavascriptBridge(callback) {
+               if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+               if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+               window.WVJBCallbacks = [callback];
+             var WVJBIframe = document.createElement('iframe');
+              WVJBIframe.style.display = 'none';
+             WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+             document.documentElement.appendChild(WVJBIframe);
+               setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0);
+             }
+
+            /*与OC交互的所有JS方法都要放在此处注册，才能调用通过JS调用OC或者让OC调用这里的JS*/
+             setupWebViewJavascriptBridge(function(bridge) {
+              /*JS给ObjC提供公开的API，在ObjC端可以手动调用JS的这个API。接收ObjC传过来的参数，且可以回调ObjC*/
+               bridge.registerHandler('getUserInfos', function(e) {
+                    gotoIosApp(e);
+                     gotoRotate(e);
+               });
+
+               bridge.callHandler(
+                  'scan'
+                  ,"ios js请求原生扫码"
+                ,function(responserData){ //获取到返回数据
+                  var ind =document.getElementById("scan");
+                  ind.innerHTML ="二维码扫描结果Ios：";
+               });
+             });
+
+
+       // function setupWebViewJavascriptBridge(callback) {
+       //   document.getElementById("scan").innerHTML ="ios：";
+       //   if (window.WebViewJavascriptBridge) {
+       //    callback(WebViewJavascriptBridge)
+       // } else {
+       //    document.addEventListener(
+       //       'WebViewJavascriptBridgeReady'
+       //       , function() {
+       //         callback(WebViewJavascriptBridge)
+       //      },
+       //      false
+       //      );
+       // }
+
+       // if (window.WVJBCallbacks) {
+       //   return window.WVJBCallbacks.push(callback);
+       //   }
+       // window.WVJBCallbacks = [callback];
+       // var WVJBIframe = document.createElement('iframe');
+       // WVJBIframe.style.display = 'none';
+       // WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+       // document.documentElement.appendChild(WVJBIframe);
+       // setTimeout(function() {
+       //   document.documentElement.removeChild(WVJBIframe)
+       // }, 0);
+
+       // setupWebViewJavascriptBridge(function(bridge) {
+       //      //扫码
+       //      document.getElementById("buttonScan").onclick = function () {
+       //      //参数1： pay 注册flag 供原生使用，要和原生统一
+       //      //参数2： 是调起原生时向原生传递的参数
+       //      //参数3： 原生调用回调返回的数据
+       //      bridge.callHandler(
+       //         'scan'
+       //         ,"ios js请求原生扫码"
+       //          ,function(responserData){ //获取到返回数据
+       //            var ind =document.getElementById("scan");
+       //            ind.innerHTML ="二维码扫描结果Ios："+responserData;
+       //         });
+       //   }
+
+      }else{
+
+         document.getElementById("scan").innerHTML ="Android：";
+          //扫码
+          function funScan(){
+            var ind =document.getElementById("scan");
+            ind.innerHTML ="二维码扫描结果Android：";
+            window.WebViewJavascriptBridge.callHandler(
+             'scan'
+             ,{'param':'请求扫码'}
+             ,function(responserData){
+                    //获取到返回数据
+                    var ind =document.getElementById("scan");
+                    ind.innerHTML ="二维码扫描结果Android："+responserData;
+                 });
+
+             //连接成功时向js传递用户信息
+             function connectWebViewJavascriptBridge(callback) {
+               if (window.WebViewJavascriptBridge) {
+                 callback(WebViewJavascriptBridge)
+              } else {
+                 document.addEventListener(
+                  'WebViewJavascriptBridgeReady'
+                  , function() {
+                   callback(WebViewJavascriptBridge)
+                },
+                false
+                );
+              }
+           }
+
+           connectWebViewJavascriptBridge(function(bridge) {
+            bridge.init(function(message, responseCallback) {
+              var data = {
+               'Javascript Responds': 'Wee!'
+            };
+            responseCallback(data);
+         });
+         })
+        }
+     }
+  </script>
+</html>

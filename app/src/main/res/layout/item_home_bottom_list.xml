@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/item_rootView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/base_dimen_36"
+                android:paddingLeft="@dimen/base_dimen_24"
+                android:paddingRight="@dimen/base_dimen_24"
+                android:paddingTop="@dimen/base_dimen_36">
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image_head"
+        android:layout_width="@dimen/base_dimen_88"
+        android:layout_height="@dimen/base_dimen_88"
+        android:layout_marginLeft="@dimen/base_dimen_24"
+        android:src="@mipmap/icon_present_default_head"
+        fresco:failureImage="@mipmap/icon_present_default_head"
+        fresco:progressBarImage="@mipmap/icon_present_default_head"
+        fresco:roundAsCircle="true"/>
+
+    <TextView
+        android:id="@+id/tx_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen_24"
+        android:layout_toRightOf="@+id/image_head"
+        android:text="关于停电通知"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_toLeftOf="@+id/ll_praise"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:textColor="@color/main_present_text_black"
+        android:textSize="@dimen/base_dimen_28"/>
+
+    <TextView
+        android:id="@+id/tx_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_head"
+        android:layout_alignLeft="@+id/tx_name"
+        android:layout_marginTop="@dimen/base_dimen_10"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="10-20 12:22"
+        android:textColor="@color/main_home_bottom_gray"
+        android:textSize="@dimen/base_dimen_24"/>
+
+    <LinearLayout
+        android:id="@+id/ll_praise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_head"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/icon_fragment_housekeeper_praise_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/tx_praise"
+            android:paddingRight="@dimen/base_dimen_4"
+            android:src="@mipmap/icon_fragment_housekeeper_praise"/>
+
+        <TextView
+            android:id="@+id/tx_praise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="赞"
+            android:textColor="@color/main_home_bottom_gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tx_time"
+        android:layout_below="@+id/tx_time"
+        android:layout_marginTop="@dimen/base_dimen_18"
+        android:orientation="vertical">
+
+        <com.jinke.community.ui.widget.ExpandableTextView
+            android:id="@+id/tx_home_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tx_time"
+            android:visibility="gone"
+            app:collapseExpandGrarity="left"
+            app:collapseExpandTextColor="@color/fragment_housekeeper_color4"
+            app:contentTextColor="@color/fragment_housekeeper_color2"
+            app:contentTextSize="14sp"
+            app:textCollapse="收缩全文"
+            app:textExpand="展开全文"/>
+
+        <com.jinke.community.ui.widget.FillGridView
+            android:id="@+id/item_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tx_home_content"
+            android:layout_below="@+id/tx_home_content"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:horizontalSpacing="@dimen/base_dimen_26"
+            android:listSelector="@color/white"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/base_dimen_20"
+            android:visibility="gone"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.jinke.community.ui.activity.OpenDoorActivity">
+
+    <include
+        android:id="@+id/apk_page_body_wait"
+        layout="@layout/apk_page_body_wait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"/>
+
+    <include
+        android:id="@+id/apk_page_body_success"
+        layout="@layout/apk_page_body_success"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/apk_page_body_defeated"
+        layout="@layout/apk_page_body_defeated"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.donkingliang.banner.CustomBanner xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/customBanner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_300"
+        app:indicatorInterval="@dimen/base_dimen_26"
+        app:indicatorSelectRes="@drawable/shape_point_select"
+        app:indicatorStyle="NONE"
+        app:indicatorUnSelectRes="@drawable/shape_point_unselect" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_parting_both_10dp"
+        android:paddingBottom="@dimen/base_dimen_20"
+        android:paddingLeft="@dimen/base_dimen_16"
+        android:paddingTop="@dimen/base_dimen_20">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/circle_head_image"
+            android:layout_width="@dimen/base_dimen_120"
+            android:layout_height="@dimen/base_dimen_120"
+            android:layout_marginBottom="@dimen/base_dimen_20"
+            android:layout_marginRight="@dimen/base_dimen_24"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:src="@mipmap/icon_present_default_head"
+            fresco:failureImage="@mipmap/icon_present_default_head"
+            fresco:progressBarImage="@mipmap/icon_present_default_head"
+            fresco:roundAsCircle="true" />
+
+        <TextView
+            android:id="@+id/tx_circle_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/circle_head_image"
+            android:layout_marginRight="@dimen/base_dimen_30"
+            android:layout_marginTop="@dimen/base_dimen_10"
+            android:layout_toLeftOf="@+id/tx_circle_money_center"
+            android:layout_toRightOf="@+id/circle_head_image"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/circle_name_color"
+            android:textSize="@dimen/base_dimen_34"
+            tools:text="@string/circle_name" />
+
+        <TextView
+            android:id="@+id/tx_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/circle_head_image"
+            android:layout_marginBottom="@dimen/base_dimen_10"
+            android:layout_toRightOf="@+id/circle_head_image"
+            android:text="@string/jk_money"
+            android:textColor="@color/circle_money_color"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <TextView
+            android:id="@+id/tx_circle_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tx_circle"
+            android:layout_marginLeft="@dimen/base_dimen_20"
+            android:layout_toRightOf="@+id/tx_circle"
+            android:drawablePadding="@dimen/base_dimen_4"
+            android:drawableRight="@mipmap/icon_jk_money"
+            android:text="0"
+            android:textColor="@color/circle_money_color"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <TextView
+            android:id="@+id/tx_circle_money_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_jk_money_center"
+            android:drawablePadding="@dimen/base_dimen_5"
+            android:drawableRight="@mipmap/icon_jiantou"
+            android:paddingBottom="@dimen/base_dimen_18"
+            android:paddingLeft="@dimen/base_dimen_16"
+            android:paddingRight="@dimen/base_dimen_10"
+            android:paddingTop="@dimen/base_dimen_14"
+            android:text="@string/jk_money_center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_24" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/event_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/base_dimen_36"
+        android:paddingRight="@dimen/base_dimen_40">
+
+        <ImageView
+            android:id="@+id/event_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/base_dimen_28"
+            android:paddingRight="@dimen/base_dimen_20"
+            android:paddingTop="@dimen/base_dimen_28"
+            android:src="@mipmap/icon_game" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/event_image"
+            android:text="@string/circle_community_events"
+            android:textColor="@color/circle_name_color"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@mipmap/icon_forward3x" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_2"
+        android:layout_marginLeft="@dimen/base_dimen_40"
+        android:background="@color/circle_gray" />
+
+    <RelativeLayout
+        android:id="@+id/walking_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_parting_bottom_1dp"
+        android:paddingLeft="@dimen/base_dimen_36"
+        android:paddingRight="@dimen/base_dimen_40">
+
+        <ImageView
+            android:id="@+id/walking_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/base_dimen_28"
+            android:paddingRight="@dimen/base_dimen_20"
+            android:paddingTop="@dimen/base_dimen_28"
+            android:src="@mipmap/icon_sport" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/walking_image"
+            android:text="@string/circle_walking_competition_events"
+            android:textColor="@color/circle_name_color"
+            android:textSize="@dimen/base_dimen_30" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@mipmap/icon_forward3x" />
+    </RelativeLayout>
+</LinearLayout>

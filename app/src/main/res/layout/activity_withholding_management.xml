@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/activity_withholding_management_color1"
+            android:orientation="vertical"
+            android:padding="@dimen/base_dimen_30">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_withholding_management_tips_above"
+                android:textColor="@color/activity_withholding_management_color2"/>
+
+            <TextView
+                android:id="@+id/tx_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_withholding_management_tips_below"
+                android:textColor="@color/activity_withholding_management_color2"/>
+        </LinearLayout>
+
+        <com.jinke.community.ui.widget.LoadingLayout
+            android:id="@+id/loadingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/ll_tips"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            app:isFirstVisible="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.jinke.community.ui.widget.FillListView
+                    android:id="@+id/list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:divider="@color/default_bg"
+                    android:dividerHeight="@dimen/base_dimen_20"
+                    android:scrollbars="none"/>
+
+                <TextView
+                    android:id="@+id/tx_explain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/list_view"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/base_dimen_48"
+                    android:layout_marginTop="@dimen/base_dimen_100"
+                    android:text="@string/activity_withholding_management_explain"
+                    android:textColor="@color/activity_withholding_management_color3"
+                    android:textSize="@dimen/base_dimen_28"/>
+            </RelativeLayout>
+        </com.jinke.community.ui.widget.LoadingLayout>
+    </RelativeLayout>
+</ScrollView>

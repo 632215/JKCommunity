@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_access_control_bg"
+    android:gravity="center_vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tx_access_control_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="@dimen/base_dimen_35"
+                android:drawableTop="@mipmap/icon_activity_access_control_key"
+                android:gravity="center_horizontal"
+                android:text="一键开门"
+                android:textColor="#B34950" />
+
+            <TextView
+                android:id="@+id/tx_access_control_visitor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_access_control_key"
+                android:layout_centerHorizontal="true"
+                android:drawablePadding="@dimen/base_dimen_35"
+                android:drawableTop="@mipmap/icon_activity_access_control_visitor"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/base_dimen_75"
+                android:text="访客通行"
+                android:textColor="#30A4E8" />
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

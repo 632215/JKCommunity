@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/video_call_bg">
+
+    <TextView
+        android:id="@+id/video_call_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base_dimen_56"
+        android:text="@string/video_call_head_hint"
+        android:textColor="@color/video_call_1"
+        android:textSize="@dimen/base_dimen_36" />
+
+    <RelativeLayout
+        android:id="@+id/video_surface_layout"
+        android:layout_width="@dimen/base_dimen_560"
+        android:layout_height="@dimen/base_dimen_420"
+        android:layout_below="@+id/video_call_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base_dimen_62">
+
+        <com.doormaster.vphone.view.GL2JNIView
+            android:id="@+id/video_surface"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <SurfaceView
+            android:id="@+id/video_capture_surface"
+            android:layout_width="0.1dp"
+            android:layout_height="@dimen/base_dimen_100"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:layout_width="@dimen/base_dimen_560"
+            android:layout_height="@dimen/base_dimen_421"
+            android:layout_centerInParent="true"
+            android:background="@drawable/video_call_1_bg" />
+
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/video_call_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/video_surface_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base_dimen_56"
+        android:text="00:00"
+        android:textColor="@color/video_call_1"
+        android:textSize="@dimen/base_dimen_30" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/base_dimen_124">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/video_call_come"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/video_call_come_ico" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/video_call_come"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/base_dimen_30"
+                android:text="@string/video_call_come"
+                android:textColor="@color/video_call_1"
+                android:textSize="@dimen/base_dimen_30" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/video_call_forbid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/video_call_forbid_ico" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/video_call_forbid"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/base_dimen_30"
+                android:text="@string/video_call_forbid"
+                android:textColor="@color/video_call_1"
+                android:textSize="@dimen/base_dimen_30" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

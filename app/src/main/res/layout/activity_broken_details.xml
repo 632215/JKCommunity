@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jinke.community.ui.widget.LoadingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:fresco="http://schemas.android.com/tools"
+                                             android:id="@+id/loadingLayout"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@color/main_gray_default"
+                                             android:orientation="vertical"
+                                             app:isFirstVisible="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_20"
+        android:background="@color/white"
+        android:paddingTop="@dimen/base_dimen_40">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/item_details_image"
+            android:layout_width="@dimen/base_dimen_88"
+            android:layout_height="@dimen/base_dimen_88"
+            android:layout_marginLeft="@dimen/base_dimen_24"
+            android:background="@drawable/icon_home_notifaction"
+            android:src="@mipmap/icon_present_default_head"
+            fresco:failureImage="@mipmap/icon_present_default_head"
+            fresco:progressBarImage="@mipmap/icon_present_default_head"
+            fresco:roundAsCircle="true"/>
+
+        <TextView
+            android:id="@+id/item_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen_36"
+            android:layout_toRightOf="@+id/item_details_image"
+            android:text="物业报事"
+            android:textColor="@color/main_present_text_black" />
+
+        <TextView
+            android:id="@+id/item_details_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_details_title"
+            android:layout_below="@+id/item_details_title"
+            android:text="2017-07-26 08:36"
+            android:textColor="@color/main_present_text_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/property_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/item_details_title"
+            android:layout_marginRight="@dimen/base_dimen_30"
+            android:background="@drawable/shape_broke_preview_bg"
+            android:paddingBottom="@dimen/base_dimen_7"
+            android:paddingLeft="@dimen/base_dimen_24"
+            android:paddingRight="@dimen/base_dimen_24"
+            android:paddingTop="@dimen/base_dimen_7"
+            android:text="待处理"
+            android:textColor="@color/main_them_color" />
+
+        <TextView
+            android:id="@+id/main_gray_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen_2"
+            android:layout_below="@+id/item_details_time"
+            android:layout_marginTop="@dimen/base_dimen_40"
+            android:background="@color/main_gray_line" />
+
+        <TextView
+            android:id="@+id/tx_broken_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/item_details_title"
+            android:layout_below="@+id/main_gray_line"
+            android:layout_marginRight="@dimen/base_dimen_50"
+            android:background="@color/white"
+            android:lineSpacingExtra="@dimen/base_dimen_5"
+            android:paddingTop="@dimen/base_dimen_32"
+            android:text="Glide的网络请求部分可以使用当前最流行的网络请求框架Volley或OkHttp，
+        也可以通过Glide的ModelLoader接口自己写网络请求。
+Glide默认使用HttpUrlConnection进行网络请求，为了让APP保持一致的网络请求形式，
+可以让Glide使"
+            android:textColor="@color/main_present_text_gray" />
+
+        <GridView
+            android:id="@+id/gv_broken_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tx_broken_content"
+            android:layout_alignRight="@+id/tx_broken_content"
+            android:layout_below="@+id/tx_broken_content"
+            android:layout_marginBottom="@dimen/base_dimen_30"
+            android:layout_marginTop="@dimen/base_dimen_30"
+            android:horizontalSpacing="@dimen/base_dimen_20"
+            android:listSelector="@color/white"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/base_dimen_20" />
+    </RelativeLayout>
+
+
+</com.jinke.community.ui.widget.LoadingLayout>

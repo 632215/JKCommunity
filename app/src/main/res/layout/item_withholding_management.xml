@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:paddingLeft="@dimen/base_dimen_30"
+              android:paddingRight="@dimen/base_dimen_30"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tx_house_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/icon_activity_myhouse_house"
+        android:drawablePadding="@dimen/base_dimen_16"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/base_dimen_30"
+        android:paddingTop="@dimen/base_dimen_30"
+        android:text="重庆市重庆金科云湖天都14-05重庆市重庆金科云湖天都14"
+        android:textColor="@color/main_present_text_black"
+        android:textSize="@dimen/base_dimen_30"/>
+
+    <TextView
+        android:id="@+id/tx_house_owner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tx_house_title"
+        android:layout_below="@+id/tx_house_title"
+        android:background="@drawable/shape_parting_top_1dp"
+        android:drawableLeft="@mipmap/icon_activity_myhouse_owner"
+        android:drawablePadding="@dimen/base_dimen_16"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:paddingBottom="@dimen/base_dimen_30"
+        android:paddingTop="@dimen/base_dimen_30"
+        android:text="业主名字"
+        android:textColor="@color/main_present_text_black"
+        android:textSize="@dimen/base_dimen_30"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_parting_top_1dp">
+
+        <TextView
+            android:id="@+id/tx_withholding_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_activity_withholding_withholding"
+            android:drawablePadding="@dimen/base_dimen_16"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30"
+            android:text="@string/activity_withholding_management_method"
+            android:textColor="@color/main_present_text_black"
+            android:textSize="@dimen/base_dimen_30"
+            tools:text="微信代扣"
+            />
+
+        <TextView
+            android:id="@+id/tx_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base_dimen_48"
+            android:layout_toRightOf="@+id/tx_withholding_method"
+            android:textColor="@color/activity_withholding_management_color2"
+            android:textSize="@dimen/base_dimen_28"
+            tools:text="微信代扣"
+            />
+
+        <TextView
+            android:id="@+id/tx_operate_withholding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_activity_withholding_operate_bg"
+            android:gravity="center"
+            android:textSize="@dimen/base_dimen_28"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_recorder_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_parting_top_1dp">
+
+        <TextView
+            android:id="@+id/tx_recorder_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30"
+            android:text="@string/activity_withholding_management_method"
+            android:textColor="@color/main_present_text_black"
+            android:textSize="@dimen/base_dimen_30"
+            tools:text="代缴费明细"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_pay_recorder_arrow"
+            />
+    </RelativeLayout>
+</LinearLayout>

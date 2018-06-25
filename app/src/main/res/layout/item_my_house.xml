@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rl_root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/icon_house_list_bg_red"
+                android:paddingLeft="@dimen/base_dimen_35"
+                android:paddingRight="@dimen/base_dimen_35">
+
+    <TextView
+        android:id="@+id/tx_house_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_40"
+        android:drawableLeft="@mipmap/icon_activity_myhouse_house"
+        android:drawablePadding="@dimen/base_dimen_16"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        tools:text="重庆市重庆金科云湖天都14-05重庆市重庆金科云湖天都14"/>
+
+    <TextView
+        android:id="@+id/tx_house_owen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tx_house_title"
+        android:layout_below="@+id/tx_house_title"
+        android:layout_marginTop="@dimen/base_dimen_40"
+        android:drawableLeft="@mipmap/icon_activity_myhouse_owner"
+        android:drawablePadding="@dimen/base_dimen_16"
+        android:ellipsize="end"
+        android:gravity="center_vertical|left"
+        android:lines="1"
+        android:text="业主名字"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tx_house_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_house_owen"
+        android:layout_marginBottom="@dimen/base_dimen_30"
+        android:layout_marginTop="@dimen/base_dimen_80"
+        android:drawableLeft="@mipmap/icon_house_choose_bg_red"
+        android:drawablePadding="@dimen/base_dimen_20"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/base_dimen_30"
+        android:text="@string/house_present_setting"
+        android:textColor="@color/white"
+        android:textSize="@dimen/base_dimen_28"
+        android:visibility="gone"/>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_authorized_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tx_house_setting"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/icon_authorize_button_red_bg"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tx_authorized"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_activity_myhouse_authoried_white"
+            android:drawablePadding="@dimen/base_dimen_16"
+            android:text="授权"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_28"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_get_house"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_house_owen"
+        android:layout_marginBottom="@dimen/base_dimen_30"
+        android:layout_marginTop="@dimen/base_dimen_80">
+
+        <TextView
+            android:id="@+id/tx_get_house"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/base_dimen_30"
+            android:text="@string/activity_authentication_guide"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_28"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tx_get_house"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/icon_bind_hosue_arrow"/>
+    </RelativeLayout>
+</RelativeLayout>

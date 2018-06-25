@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tx_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/base_dimen_28"
+        tools:text="2017/08/12"/>
+
+    <TextView
+        android:id="@+id/tx_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tx_date"
+        android:textColor="@color/color_text"
+        android:textSize="@dimen/base_dimen_28"
+        tools:text="12:25"/>
+
+    <RelativeLayout
+        android:layout_width="@dimen/base_dimen_36"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rl_progress_content"
+        android:layout_alignTop="@+id/rl_progress_content"
+        android:layout_marginLeft="@dimen/base_dimen_30"
+        android:layout_toRightOf="@+id/tx_date">
+
+        <TextView
+            android:id="@+id/tx_line_top"
+            android:layout_width="@dimen/base_dimen_2"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/img_state"
+            android:background="@color/default_driver_line_color"/>
+
+        <ImageView
+            android:id="@+id/img_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/icon_progress_wait"/>
+
+        <TextView
+            android:id="@+id/tx_line_bottom"
+            android:layout_width="@dimen/base_dimen_2"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/img_state"
+            android:layout_centerHorizontal="true"
+            android:background="@color/default_driver_line_color"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_progress_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/base_dimen_90"
+        android:minHeight="@dimen/base_dimen_100"
+        android:layout_toEndOf="@+id/tx_date">
+
+        <TextView
+            android:id="@+id/tx_progress_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_property_wait_deal"
+            android:textColor="@color/color_text_first_title"
+            android:textSize="@dimen/base_dimen_28"
+            android:visibility="gone"
+            tools:text="@string/activity_property_wait_deal"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_progress_dealing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tx_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_text_first_title"
+                android:textSize="@dimen/base_dimen_28"
+                tools:text="***"/>
+
+            <TextView
+                android:id="@+id/tx_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/base_dimen_6"
+                android:layout_toEndOf="@+id/tx_name"
+                android:textColor="@color/color_help_button_text"
+                android:textSize="@dimen/base_dimen_28"
+                tools:text="12544444444"/>
+
+            <TextView
+                android:id="@+id/tx_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_name"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/base_dimen_4"
+                android:text="@string/activity_property_deal"
+                android:textColor="@color/color_text_first_title"
+                android:textSize="@dimen/base_dimen_28"/>
+
+            <ImageView
+                android:id="@+id/img_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_tips"
+                android:layout_marginTop="@dimen/base_dimen_4"
+                android:src="@mipmap/icon_progress_fee"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tx_progress_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activity_property_finish"
+            android:lines="2"
+            android:textColor="@color/color_text_first_title"
+            android:textSize="@dimen/base_dimen_28"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_progress_satisfaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.jinke.community.ui.widget.FillGridView
+                android:id="@+id/fill_grid_view"
+                android:layout_width="@dimen/base_dimen_300"
+                android:layout_height="wrap_content"
+                android:listSelector="@color/white"
+                android:numColumns="5"/>
+
+            <TextView
+                android:id="@+id/tx_satisfaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fill_grid_view"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:textColor="@color/color_text_first_title"
+                android:textSize="@dimen/base_dimen_28"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tx_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_property_score"
+                android:textColor="@color/color_text_first_title"
+                android:textSize="@dimen/base_dimen_28"/>
+
+            <TextView
+                android:id="@+id/tx_to_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_score"
+                android:layout_marginTop="@dimen/base_dimen_12"
+                android:background="@mipmap/icon_progress_to_score"
+                android:gravity="center"
+                android:text="@string/activity_property_to_score"
+                android:textColor="@color/color_main"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_visit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/tx_visitor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_text_first_title"
+                android:textSize="@dimen/base_dimen_28"
+                tools:text="回访人：***"/>
+
+            <TextView
+                android:id="@+id/tx_visitor_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_visitor"
+                android:textColor="@color/color_help_button_text"
+                android:textSize="@dimen/base_dimen_28"
+                tools:text="12544444444"/>
+
+            <TextView
+                android:id="@+id/tx_visit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_visitor_phone"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/base_dimen_4"
+                android:text="@string/activity_property_deal"
+                android:textColor="@color/color_text_first_title"
+                android:textSize="@dimen/base_dimen_28"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

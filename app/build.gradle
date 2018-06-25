@@ -1,0 +1,137 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+    defaultConfig {
+        applicationId "com.jinke.community"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 9
+        versionName '2.2.0'
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "rap9lBHjN68HcxSq3RMzy",
+                GETUI_APP_KEY   : "UtbLcyLN8KAeRKIWjRk4V2",
+                GETUI_APP_SECRET: "Hr1D386MJD79ks7MoivWy7",
+                HUAWEI_APPID    : "10869475",
+                MEIZU_APP_ID    : "111619",
+                MEIZU_APP_KEY   : "06a53f6fe9fb4860a6eb89306d5a5687",
+                MIPUSH_APP_ID   : "2882303761517570637",
+                MIPUSH_APP_KEY  : "5101757026637",
+                PACKAGE_NAME    : "com.jinke.community",
+
+                JPUSH_PKGNAME   : applicationId,
+                JPUSH_APPKEY    : "bf497542345a0803234e5a90", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL   : "developer-default", //暂时填写默认值即可.
+        ]
+        ndk {
+            // 设置支持的SO库架构
+            abiFilters 'armeabi', 'armeabi-v7a'
+//            abiFilters 'armeabi', 'armeabi-v7a', 'x86', 'arm64-v8a'
+            //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'+-*9/58,.l
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+        jumboMode = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+        debug {
+            keyAlias 'community'
+            keyPassword 'jinkecommunity'
+            storeFile file('./keystore/jinkecommunity_keystore.jks')
+            storePassword 'jinkecommunity'
+        }
+        release {
+            keyAlias 'community'
+            keyPassword 'jinkecommunity'
+            storeFile file('./keystore/jinkecommunity_keystore.jks')
+            storePassword 'jinkecommunity'
+        }
+    }
+    allprojects {
+        repositories {
+            jcenter()
+        }
+    }
+    buildscript {
+        repositories {
+            jcenter()
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile(name: 'doormaster-vphone-sdk-V2.0.7-thinmoo', ext: 'aar')
+    testCompile 'junit:junit:4.12'
+    compile 'com.github.asLody:turbodex:1.1.0'
+    compile 'com.github.Brave-wan:BasisLibrary:2.0.4'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.lovedise:permissiongen:0.0.6'
+    compile 'com.amap.api:location:latest.integration'
+    compile 'com.tencent.bugly:crashreport_upgrade:latest.release'
+    compile 'com.tencent.bugly:nativecrashreport:latest.release'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.github.lzyzsd:jsbridge:1.0.4'
+    compile 'com.github.donkingliang:CustomBanner:1.1.0'
+    compile 'org.loader:autohideime:1.0'
+    compile 'com.ycjiang:imgepreviewlibrary:1.0.1'
+    compile 'top.zibin:Luban:1.1.3'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.zhy:okhttputils:2.3.8'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/SignSDK.jar')
+    compile 'com.isanwenyu.highlight:highlight:1.8.0'
+    //高亮显示
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.8'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:1.3.4'
+    implementation files('libs/alipaySdk-20161009.jar')
+    implementation project(':library')
+    compile(name: 'LumiSDK', ext: 'aar')
+    compile(name: 'biz_xiaodi_sdk-release-v3.4.2', ext: 'aar')
+    compile(name: 'lib_base-release-v3.4.4', ext: 'aar')
+    compile(name: 'lib_bluetoothle-release-v3.4.1', ext: 'aar')
+    compile 'com.blankj:utilcode:1.9.3'
+    //云视频
+    compile 'com.getui:sdk:2.10.2.0'
+    implementation 'com.meizu.flyme.internet:push-internal:3.4.2@aar'
+    //大社区极光推送
+    compile 'cn.jiguang.sdk:jpush:3.1.1'
+    compile 'cn.jiguang.sdk:jcore:1.1.9'
+    //百度标准统计
+    compile 'com.baidu.mobstat:mtj-sdk:latest.integration'
+    //蓝牙
+    compile 'com.clj.fastble:FastBleLib:2.3.2'
+}

@@ -1,0 +1,44 @@
+package com.jinke.community.service.impl;
+
+import android.content.Context;
+
+import com.jinke.community.application.MyApplication;
+import com.jinke.community.bean.HttpResult;
+import com.jinke.community.bean.PostItNoticeDetailBean;
+import com.jinke.community.http.main.HttpMethods;
+import com.jinke.community.http.main.OnRequestListener;
+import com.jinke.community.http.main.ProgressSubscriber;
+import com.jinke.community.http.main.SubscriberOnNextListener;
+import com.jinke.community.service.IPropertyWebBiz;
+
+import java.util.Map;
+
+/**
+ * Created by root on 17-8-17.
+ */
+
+public class PropertyWebImpl implements IPropertyWebBiz {
+    private Context mContext;
+
+    public PropertyWebImpl(Context mContext) {
+        this.mContext = mContext;
+
+    }
+
+    @Override
+    public void getPostItNoticeDetail(Map<String, String> map, final OnRequestListener listener) {
+        SubscriberOnNextListener nextListener = new SubscriberOnNextListener<PostItNoticeDetailBean>() {
+            @Override
+            public void onNext(PostItNoticeDetailBean info) {
+                listener.onSuccess(info);
+            }
+
+            @Override
+            public void onError(String Code, String Msg) {
+                listener.onError(Code, Msg);
+            }
+        };
+
+        HttpMethods.getInstance().getPostItNoticeDetail(new ProgressSubscriber<HttpResult<PostItNoticeDetailBean>>(nextListener, mContext), map, MyApplication.creatSign(map));
+    }
+}

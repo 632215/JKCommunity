@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_gray_default"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:id="@+id/property_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/property_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/icon_activity_broke_news_property"/>
+
+            <TextView
+                android:id="@+id/tx_property_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="@dimen/base_dimen_30"
+                android:text="@string/property_news_title"
+                android:textColor="@color/activity_broke_news_color"/>
+
+            <TextView
+                android:id="@+id/tx_property_tips_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/property_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/base_dimen_30"
+                android:gravity="center"
+                android:text="@string/property_news_property_tips_top"
+                android:textColor="@color/activity_broke_news_color"
+                android:textSize="@dimen/base_dimen_24"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/broken_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/property_view"
+            android:layout_marginTop="@dimen/base_dimen_50">
+
+            <ImageView
+                android:id="@+id/image_broken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/icon_activity_broke_news_community"/>
+
+            <TextView
+                android:id="@+id/tx_broken_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/property_broken_title"
+                android:textColor="@color/activity_broke_news_color"/>
+
+            <TextView
+                android:id="@+id/tx_break_tips_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_broken"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/base_dimen_30"
+                android:gravity="center"
+                android:text="@string/property_news_broken_tips_top"
+                android:textColor="@color/activity_broke_news_color"
+                android:textSize="@dimen/base_dimen_24"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_tips"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@mipmap/icon_tips"/>
+
+            <TextView
+                android:id="@+id/img_close"
+                android:layout_width="@dimen/base_dimen_60"
+                android:layout_height="@dimen/base_dimen_60"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

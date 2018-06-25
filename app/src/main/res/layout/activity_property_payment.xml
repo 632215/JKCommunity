@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/owner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/owner_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/base_dimen_28"
+            android:paddingLeft="@dimen/base_dimen_24"
+            android:paddingRight="@dimen/base_dimen_6"
+            android:paddingTop="@dimen/base_dimen_28"
+            android:text="@string/payment_owner"
+            android:textColor="@color/payment_text_color1"/>
+
+        <com.jinke.community.ui.widget.FillListView
+            android:id="@+id/owner_fillListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/owner_text"
+            android:divider="@null"
+            android:listSelector="@color/list_bg"
+            android:paddingRight="@dimen/base_dimen_28"
+            android:paddingTop="@dimen/base_dimen_28"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_property_fee_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/owner_layout"
+        android:background="@drawable/shape_parting_top_12dp"
+        android:paddingLeft="@dimen/base_dimen_30"
+        android:paddingRight="@dimen/base_dimen_28"
+        android:paddingTop="@dimen/base_dimen_20">
+
+        <TextView
+            android:id="@+id/tx_property_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_vehicle_rectangle"
+            android:drawablePadding="@dimen/base_dimen_12"
+            android:paddingBottom="@dimen/base_dimen_14"
+            android:paddingTop="@dimen/base_dimen_24"
+            android:text="@string/payment_tx_property_payment"
+            android:textColor="@color/payment_text_color19"
+            android:textSize="@dimen/base_dimen_30"/>
+
+        <RelativeLayout
+            android:id="@+id/pending_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx_property_payment"
+            android:background="@drawable/shape_parting_top_1dp"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30">
+
+            <ImageView
+                android:id="@+id/pending_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/base_dimen_28"
+                android:src="@mipmap/icon_payment_search"/>
+
+            <TextView
+                android:id="@+id/pending_search_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/pending_image"
+                android:text="@string/payment_pending_search"
+                android:textColor="@color/payment_text_color5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pending_search_text"
+                android:layout_toRightOf="@+id/pending_image"
+                android:text="@string/payment_pending_search_description"
+                android:textColor="@color/payment_text_color6"
+                android:textSize="@dimen/base_dimen_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableRight="@mipmap/icon_forward"
+                />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/pre_stored_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pending_layout"
+            android:background="@drawable/shape_parting_top_1dp"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30">
+
+            <ImageView
+                android:id="@+id/pre_stored_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/base_dimen_28"
+                android:src="@mipmap/icon_pre_stored_search"/>
+
+            <TextView
+                android:id="@+id/pre_stored_search_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/pre_stored_image"
+                android:layout_toRightOf="@+id/pre_stored_image"
+                android:text="@string/payment_pre_stored_search"
+                android:textColor="@color/payment_text_color5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pre_stored_search_text"
+                android:layout_toRightOf="@+id/pre_stored_image"
+                android:text="@string/payment_pre_stored_search_description"
+                android:textColor="@color/payment_text_color6"
+                android:textSize="@dimen/base_dimen_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableRight="@mipmap/icon_forward"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/withholding_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pre_stored_layout"
+            android:background="@drawable/shape_parting_top_1dp"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/withholding_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/base_dimen_28"
+                android:src="@mipmap/icon_withholding_search"/>
+
+            <TextView
+                android:id="@+id/withholding_search_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/withholding_image"
+                android:layout_toRightOf="@+id/withholding_image"
+                android:text="@string/payment_withholding_costs"
+                android:textColor="@color/payment_text_color5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/withholding_search_text"
+                android:layout_toRightOf="@+id/withholding_image"
+                android:text="@string/payment_withholding_search_description"
+                android:textColor="@color/payment_text_color6"
+                android:textSize="@dimen/base_dimen_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableRight="@mipmap/icon_forward"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_withholding_management"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pre_stored_layout"
+            android:background="@drawable/shape_parting_top_1dp"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/image_withholding_management"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/base_dimen_28"
+                android:src="@mipmap/icon_withholding_search"/>
+
+            <TextView
+                android:id="@+id/tx_withholding_management"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/image_withholding_management"
+                android:layout_toRightOf="@+id/image_withholding_management"
+                android:text="@string/withholding_management"
+                android:textColor="@color/payment_text_color5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_withholding_management"
+                android:layout_toRightOf="@+id/image_withholding_management"
+                android:text="@string/withholding_management_description"
+                android:textColor="@color/payment_text_color6"
+                android:textSize="@dimen/base_dimen_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableRight="@mipmap/icon_forward"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_vehicle_fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_property_fee_detail"
+        android:background="@drawable/shape_parting_top_10dp"
+        android:paddingLeft="@dimen/base_dimen_30"
+        android:paddingRight="@dimen/base_dimen_28"
+        android:paddingTop="@dimen/base_dimen_20"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tx_monthly_parking_fee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_vehicle_rectangle"
+            android:drawablePadding="@dimen/base_dimen_12"
+            android:paddingBottom="@dimen/base_dimen_14"
+            android:paddingTop="@dimen/base_dimen_24"
+            android:text="@string/payment_tx_monthly_parking_fee"
+            android:textColor="@color/payment_text_color19"
+            android:textSize="@dimen/base_dimen_30"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_monthly_parking_fee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tx_monthly_parking_fee"
+            android:background="@drawable/shape_parting_top_1dp"
+            android:paddingBottom="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30">
+
+            <ImageView
+                android:id="@+id/image_parking_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/base_dimen_28"
+                android:src="@drawable/icon_month_parking_fee"/>
+
+            <TextView
+                android:id="@+id/tx_monthly_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/image_parking_fee"
+                android:layout_toRightOf="@+id/image_parking_fee"
+                android:text="@string/payment_tx_parking_fee"
+                android:textColor="@color/payment_text_color5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_monthly_recharge"
+                android:layout_toRightOf="@+id/image_parking_fee"
+                android:text="@string/payment_tx_parking_fee_description"
+                android:textColor="@color/payment_text_color6"
+                android:textSize="@dimen/base_dimen_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableRight="@mipmap/icon_forward"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/base_dimen_54"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/payment_notes_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/base_dimen_20"
+            android:text="@string/payment_notes"
+            android:textColor="@color/payment_text_color7"
+            android:textSize="@dimen/base_dimen_30"/>
+
+        <View
+            android:layout_width="@dimen/base_dimen_1"
+            android:layout_height="match_parent"
+            android:background="@color/payment_text_color7"/>
+
+        <TextView
+            android:id="@+id/payment_recorder_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/base_dimen_20"
+            android:text="@string/payment_payment_record"
+            android:textColor="@color/payment_text_color7"
+            android:textSize="@dimen/base_dimen_30"/>
+    </LinearLayout>
+</RelativeLayout>

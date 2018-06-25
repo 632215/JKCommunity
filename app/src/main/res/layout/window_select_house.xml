@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+
+    <ImageView
+        android:id="@+id/image_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/icon_fragment_housekeeper_hosue_select_bg" />
+
+    <TextView
+        android:id="@+id/tx_select_house_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/image_bg"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="@dimen/base_dimen_26"
+        android:text="选择房屋"
+        android:textColor="@color/white"
+        android:textSize="@dimen/base_dimen_36" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_operate"
+        android:layout_alignLeft="@+id/image_bg"
+        android:layout_alignRight="@+id/image_bg"
+        android:layout_below="@+id/tx_select_house_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/base_dimen_30"
+        android:layout_marginTop="@dimen/base_dimen_260"
+        android:divider="@null"
+        android:dividerHeight="@dimen/base_dimen_0"
+        android:listSelector="@null"
+        android:scrollbars="none" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_operate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/image_bg"
+        android:layout_alignLeft="@+id/image_bg"
+        android:layout_alignRight="@+id/image_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/base_dimen_10">
+
+        <TextView
+            android:id="@+id/tx_dialog_cancel"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="@dimen/base_dimen_90"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/activity_authorization_relation_cancel"
+            android:textColor="@color/activity_authoried_color3" />
+
+        <TextView
+            android:id="@+id/tx_dialog_sure"
+            android:layout_width="@dimen/base_dimen_0"
+            android:layout_height="@dimen/base_dimen_90"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/activity_authorization_relation_sure"
+            android:textColor="@color/activity_authoried_color1" />
+    </LinearLayout>
+</RelativeLayout>

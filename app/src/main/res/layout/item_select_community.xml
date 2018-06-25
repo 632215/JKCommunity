@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/base_dimen_32"
+    android:paddingLeft="@dimen/base_dimen_30"
+    android:paddingRight="@dimen/base_dimen_30"
+    android:paddingTop="@dimen/base_dimen_32">
+
+    <TextView
+        android:id="@+id/tx_community_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="金科云湖天都"
+        android:textColor="@color/main_present_text_black" />
+
+    <TextView
+        android:id="@+id/tx_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="距离: 342km"
+        android:textColor="@color/main_present_text_gray" />
+
+
+</RelativeLayout>

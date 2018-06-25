@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/item_spike"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen_244"
+        android:layout_marginTop="@dimen/base_dimen_22"
+        android:layout_toLeftOf="@+id/tx_line"
+        android:src="@mipmap/icon_spike" />
+
+    <TextView
+        android:id="@+id/tx_line"
+        android:layout_width="@dimen/base_dimen_6"
+        android:layout_height="@dimen/base_dimen_244"
+        android:layout_alignParentRight="true"
+        android:background="@color/main_gray_default" />
+</RelativeLayout>

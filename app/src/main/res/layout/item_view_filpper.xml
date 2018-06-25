@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_110"
+                android:gravity="center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/tx_notice_time"
+        android:gravity="left">
+
+        <TextView
+            android:id="@+id/tx_notice_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_5"
+            android:layout_toLeftOf="@+id/image_new"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingLeft="@dimen/base_dimen_30"
+            android:textColor="@color/main_present_text_black"
+            android:textSize="@dimen/base_dimen_28"
+            tools:text="关于停电关于停电电"/>
+
+        <ImageView
+            android:id="@+id/image_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="@dimen/base_dimen_4"
+            android:background="@drawable/shape_corners_red_bg"
+            android:src="@mipmap/icon_fragment_housekeeper_new"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tx_notice_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/base_dimen_42"
+        android:gravity="right"
+        android:lines="1"
+        android:textColor="@color/fragment_housekeeper_color1"
+        android:textSize="@dimen/base_dimen_28"
+        tools:text=" 1小时以前"/>
+</RelativeLayout>

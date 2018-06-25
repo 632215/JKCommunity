@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/icon_check_bg">
+
+    <ImageView
+        android:id="@+id/img_check_state"
+        android:layout_width="@dimen/base_dimen_234"
+        android:layout_height="@dimen/base_dimen_234"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base_dimen_80"/>
+
+    <TextView
+        android:id="@+id/tx_check_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_check_state"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base_dimen_400"
+        android:textColor="@color/color_text_first_title"
+        android:textSize="@dimen/base_dimen_32"/>
+
+    <TextView
+        android:id="@+id/tx_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/base_dimen_80"
+        android:layout_marginLeft="@dimen/base_dimen_30"
+        android:layout_marginRight="@dimen/base_dimen_30"
+        android:background="@mipmap/icon_check_sure_bg"
+        android:gravity="center"
+        android:text="@string/activity_authentication_photo_national"
+        android:textColor="@color/payment_text_color16"/>
+</RelativeLayout>

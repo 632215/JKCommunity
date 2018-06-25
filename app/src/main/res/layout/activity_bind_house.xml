@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.jinke.community.ui.widget.LoadingLayout
+        android:id="@+id/loadinglayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_parting_top_12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tx_please_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_dimen_22"
+                android:background="@drawable/shape_parting_top_12dp"
+                android:drawableLeft="@mipmap/icon_bind_house"
+                android:drawablePadding="@dimen/base_dimen_21"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/base_dimen_22"
+                android:paddingLeft="@dimen/base_dimen_24"
+                android:paddingRight="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_46"
+                android:text="@string/activity_bind_house_please_select_house"
+                android:textColor="@color/acticivty_bind_house_color1" />
+
+            <com.jinke.community.ui.widget.FillListView
+                android:id="@+id/fill_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_please_select"
+                android:background="@drawable/shape_parting_top_12dp"
+                android:choiceMode="singleChoice"
+                android:divider="@null"
+                android:listSelector="@color/white"
+                android:paddingLeft="@dimen/base_dimen_24"
+                android:paddingRight="@dimen/base_dimen_30"
+                android:paddingTop="@dimen/base_dimen_24" />
+        </RelativeLayout>
+    </com.jinke.community.ui.widget.LoadingLayout>
+
+
+</RelativeLayout>

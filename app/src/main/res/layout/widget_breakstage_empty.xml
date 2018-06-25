@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_breakstage_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base_dimen_100"
+        android:src="@mipmap/icon_breakstage_empty"/>
+
+    <TextView
+        android:id="@+id/tx_breakstage_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_breakstage_empty"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/base_dimen_90"
+        android:text="您还没有爆料记录哦！"
+        android:textColor="@color/loaclayout_color1"
+        android:textSize="@dimen/base_dimen_32"/>
+
+    <TextView
+        android:id="@+id/tx_breakstage_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@mipmap/icon_add_broken"
+        android:clickable="true"
+        android:gravity="center|bottom"
+        android:paddingBottom="@dimen/base_dimen_10"
+        android:text="添加爆料"
+        android:textColor="@color/activity_broken_stage_add"
+        android:textSize="@dimen/base_dimen_28"/>
+
+    <TextView
+        android:id="@+id/tx_network_err_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_40"
+        android:background="@mipmap/icon_loadlayout_network_err_return"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="返回管家"
+        android:textColor="@color/loaclayout_color2"
+        android:textSize="@dimen/base_dimen_32"
+        android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jinke.community.ui.widget.LoadingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/loadingLayout"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             app:isFirstVisible="true">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_parting_both_10dp">
+
+            <TextView
+                android:id="@+id/tx_payment_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/base_dimen_6"
+                android:paddingLeft="@dimen/base_dimen_24"
+                android:paddingTop="@dimen/base_dimen_38"
+                android:textColor="@color/payment_text_color8"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:text="¥123.4"/>
+
+            <TextView
+                android:id="@+id/tx_payment_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_payment_money"
+                android:paddingBottom="@dimen/base_dimen_26"
+                android:paddingLeft="@dimen/base_dimen_24"
+                android:textColor="@color/payment_text_color5"
+                tools:text="公众号  微信支付"/>
+
+            <View
+                android:id="@+id/divider_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_dimen_1"
+                android:layout_below="@+id/tx_payment_method"
+                android:layout_marginLeft="@dimen/base_dimen_24"
+                android:background="@color/circle_gray"/>
+
+            <TextView
+                android:id="@+id/tx_payment_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/divider_view"
+                android:layout_below="@+id/divider_view"
+                android:ellipsize="end"
+                android:lines="1"
+                android:paddingTop="@dimen/base_dimen_24"
+                android:textColor="@color/payment_text_color1"
+                tools:text="支付时间：2017年12月12日  12:12:12"/>
+
+            <TextView
+                android:id="@+id/tx_payment_recorder_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/divider_view"
+                android:layout_below="@+id/tx_payment_time"
+                android:ellipsize="end"
+                android:lines="1"
+                android:paddingTop="@dimen/base_dimen_24"
+                android:textColor="@color/payment_text_color1"
+                tools:text="入账时间：2017年12月12日  12:12:12"/>
+
+            <TextView
+                android:id="@+id/tx_payment_serial_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/divider_view"
+                android:layout_below="@+id/tx_payment_recorder_time"
+                android:ellipsize="end"
+                android:lines="1"
+                android:paddingTop="@dimen/base_dimen_24"
+                android:textColor="@color/payment_text_color1"
+                tools:text="金科流水号：2017年12月12日  12:12:12"/>
+
+            <TextView
+                android:id="@+id/tx_payment_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/divider_view"
+                android:layout_below="@+id/tx_payment_serial_number"
+                android:ellipsize="end"
+                android:lines="1"
+                android:paddingBottom="@dimen/base_dimen_48"
+                android:paddingTop="@dimen/base_dimen_24"
+                android:textColor="@color/payment_text_color1"
+                tools:text="支付单号：2017年12月12日  12:12:12"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/details_layout"
+            android:scrollbars="none">
+
+            <com.jinke.community.ui.widget.FillListView
+                android:id="@+id/payment_details_fillList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:divider="@color/default_bg"
+                android:dividerHeight="@dimen/base_dimen_20"
+                android:listSelector="@color/list_bg"/>
+        </ScrollView>
+    </RelativeLayout>
+</com.jinke.community.ui.widget.LoadingLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/loadingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_gray_default"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            app:isFirstVisible="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_break"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/base_dimen_30"
+            android:paddingRight="@dimen/base_dimen_30">
+
+            <TextView
+                android:id="@+id/tx_break_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ll_state"
+                android:layout_alignTop="@+id/ll_state"
+                android:gravity="center_vertical"
+                android:text="@string/activity_property_details_state"
+                android:textColor="@color/activity_property_details_color1"
+                android:textSize="@dimen/base_dimen_28"/>
+
+            <LinearLayout
+                android:id="@+id/ll_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/base_dimen_10"
+                android:layout_marginTop="@dimen/base_dimen_30"
+                android:layout_toEndOf="@+id/tx_break_state"
+                android:background="@mipmap/icon_activity_break_history_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tx_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/activity_property_details_color1"
+                    android:textSize="@dimen/base_dimen_28"
+                    tools:text="待处理"/>
+
+                <ImageView
+                    android:id="@+id/image_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/base_dimen_12"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tx_break_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_break_state"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:gravity="center_vertical"
+                android:text="@string/activity_property_details_time"
+                android:textColor="@color/activity_property_details_color1"
+                android:textSize="@dimen/base_dimen_28"/>
+
+            <TextView
+                android:id="@+id/tx_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tx_break_time"
+                android:layout_marginStart="@dimen/base_dimen_10"
+                android:layout_toEndOf="@+id/tx_break_time"
+                android:lines="1"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/base_dimen_28"
+                tools:text="2017/7/9 12:12"/>
+
+            <TextView
+                android:id="@+id/tx_break_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_break_time"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:gravity="center_vertical"
+                android:text="@string/activity_property_details_id"
+                android:textColor="@color/activity_property_details_color1"
+                android:textSize="@dimen/base_dimen_28"/>
+
+            <TextView
+                android:id="@+id/tx_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tx_break_id"
+                android:layout_marginStart="@dimen/base_dimen_10"
+                android:layout_toEndOf="@+id/tx_break_time"
+                android:singleLine="true"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/base_dimen_28"
+                tools:text="b681d613-c6dc-4095-85dc-3ad19a10d0b2"/>
+
+            <TextView
+                android:id="@+id/tx_break_house"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_break_id"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:gravity="center_vertical"
+                android:text="@string/activity_property_details_house"
+                android:textColor="@color/activity_property_details_color1"
+                android:textSize="@dimen/base_dimen_28"/>
+
+            <TextView
+                android:id="@+id/tx_house"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tx_break_house"
+                android:layout_marginStart="@dimen/base_dimen_10"
+                android:layout_toEndOf="@+id/tx_break_time"
+                android:singleLine="true"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/base_dimen_28"
+                tools:text="金科十年城"/>
+
+            <TextView
+                android:id="@+id/tx_break_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_break_house"
+                android:layout_marginTop="@dimen/base_dimen_20"
+                android:gravity="center_vertical"
+                android:text="@string/activity_property_details_content"
+                android:textColor="@color/activity_property_details_color1"
+                android:textSize="@dimen/base_dimen_28"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/tx_break_content"
+                android:layout_marginBottom="@dimen/base_dimen_20"
+                android:layout_marginStart="@dimen/base_dimen_10"
+                android:layout_toEndOf="@+id/tx_break_time"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tx_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_text"
+                    android:textSize="@dimen/base_dimen_28"
+                    tools:text="损坏维修报事，高效快捷为您提供优质您提供物业服，尽量避"/>
+
+                <com.jinke.community.ui.widget.FillGridView
+                    android:id="@+id/fill_grid_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_dimen_20"
+                    android:horizontalSpacing="@dimen/base_dimen_26"
+                    android:listSelector="@color/white"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:verticalSpacing="@dimen/base_dimen_20"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_access"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_break"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/base_dimen_30"
+            android:paddingRight="@dimen/base_dimen_30"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tx_my_access"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_dimen_28"
+                android:layout_marginTop="@dimen/base_dimen_28"
+                android:drawableLeft="@drawable/icon_housekeeper_rectangle"
+                android:drawablePadding="@dimen/base_dimen_10"
+                android:paddingBottom="@dimen/base_dimen_5"
+                android:paddingTop="@dimen/base_dimen_5"
+                android:text="@string/activity_property_details_my_access"
+                android:textColor="@color/activity_property_details_color3"
+                android:textSize="@dimen/base_dimen_30"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_satisfaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx_my_access"
+                android:layout_marginBottom="@dimen/base_dimen_30"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tx_satisfaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/activity_property_details_haven_access"
+                    android:textColor="@color/activity_comment_color1"
+                    android:textSize="@dimen/base_dimen_30"/>
+
+                <com.jinke.community.ui.widget.FillGridView
+                    android:id="@+id/grid_view"
+                    android:layout_width="@dimen/base_dimen_220"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/base_dimen_20"
+                    android:layout_toEndOf="@+id/tx_satisfaction"
+                    android:gravity="left"
+                    android:listSelector="@color/white"
+                    android:numColumns="5"/>
+
+                <TextView
+                    android:id="@+id/tx_service_satisfaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/base_dimen_24"
+                    android:textColor="@color/activity_comment_color2"
+                    android:textSize="@dimen/base_dimen_30"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tx_access"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_satisfaction"
+                android:layout_marginBottom="@dimen/base_dimen_40"
+                android:background="@color/activity_property_details_color4"
+                android:paddingBottom="@dimen/base_dimen_60"
+                android:paddingLeft="@dimen/base_dimen_24"
+                android:paddingRight="@dimen/base_dimen_24"
+                android:paddingTop="@dimen/base_dimen_46"
+                android:textColor="@color/activity_property_details_color5"
+                android:textSize="@dimen/base_dimen_28"
+                tools:text="损坏维修报事，高效快捷为您提供优质您提供物业服，尽量避免近距离接触损坏维修报事，高效快捷为您提供优质您提供物业服，尽量避免近距离接触。高效快捷为您提供优质您提供物业服，尽量避免近距离接触。"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tx_housekeeper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/rl_access"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/base_dimen_20"
+            android:gravity="bottom"
+            android:paddingBottom="@dimen/base_dimen_20"
+            android:text="@string/activity_property_details_housekeeper"
+            android:textColor="@color/activity_property_details_color6"
+            android:textSize="@dimen/base_dimen_28"/>
+    </RelativeLayout>
+</ScrollView>

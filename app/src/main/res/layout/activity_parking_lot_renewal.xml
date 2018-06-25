@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jinke.community.ui.widget.LoadingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:id="@+id/loadingLayout"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             app:isFirstVisible="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_sign_type"
+            android:layout_marginTop="@dimen/base_dimen_24"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/address_txw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/base_dimen_20"
+                android:layout_toLeftOf="@+id/tx_select"
+                android:drawableLeft="@mipmap/icon_pending_house"
+                android:drawablePadding="@dimen/base_dimen_10"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/base_dimen_22"
+                android:paddingLeft="@dimen/base_dimen_24"
+                android:paddingTop="@dimen/base_dimen_22"
+                android:textColor="@color/payment_text_address"
+                android:textSize="@dimen/base_dimen_30"
+                tools:text="@string/payment_address"/>
+
+            <TextView
+                android:id="@+id/tx_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/base_dimen_16"
+                android:drawableRight="@mipmap/icon_forward"
+                android:paddingRight="@dimen/base_dimen_24"
+                android:text="@string/payment_please_select"
+                android:textColor="@color/payment_text_color1"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tx_select_parking_spaces"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_address"
+            android:background="@drawable/shape_parting_top_12dp"
+            android:drawableLeft="@drawable/icon_vehicle_rectangle"
+            android:drawablePadding="@dimen/base_dimen_12"
+            android:paddingBottom="@dimen/base_dimen_14"
+            android:paddingLeft="@dimen/base_dimen_24"
+            android:paddingRight="@dimen/base_dimen_28"
+            android:paddingTop="@dimen/base_dimen_48"
+            android:text="@string/payment_tx_monthly_parking_fee"
+            android:textColor="@color/payment_text_color19"
+            android:textSize="@dimen/base_dimen_30"/>
+
+
+        <com.jinke.community.ui.widget.FillListView
+            android:id="@+id/fill_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tx_total_pending"
+            android:layout_below="@+id/tx_select_parking_spaces"
+            android:divider="@null"
+            android:scrollbars="none"/>
+
+        <TextView
+            android:id="@+id/tx_total_pending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tx_pay_immediately"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/tx_pay_immediately"
+            android:layout_toLeftOf="@+id/tx_pay_immediately"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/base_dimen_74"
+            android:text="@string/payment_renewal_total_in_advance"
+            android:textColor="@color/payment_text_color10"
+            android:textSize="@dimen/base_dimen_32"/>
+
+        <TextView
+            android:id="@+id/tx_pay_immediately"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/circle_money_color"
+            android:clickable="false"
+            android:paddingBottom="@dimen/base_dimen_28"
+            android:paddingLeft="@dimen/base_dimen_50"
+            android:paddingRight="@dimen/base_dimen_50"
+            android:paddingTop="@dimen/base_dimen_30"
+            android:text="@string/payment_renewal_recharge_now"
+            android:textColor="@color/white"
+            android:textSize="@dimen/base_dimen_32"/>
+    </RelativeLayout>
+
+</com.jinke.community.ui.widget.LoadingLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/rl_address"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/rl_sign_type"-->
+    <!--android:layout_marginTop="@dimen/base_dimen_24"-->
+    <!--android:background="@color/white"-->
+    <!--android:visibility="gone">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/address_txw"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="@dimen/base_dimen_20"-->
+    <!--android:layout_toLeftOf="@+id/tx_select"-->
+    <!--android:drawableLeft="@mipmap/icon_pending_house"-->
+    <!--android:drawablePadding="@dimen/base_dimen_10"-->
+    <!--android:ellipsize="end"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:maxLines="1"-->
+    <!--android:paddingBottom="@dimen/base_dimen_22"-->
+    <!--android:paddingLeft="@dimen/base_dimen_24"-->
+    <!--android:paddingTop="@dimen/base_dimen_22"-->
+    <!--android:textColor="@color/payment_text_address"-->
+    <!--android:textSize="@dimen/base_dimen_30"-->
+    <!--tools:text="@string/payment_address"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tx_select"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:drawablePadding="@dimen/base_dimen_16"-->
+    <!--android:drawableRight="@mipmap/icon_forward"-->
+    <!--android:paddingRight="@dimen/base_dimen_24"-->
+    <!--android:text="@string/payment_please_select"-->
+    <!--android:textColor="@color/payment_text_color1"-->
+    <!--android:visibility="gone"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tx_select_parking_spaces"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/rl_address"-->
+    <!--android:background="@drawable/shape_parting_top_12dp"-->
+    <!--android:drawableLeft="@drawable/icon_vehicle_rectangle"-->
+    <!--android:drawablePadding="@dimen/base_dimen_12"-->
+    <!--android:paddingBottom="@dimen/base_dimen_14"-->
+    <!--android:paddingLeft="@dimen/base_dimen_24"-->
+    <!--android:paddingRight="@dimen/base_dimen_28"-->
+    <!--android:paddingTop="@dimen/base_dimen_48"-->
+    <!--android:text="@string/payment_tx_monthly_parking_fee"-->
+    <!--android:textColor="@color/payment_text_color19"-->
+    <!--android:textSize="@dimen/base_dimen_30"/>-->
+
+    <!--<com.jinke.community.ui.widget.LoadingLayout-->
+    <!--android:id="@+id/loadingLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_above="@+id/tx_total_pending"-->
+    <!--android:layout_below="@+id/tx_select_parking_spaces"-->
+    <!--app:isFirstVisible="true">-->
+
+    <!--<com.jinke.community.ui.widget.FillListView-->
+    <!--android:id="@+id/fill_list_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:divider="@null"-->
+    <!--android:scrollbars="none"/>-->
+    <!--</com.jinke.community.ui.widget.LoadingLayout>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tx_total_pending"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignBottom="@+id/tx_pay_immediately"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignTop="@+id/tx_pay_immediately"-->
+    <!--android:layout_toLeftOf="@+id/tx_pay_immediately"-->
+    <!--android:background="@color/white"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:paddingLeft="@dimen/base_dimen_74"-->
+    <!--android:text="@string/payment_renewal_total_in_advance"-->
+    <!--android:textColor="@color/payment_text_color10"-->
+    <!--android:textSize="@dimen/base_dimen_32"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tx_pay_immediately"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:background="@color/circle_money_color"-->
+    <!--android:clickable="false"-->
+    <!--android:paddingBottom="@dimen/base_dimen_28"-->
+    <!--android:paddingLeft="@dimen/base_dimen_50"-->
+    <!--android:paddingRight="@dimen/base_dimen_50"-->
+    <!--android:paddingTop="@dimen/base_dimen_30"-->
+    <!--android:text="@string/payment_renewal_recharge_now"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="@dimen/base_dimen_32"/>-->
+    <!--</RelativeLayout>-->

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/rl_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/base_dimen_24"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/address_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/base_dimen_20"
+            android:layout_toStartOf="@+id/tx_select"
+            android:drawablePadding="@dimen/base_dimen_10"
+            android:drawableStart="@mipmap/icon_pending_house"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/base_dimen_22"
+            android:paddingStart="@dimen/base_dimen_24"
+            android:paddingTop="@dimen/base_dimen_22"
+            android:textColor="@color/payment_text_address"
+            android:textSize="@dimen/base_dimen_30"
+            tools:text="@string/payment_address"/>
+
+        <TextView
+            android:id="@+id/tx_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:drawableEnd="@mipmap/icon_forward"
+            android:drawablePadding="@dimen/base_dimen_16"
+            android:paddingEnd="@dimen/base_dimen_24"
+            android:text="@string/payment_please_select"
+            android:textColor="@color/payment_text_color1"/>
+    </RelativeLayout>
+
+    <com.jinke.community.ui.widget.LoadingLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_address"
+        android:background="@drawable/shape_parting_top_12dp"
+        app:isFirstVisible="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/base_dimen_30"
+            android:paddingRight="@dimen/base_dimen_30">
+
+            <TextView
+                android:id="@+id/total_cost_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/base_dimen_38"
+                android:layout_marginTop="@dimen/base_dimen_64"
+                android:text="@string/payment_total_cost_text"
+                android:textColor="@color/payment_text_color20"
+                android:textSize="@dimen/base_dimen_30"/>
+
+            <TextView
+                android:id="@+id/tx_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/total_cost_text"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/total_cost_text"
+                android:layout_marginLeft="@dimen/base_dimen_6"
+                android:textColor="@color/payment_text_color25"
+                android:textSize="@dimen/base_dimen_36"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/total_cost_text"
+                android:paddingTop="@dimen/base_dimen_3"
+                android:scrollbars="none">
+
+                <com.jinke.community.ui.widget.FillRecyclerView
+                    android:id="@+id/fill_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:divider="@color/main_gray_line"
+                    android:dividerHeight="@dimen/base_dimen_2"
+                    android:scrollbars="none"/>
+            </ScrollView>
+        </RelativeLayout>
+    </com.jinke.community.ui.widget.LoadingLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/total_prepaid_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:paddingBottom="@dimen/base_dimen_28"
+            android:paddingLeft="@dimen/base_dimen_30"
+            android:paddingTop="@dimen/base_dimen_30"
+            android:text="@string/payment_prepaid_cost_text"
+            android:textColor="@color/payment_text_color10"/>
+
+        <TextView
+            android:id="@+id/tx_total_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/total_prepaid_text"
+            android:layout_marginLeft="@dimen/base_dimen_10"
+            android:layout_marginRight="@dimen/base_dimen_10"
+            android:layout_toLeftOf="@+id/prepaid_now_text"
+            android:layout_toRightOf="@+id/total_prepaid_text"
+            android:lines="1"
+            android:text="￥0.00"
+            android:textColor="@color/main_them_color"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/prepaid_now_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/total_prepaid_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/total_prepaid_text"
+            android:background="@drawable/shape_red_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/base_dimen_50"
+            android:paddingRight="@dimen/base_dimen_50"
+            android:text="@string/payment_prepaid_now"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+</RelativeLayout>
